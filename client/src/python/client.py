@@ -35,7 +35,7 @@ class TaskCreator():
         self.__server = HOST + ':' + PORT
         self.args = kwargs.get('args') if kwargs.get('args') else {}
 
-    def process_task(self):
+    def start_task(self):
         #create a connection
         conn = http.client.HTTPConnection(self.__server)
         cmd = 'task'
@@ -43,7 +43,7 @@ class TaskCreator():
         data = json.dumps(self.args)
 
         #request command to server
-        conn.request('GET', cmd, body=data)
+        conn.request('POST', cmd, body=data)
 
         #get response from server
         rsp = conn.getresponse()
@@ -56,8 +56,10 @@ class TaskCreator():
         conn.close()
 
 
+
+
 if __name__ == "__main__":
     args = args_parser()
     logger.info("Make a request to server")
     task = TaskCreator(args=args)
-    task.process_task()
+    task.start_task()

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3.7
 
+import json
+import os
+import socketserver
+
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 from tools.config_init import logger, config
 
-import socketserver
-import os
 
 HOST = config.get('server', 'host')
 PORT = eval(config.get('server', 'port'))
@@ -15,23 +17,35 @@ class TaskHandle(BaseHTTPRequestHandler):
 
     #handle GET command
     def do_GET(self):
-        rootdir = '/tmp' #file location
+        self.send_response(200)
+
+        #send header first
+        self.send_header('Content-type','text-html')
+        self.end_headers()
+
+        #send file content to client
+        self.wfile.write('Task manager server is running'.encode())
+        return
+
+    def do_POST(self):
         try:
             if self.path == 'task':
-                #send code 200 response
-                # read = self.raw_requestline()
                 self.send_response(200)
+
+                content_len = int(self.headers.get('Content-Length'))
+                post_body = self.rfile.read(content_len)
+                loaded_data = json.loads(post_body)
 
                 #send header first
                 self.send_header('Content-type','text-html')
                 self.end_headers()
 
                 #send file content to client
-                self.wfile.write('HELLO'.encode())
+                self.wfile.write(post_body)
                 return
 
-        except IOError:
-            self.send_error(404, 'file not found')
+        except:
+            self.do_send_error(404, 'file not found')
 
 def run():
     with socketserver.TCPServer((HOST, PORT), TaskHandle) as httpd:
