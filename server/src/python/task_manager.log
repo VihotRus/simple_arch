@@ -21,3 +21,774 @@
 2018-11-18 14:16:40,043 - task_manager - INFO - Started server
 2018-11-18 14:18:28,001 - task_manager - INFO - Started server
 2018-11-18 14:21:25,375 - task_manager - INFO - Started server
+2018-11-18 15:32:48,407 - task_manager - INFO - Started server
+2018-11-18 15:41:24,685 - task_manager - INFO - Started server
+2018-11-19 07:19:13,940 - task_manager - INFO - Started server
+2018-11-19 07:24:49,728 - task_manager - INFO - Started server
+2018-11-19 07:32:41,170 - task_manager - INFO - Started server
+2018-11-19 08:17:20,226 - task_manager - INFO - Started server
+2018-11-19 08:38:37,276 - task_manager - INFO - Started server
+2018-11-19 09:14:29,111 - task_manager - INFO - Started server
+2018-11-19 09:15:15,652 - task_manager - INFO - Started server
+2018-11-19 09:17:32,636 - task_manager - INFO - Started server
+2018-11-19 09:21:21,240 - task_manager - INFO - Started server
+2018-11-19 09:22:28,080 - task_manager - INFO - Started server
+2018-11-19 09:30:45,273 - task_manager - INFO - Started server
+2018-11-19 09:32:43,148 - task_manager - INFO - Started server
+2018-11-19 09:34:31,618 - task_manager - INFO - Started server
+2018-11-19 09:41:55,478 - task_manager - INFO - Started server
+2018-11-19 09:42:49,010 - task_manager - INFO - Started server
+2018-11-19 09:43:15,401 - task_manager - INFO - Started server
+2018-11-19 09:58:42,014 - task_manager - INFO - Started server
+2018-11-19 10:00:37,047 - task_manager - INFO - Started server
+2018-11-19 10:01:57,762 - task_manager - INFO - Started server
+2018-11-19 10:03:36,265 - task_manager - INFO - Started server
+2018-11-19 13:21:11,178 - task_manager - INFO - Started server
+2018-11-19 13:39:00,370 - task_manager - INFO - Started server
+2018-11-19 13:39:11,608 - task_manager - INFO - Started server
+2018-11-19 13:40:12,116 - task_manager - INFO - Started server
+2018-11-19 13:59:14,897 - task_manager - INFO - Started server
+2018-11-19 13:59:40,087 - task_manager - INFO - Started server
+2018-11-19 14:00:07,167 - task_manager - INFO - Started server
+2018-11-19 14:01:32,421 - task_manager - INFO - Started server
+2018-11-19 14:41:45,485 - task_manager - INFO - Started server
+2018-11-19 14:42:31,824 - task_manager - INFO - Started server
+2018-11-19 14:43:32,669 - task_manager - INFO - Started server
+2018-11-19 14:45:25,588 - task_manager - INFO - Started server
+2018-11-19 14:46:18,557 - task_manager - INFO - Started server
+2018-11-19 14:51:13,674 - task_manager - INFO - Started server
+2018-11-19 14:52:09,127 - task_manager - INFO - Started server
+2018-11-19 14:55:47,821 - task_manager - INFO - Started server
+2018-11-19 14:58:04,685 - task_manager - INFO - Started server
+2018-11-19 14:58:56,362 - task_manager - INFO - Started server
+2018-11-19 15:03:50,182 - task_manager - INFO - Started server
+2018-11-19 15:04:56,682 - task_manager - INFO - Started server
+2018-11-19 15:06:45,959 - task_manager - INFO - Started server
+2018-11-19 15:07:35,251 - task_manager - INFO - Started server
+2018-11-19 15:09:13,190 - task_manager - INFO - Started server
+2018-11-19 15:10:22,605 - task_manager - INFO - Started server
+2018-11-19 15:13:37,137 - task_manager - INFO - Started server
+2018-11-19 15:14:50,237 - task_manager - INFO - Started server
+2018-11-19 15:17:29,722 - task_manager - INFO - Started server
+2018-11-19 15:42:33,342 - task_manager - INFO - Started server
+2018-11-19 15:48:21,873 - task_manager - INFO - Started server
+2018-11-19 15:50:00,972 - task_manager - INFO - Started server
+2018-11-19 15:53:55,488 - task_manager - INFO - Started server
+2018-11-19 15:55:17,474 - task_manager - INFO - Started server
+2018-11-19 15:55:41,204 - task_manager - INFO - Started server
+2018-11-19 15:56:02,079 - task_manager - INFO - Started server
+2018-11-19 16:29:30,545 - task_manager - INFO - Started server
+2018-11-19 16:50:38,183 - task_manager - INFO - Started server
+2018-11-19 16:51:57,693 - task_manager - INFO - Started server
+2018-11-19 16:52:30,961 - task_manager - INFO - Started server
+2018-11-19 16:53:50,823 - task_manager - INFO - Started server
+2018-11-19 17:31:37,736 - task_manager - INFO - Started server
+2018-11-19 18:15:29,798 - task_manager - INFO - Started server
+2018-11-19 18:16:03,237 - task_manager - INFO - Started server
+2018-11-19 18:17:11,122 - task_manager - INFO - Started server
+2018-11-19 18:19:11,324 - task_manager - INFO - Started server
+2018-11-19 18:19:13,913 - task_manager - INFO - Connecting to database
+2018-11-19 18:19:13,914 - task_manager - INFO - Error occured when connecting to database:'MySqlClient' object has no attribute '_MySqlClient__user'
+2018-11-19 18:22:15,177 - task_manager - INFO - Started server
+2018-11-19 18:22:17,750 - task_manager - INFO - Connecting to database
+2018-11-19 18:22:17,754 - task_manager - INFO - Connected
+2018-11-19 18:22:17,754 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc6e65478d0>
+2018-11-19 18:22:17,754 - task_manager - DEBUG - Calling func insert_task 
+2018-11-19 18:22:17,754 - task_manager - INFO - Error occured
+2018-11-19 18:22:17,754 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-19 18:22:17,755 - task_manager - INFO - Rollbacking changes
+2018-11-19 18:22:17,755 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc6e65478d0>
+2018-11-19 18:26:43,413 - task_manager - INFO - Started server
+2018-11-19 18:26:46,185 - task_manager - INFO - Connecting to database
+2018-11-19 18:26:46,188 - task_manager - INFO - Connected
+2018-11-19 18:26:46,188 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f93317eb9b0>
+2018-11-19 18:26:46,188 - task_manager - DEBUG - Calling func insert_task 
+2018-11-19 18:26:46,189 - task_manager - INFO - Error occured
+2018-11-19 18:26:46,189 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-19 18:26:46,189 - task_manager - INFO - Rollbacking changes
+2018-11-19 18:26:46,190 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f93317eb9b0>
+2018-11-20 11:02:06,796 - task_manager - INFO - Started server
+2018-11-20 11:02:09,778 - task_manager - INFO - Connecting to database
+2018-11-20 11:02:09,778 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 11:07:49,080 - task_manager - INFO - Connecting to database
+2018-11-20 11:07:49,087 - task_manager - INFO - Connected
+2018-11-20 11:07:49,087 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f4261870b38>
+2018-11-20 11:07:49,087 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 11:07:49,088 - task_manager - INFO - Error occured
+2018-11-20 11:07:49,088 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 11:07:49,088 - task_manager - INFO - Rollbacking changes
+2018-11-20 11:07:49,089 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f4261870b38>
+2018-11-20 11:08:51,755 - task_manager - INFO - Connecting to database
+2018-11-20 11:08:51,762 - task_manager - INFO - Connected
+2018-11-20 11:08:51,762 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f36af350dd8>
+2018-11-20 11:08:51,762 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 11:08:51,762 - task_manager - INFO - Error occured
+2018-11-20 11:08:51,763 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 11:08:51,763 - task_manager - INFO - Rollbacking changes
+2018-11-20 11:08:51,763 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f36af350dd8>
+2018-11-20 11:10:13,058 - task_manager - INFO - Connecting to database
+2018-11-20 11:10:13,065 - task_manager - INFO - Connected
+2018-11-20 11:10:13,065 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fd726e68b00>
+2018-11-20 11:10:13,065 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 11:10:13,065 - task_manager - INFO - Error occured
+2018-11-20 11:10:13,066 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 11:10:13,066 - task_manager - INFO - Rollbacking changes
+2018-11-20 11:10:13,066 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fd726e68b00>
+2018-11-20 11:10:26,626 - task_manager - INFO - Connecting to database
+2018-11-20 11:10:26,633 - task_manager - INFO - Connected
+2018-11-20 11:10:26,633 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fedfdf3fb38>
+2018-11-20 11:10:26,633 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 11:10:26,633 - task_manager - INFO - Error occured
+2018-11-20 11:10:26,633 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 11:10:26,634 - task_manager - INFO - Rollbacking changes
+2018-11-20 11:10:26,634 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fedfdf3fb38>
+2018-11-20 12:46:23,933 - task_manager - INFO - Connecting to database
+2018-11-20 12:46:23,943 - task_manager - INFO - Connected
+2018-11-20 12:46:23,944 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fd76e869080>
+2018-11-20 12:46:23,944 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 12:46:23,944 - task_manager - INFO - Error occured
+2018-11-20 12:46:23,944 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 12:46:23,944 - task_manager - INFO - Rollbacking changes
+2018-11-20 12:46:23,945 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fd76e869080>
+2018-11-20 12:46:23,949 - task_manager - INFO - Started server
+2018-11-20 12:46:40,537 - task_manager - INFO - Connecting to database
+2018-11-20 12:46:40,537 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 12:46:52,164 - task_manager - INFO - Connecting to database
+2018-11-20 12:46:52,164 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 12:48:45,832 - task_manager - INFO - Connecting to database
+2018-11-20 12:48:45,833 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 12:49:39,612 - task_manager - INFO - Connecting to database
+2018-11-20 12:49:39,612 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 12:51:28,843 - task_manager - INFO - Connecting to database
+2018-11-20 12:51:28,843 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 12:51:32,257 - task_manager - INFO - Connecting to database
+2018-11-20 12:51:32,257 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 12:52:46,523 - task_manager - INFO - Connecting to database
+2018-11-20 12:52:46,535 - task_manager - INFO - Connected
+2018-11-20 12:52:46,535 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f744291d6a0>
+2018-11-20 12:52:46,535 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 12:52:46,535 - task_manager - INFO - Error occured
+2018-11-20 12:52:46,535 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 12:52:46,535 - task_manager - INFO - Rollbacking changes
+2018-11-20 12:52:46,536 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f744291d6a0>
+2018-11-20 12:52:46,540 - task_manager - INFO - Started server
+2018-11-20 12:58:31,511 - task_manager - INFO - Connecting to database
+2018-11-20 12:58:31,518 - task_manager - INFO - Connected
+2018-11-20 12:58:31,518 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f7db09e2b38>
+2018-11-20 12:58:31,518 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 12:58:31,518 - task_manager - INFO - Error occured
+2018-11-20 12:58:31,518 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 12:58:31,519 - task_manager - INFO - Rollbacking changes
+2018-11-20 12:58:31,520 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f7db09e2b38>
+2018-11-20 13:00:21,585 - task_manager - INFO - Connecting to database
+2018-11-20 13:00:21,596 - task_manager - INFO - Connected
+2018-11-20 13:00:21,596 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fd648ff3b38>
+2018-11-20 13:00:21,596 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:00:21,596 - task_manager - INFO - Error occured
+2018-11-20 13:00:21,596 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 13:00:21,597 - task_manager - INFO - Rollbacking changes
+2018-11-20 13:00:21,597 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fd648ff3b38>
+2018-11-20 13:01:01,065 - task_manager - INFO - Connecting to database
+2018-11-20 13:01:01,076 - task_manager - INFO - Connected
+2018-11-20 13:01:01,076 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f21c1eafb38>
+2018-11-20 13:01:01,076 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:01:01,076 - task_manager - INFO - Error occured
+2018-11-20 13:01:01,076 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 13:01:01,076 - task_manager - INFO - Rollbacking changes
+2018-11-20 13:01:01,077 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f21c1eafb38>
+2018-11-20 13:04:54,546 - task_manager - INFO - Connecting to database
+2018-11-20 13:04:54,555 - task_manager - INFO - Connected
+2018-11-20 13:04:54,555 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f6ad5dc1b00>
+2018-11-20 13:04:54,555 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:04:54,556 - task_manager - INFO - Error occured
+2018-11-20 13:04:54,556 - task_manager - ERROR - insert_task() missing 1 required positional argument: 'host'
+2018-11-20 13:04:54,556 - task_manager - INFO - Rollbacking changes
+2018-11-20 13:04:54,557 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f6ad5dc1b00>
+2018-11-20 13:05:33,278 - task_manager - INFO - Connecting to database
+2018-11-20 13:05:33,286 - task_manager - INFO - Connected
+2018-11-20 13:05:33,286 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fa9743ecb38>
+2018-11-20 13:05:33,286 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:05:33,286 - task_manager - INFO - Commiting changes
+2018-11-20 13:05:33,287 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fa9743ecb38>
+2018-11-20 13:06:31,637 - task_manager - INFO - Connecting to database
+2018-11-20 13:06:31,643 - task_manager - INFO - Connected
+2018-11-20 13:06:31,644 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fcd5b798b70>
+2018-11-20 13:06:31,644 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:06:31,644 - task_manager - INFO - Error occured
+2018-11-20 13:06:31,644 - task_manager - ERROR - 'str' object has no attribute 'execute'
+2018-11-20 13:06:31,644 - task_manager - INFO - Rollbacking changes
+2018-11-20 13:06:31,645 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fcd5b798b70>
+2018-11-20 13:08:55,098 - task_manager - INFO - Connecting to database
+2018-11-20 13:08:55,109 - task_manager - INFO - Connected
+2018-11-20 13:08:55,109 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f1145d82b38>
+2018-11-20 13:08:55,109 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:08:55,111 - task_manager - INFO - Commiting changes
+2018-11-20 13:08:55,113 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f1145d82b38>
+2018-11-20 13:09:23,561 - task_manager - INFO - Connecting to database
+2018-11-20 13:09:23,568 - task_manager - INFO - Connected
+2018-11-20 13:09:23,569 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f570470ab70>
+2018-11-20 13:09:23,569 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:09:23,570 - task_manager - INFO - Commiting changes
+2018-11-20 13:09:23,572 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f570470ab70>
+2018-11-20 13:11:00,205 - task_manager - INFO - Started server
+2018-11-20 13:11:22,211 - task_manager - INFO - Connecting to database
+2018-11-20 13:11:22,211 - task_manager - INFO - Error occured when connecting to database:'str' object has no attribute '_MySqlClient__host'
+2018-11-20 13:18:20,744 - task_manager - INFO - Started server
+2018-11-20 13:20:26,749 - task_manager - INFO - Started server
+2018-11-20 13:20:52,635 - task_manager - INFO - Started server
+2018-11-20 13:21:14,468 - task_manager - INFO - Started server
+2018-11-20 13:21:16,228 - task_manager - INFO - Connecting to database
+2018-11-20 13:21:16,230 - task_manager - INFO - Connected
+2018-11-20 13:21:16,231 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f406b2304e0>
+2018-11-20 13:21:16,231 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:21:16,232 - task_manager - INFO - Commiting changes
+2018-11-20 13:21:16,233 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f406b2304e0>
+2018-11-20 13:21:34,306 - task_manager - INFO - Connecting to database
+2018-11-20 13:21:34,308 - task_manager - INFO - Connected
+2018-11-20 13:21:34,309 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f406b2304a8>
+2018-11-20 13:21:34,309 - task_manager - DEBUG - Calling func insert_task 
+2018-11-20 13:21:34,310 - task_manager - INFO - Commiting changes
+2018-11-20 13:21:34,311 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f406b2304a8>
+2018-11-20 13:24:55,134 - task_manager - INFO - Started server
+2018-11-20 14:46:08,941 - task_manager - INFO - Started server
+2018-11-20 14:46:55,946 - task_manager - INFO - Connecting to database
+2018-11-20 14:46:55,951 - task_manager - INFO - Connected
+2018-11-20 14:46:55,951 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7efeae487518>
+2018-11-20 14:46:55,951 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 14:46:55,951 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 14:46:55,953 - task_manager - INFO - Commiting changes
+2018-11-20 14:46:55,953 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7efeae487518>
+2018-11-20 14:47:25,980 - task_manager - INFO - Connecting to database
+2018-11-20 14:47:25,983 - task_manager - INFO - Connected
+2018-11-20 14:47:25,984 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7efeae753588>
+2018-11-20 14:47:25,984 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 14:47:25,984 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 14:47:25,986 - task_manager - INFO - Commiting changes
+2018-11-20 14:47:25,987 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7efeae753588>
+2018-11-20 14:54:07,637 - task_manager - INFO - Started server
+2018-11-20 14:54:09,990 - task_manager - INFO - Connecting to database
+2018-11-20 14:54:09,994 - task_manager - INFO - Connected
+2018-11-20 14:54:09,994 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f9775edf630>
+2018-11-20 14:54:09,994 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 14:54:09,995 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 14:54:09,997 - task_manager - INFO - Commiting changes
+2018-11-20 14:54:09,999 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f9775edf630>
+2018-11-20 14:55:27,383 - task_manager - INFO - Started server
+2018-11-20 14:55:28,181 - task_manager - INFO - Connecting to database
+2018-11-20 14:55:28,185 - task_manager - INFO - Connected
+2018-11-20 14:55:28,185 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7feea75681d0>
+2018-11-20 14:55:28,185 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 14:55:28,185 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 14:55:28,187 - task_manager - INFO - Commiting changes
+2018-11-20 14:55:28,188 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7feea75681d0>
+2018-11-20 15:04:41,822 - task_manager - INFO - Started server
+2018-11-20 15:04:44,776 - task_manager - INFO - Connecting to database
+2018-11-20 15:04:44,780 - task_manager - INFO - Connected
+2018-11-20 15:04:44,780 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f1d0f14a518>
+2018-11-20 15:04:44,780 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:04:44,780 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:04:44,782 - task_manager - INFO - Commiting changes
+2018-11-20 15:04:44,783 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f1d0f14a518>
+2018-11-20 15:05:22,603 - task_manager - INFO - Connecting to database
+2018-11-20 15:05:22,605 - task_manager - INFO - Connected
+2018-11-20 15:05:22,606 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f1d0f14a5f8>
+2018-11-20 15:05:22,606 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:05:22,606 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:05:22,607 - task_manager - INFO - Commiting changes
+2018-11-20 15:05:22,608 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f1d0f14a5f8>
+2018-11-20 15:05:32,144 - task_manager - INFO - Connecting to database
+2018-11-20 15:05:32,147 - task_manager - INFO - Connected
+2018-11-20 15:05:32,148 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f1d132799b0>
+2018-11-20 15:05:32,148 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:05:32,148 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:05:32,150 - task_manager - INFO - Commiting changes
+2018-11-20 15:05:32,150 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f1d132799b0>
+2018-11-20 15:06:24,301 - task_manager - INFO - Started server
+2018-11-20 15:06:26,051 - task_manager - INFO - Connecting to database
+2018-11-20 15:06:26,054 - task_manager - INFO - Connected
+2018-11-20 15:06:26,055 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc331cae6a0>
+2018-11-20 15:06:26,055 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:06:26,055 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:06:26,056 - task_manager - INFO - Commiting changes
+2018-11-20 15:06:26,057 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc331cae6a0>
+2018-11-20 15:06:59,872 - task_manager - INFO - Started server
+2018-11-20 15:07:01,899 - task_manager - INFO - Connecting to database
+2018-11-20 15:07:01,903 - task_manager - INFO - Connected
+2018-11-20 15:07:01,903 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7ff0d1b8e4a8>
+2018-11-20 15:07:01,903 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:07:01,904 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:07:01,905 - task_manager - INFO - Commiting changes
+2018-11-20 15:07:01,906 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7ff0d1b8e4a8>
+2018-11-20 15:07:30,178 - task_manager - INFO - Started server
+2018-11-20 15:07:33,071 - task_manager - INFO - Connecting to database
+2018-11-20 15:07:33,075 - task_manager - INFO - Connected
+2018-11-20 15:07:33,075 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f8a9bac24e0>
+2018-11-20 15:07:33,075 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:07:33,075 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:07:33,077 - task_manager - INFO - Error occured
+2018-11-20 15:07:33,077 - task_manager - ERROR - cannot unpack non-iterable int object
+2018-11-20 15:07:33,077 - task_manager - INFO - Rollbacking changes
+2018-11-20 15:07:33,077 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f8a9bac24e0>
+2018-11-20 15:08:05,260 - task_manager - INFO - Started server
+2018-11-20 15:08:06,528 - task_manager - INFO - Connecting to database
+2018-11-20 15:08:06,532 - task_manager - INFO - Connected
+2018-11-20 15:08:06,532 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fae6fe77668>
+2018-11-20 15:08:06,532 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:08:06,532 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:08:06,534 - task_manager - INFO - Error occured
+2018-11-20 15:08:06,534 - task_manager - ERROR - cannot unpack non-iterable int object
+2018-11-20 15:08:06,534 - task_manager - INFO - Rollbacking changes
+2018-11-20 15:08:06,535 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fae6fe77668>
+2018-11-20 15:09:20,818 - task_manager - INFO - Started server
+2018-11-20 15:09:22,561 - task_manager - INFO - Connecting to database
+2018-11-20 15:09:22,565 - task_manager - INFO - Connected
+2018-11-20 15:09:22,565 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f310bf04518>
+2018-11-20 15:09:22,565 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:09:22,565 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:09:22,567 - task_manager - INFO - Commiting changes
+2018-11-20 15:09:22,568 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f310bf04518>
+2018-11-20 15:10:01,845 - task_manager - INFO - Started server
+2018-11-20 15:10:03,040 - task_manager - INFO - Connecting to database
+2018-11-20 15:10:03,043 - task_manager - INFO - Connected
+2018-11-20 15:10:03,044 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc4ab27b6d8>
+2018-11-20 15:10:03,044 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:10:03,044 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:10:03,045 - task_manager - INFO - Commiting changes
+2018-11-20 15:10:03,046 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc4ab27b6d8>
+2018-11-20 15:10:26,383 - task_manager - INFO - Connecting to database
+2018-11-20 15:10:26,386 - task_manager - INFO - Connected
+2018-11-20 15:10:26,386 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc4a714c630>
+2018-11-20 15:10:26,386 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:10:26,386 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:10:26,388 - task_manager - INFO - Commiting changes
+2018-11-20 15:10:26,389 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc4a714c630>
+2018-11-20 15:11:24,332 - task_manager - INFO - Connecting to database
+2018-11-20 15:11:24,335 - task_manager - INFO - Connected
+2018-11-20 15:11:24,335 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc4a714c630>
+2018-11-20 15:11:24,335 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:11:24,335 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:11:24,337 - task_manager - INFO - Commiting changes
+2018-11-20 15:11:24,338 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc4a714c630>
+2018-11-20 15:12:01,213 - task_manager - INFO - Connecting to database
+2018-11-20 15:12:01,215 - task_manager - INFO - Connected
+2018-11-20 15:12:01,215 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc4ab27b6d8>
+2018-11-20 15:12:01,215 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:12:01,216 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:12:01,217 - task_manager - INFO - Commiting changes
+2018-11-20 15:12:01,218 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc4ab27b6d8>
+2018-11-20 15:13:29,640 - task_manager - INFO - Started server
+2018-11-20 15:14:41,630 - task_manager - INFO - Connecting to database
+2018-11-20 15:14:41,633 - task_manager - INFO - Connected
+2018-11-20 15:14:41,634 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fedc575beb8>
+2018-11-20 15:14:41,634 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:14:41,634 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:14:41,635 - task_manager - INFO - Commiting changes
+2018-11-20 15:14:41,636 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fedc575beb8>
+2018-11-20 15:16:12,931 - task_manager - INFO - Connecting to database
+2018-11-20 15:16:12,934 - task_manager - INFO - Connected
+2018-11-20 15:16:12,934 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fedc95bf9e8>
+2018-11-20 15:16:12,934 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:16:12,934 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:16:12,936 - task_manager - INFO - Commiting changes
+2018-11-20 15:16:12,936 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fedc95bf9e8>
+2018-11-20 15:17:51,338 - task_manager - INFO - Started server
+2018-11-20 15:17:52,603 - task_manager - INFO - Connecting to database
+2018-11-20 15:17:52,606 - task_manager - INFO - Connected
+2018-11-20 15:17:52,607 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f50ca511240>
+2018-11-20 15:17:52,607 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:17:52,607 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:17:52,608 - task_manager - INFO - Commiting changes
+2018-11-20 15:17:52,609 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f50ca511240>
+2018-11-20 15:17:55,239 - task_manager - INFO - Connecting to database
+2018-11-20 15:17:55,242 - task_manager - INFO - Connected
+2018-11-20 15:17:55,242 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f50ca511588>
+2018-11-20 15:17:55,242 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:17:55,242 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:17:55,244 - task_manager - INFO - Commiting changes
+2018-11-20 15:17:55,244 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f50ca511588>
+2018-11-20 15:18:30,676 - task_manager - INFO - Started server
+2018-11-20 15:18:32,834 - task_manager - INFO - Connecting to database
+2018-11-20 15:18:32,838 - task_manager - INFO - Connected
+2018-11-20 15:18:32,838 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7ffb3b605160>
+2018-11-20 15:18:32,838 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:18:32,838 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:18:32,840 - task_manager - INFO - Commiting changes
+2018-11-20 15:18:32,841 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7ffb3b605160>
+2018-11-20 15:20:03,328 - task_manager - INFO - Started server
+2018-11-20 15:20:05,208 - task_manager - INFO - Connecting to database
+2018-11-20 15:20:05,211 - task_manager - INFO - Connected
+2018-11-20 15:20:05,211 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fb404f8b240>
+2018-11-20 15:20:05,211 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:20:05,211 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:20:05,213 - task_manager - INFO - Commiting changes
+2018-11-20 15:20:05,213 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fb404f8b240>
+2018-11-20 15:20:05,228 - task_manager - INFO - Connecting to database
+2018-11-20 15:20:05,242 - task_manager - INFO - Connected
+2018-11-20 15:20:05,242 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fb404f8bb70>
+2018-11-20 15:20:05,242 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:20:05,243 - task_manager - INFO - Update task:3 status to in_progress
+2018-11-20 15:20:05,244 - task_manager - INFO - Error occured
+2018-11-20 15:20:05,244 - task_manager - ERROR - (1054, "Unknown column 'task_id' in 'where clause'")
+2018-11-20 15:20:05,245 - task_manager - INFO - Rollbacking changes
+2018-11-20 15:20:05,245 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fb404f8bb70>
+2018-11-20 15:21:12,718 - task_manager - INFO - Started server
+2018-11-20 15:21:15,854 - task_manager - INFO - Connecting to database
+2018-11-20 15:21:15,858 - task_manager - INFO - Connected
+2018-11-20 15:21:15,858 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fbfdb0e3630>
+2018-11-20 15:21:15,858 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:21:15,858 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:21:15,860 - task_manager - INFO - Commiting changes
+2018-11-20 15:21:15,861 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fbfdb0e3630>
+2018-11-20 15:21:15,875 - task_manager - INFO - Connecting to database
+2018-11-20 15:21:15,889 - task_manager - INFO - Connected
+2018-11-20 15:21:15,889 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fbfdb0e3f60>
+2018-11-20 15:21:15,889 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:21:15,890 - task_manager - INFO - Update task:3 status to in_progress
+2018-11-20 15:21:15,891 - task_manager - INFO - Commiting changes
+2018-11-20 15:21:15,900 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fbfdb0e3f60>
+2018-11-20 15:24:07,402 - task_manager - INFO - Connecting to database
+2018-11-20 15:24:07,405 - task_manager - INFO - Connected
+2018-11-20 15:24:07,405 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fbfd6fb4588>
+2018-11-20 15:24:07,405 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:24:07,406 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:24:07,407 - task_manager - INFO - Commiting changes
+2018-11-20 15:24:07,408 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fbfd6fb4588>
+2018-11-20 15:24:07,410 - task_manager - INFO - Connecting to database
+2018-11-20 15:24:07,413 - task_manager - INFO - Connected
+2018-11-20 15:24:07,413 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fbfdb0e3e80>
+2018-11-20 15:24:07,413 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:24:07,413 - task_manager - INFO - Update task:4 status to in_progress
+2018-11-20 15:24:07,414 - task_manager - INFO - Commiting changes
+2018-11-20 15:24:07,415 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fbfdb0e3e80>
+2018-11-20 15:27:18,891 - task_manager - INFO - Started server
+2018-11-20 15:27:20,158 - task_manager - INFO - Connecting to database
+2018-11-20 15:27:20,161 - task_manager - INFO - Connected
+2018-11-20 15:27:20,162 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc240>
+2018-11-20 15:27:20,162 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:27:20,162 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:27:20,163 - task_manager - INFO - Commiting changes
+2018-11-20 15:27:20,164 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc240>
+2018-11-20 15:27:20,167 - task_manager - INFO - Connecting to database
+2018-11-20 15:27:20,170 - task_manager - INFO - Connected
+2018-11-20 15:27:20,170 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bcb70>
+2018-11-20 15:27:20,170 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:27:20,170 - task_manager - INFO - Update task:5 status to in_progress
+2018-11-20 15:27:20,171 - task_manager - INFO - Commiting changes
+2018-11-20 15:27:20,172 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bcb70>
+2018-11-20 15:27:20,174 - task_manager - INFO - Connecting to database
+2018-11-20 15:27:20,177 - task_manager - INFO - Connected
+2018-11-20 15:27:20,177 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc4e0>
+2018-11-20 15:27:20,177 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:27:20,177 - task_manager - INFO - Update task:5 status to finished
+2018-11-20 15:27:20,178 - task_manager - INFO - Commiting changes
+2018-11-20 15:27:20,179 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc4e0>
+2018-11-20 15:27:50,201 - task_manager - INFO - Connecting to database
+2018-11-20 15:27:50,204 - task_manager - INFO - Connected
+2018-11-20 15:27:50,204 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2b2198>
+2018-11-20 15:27:50,204 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:27:50,204 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:27:50,206 - task_manager - INFO - Commiting changes
+2018-11-20 15:27:50,207 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2b2198>
+2018-11-20 15:28:20,241 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:20,244 - task_manager - INFO - Connected
+2018-11-20 15:28:20,244 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc7f0>
+2018-11-20 15:28:20,244 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:28:20,244 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:28:20,246 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:20,246 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc7f0>
+2018-11-20 15:28:50,277 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:50,280 - task_manager - INFO - Connected
+2018-11-20 15:28:50,280 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2b2198>
+2018-11-20 15:28:50,280 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:28:50,280 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:28:50,282 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:50,282 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2b2198>
+2018-11-20 15:28:50,285 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:50,288 - task_manager - INFO - Connected
+2018-11-20 15:28:50,288 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bcb00>
+2018-11-20 15:28:50,288 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:28:50,289 - task_manager - INFO - Update task:3 status to in_progress
+2018-11-20 15:28:50,289 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:50,291 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bcb00>
+2018-11-20 15:28:50,293 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:50,296 - task_manager - INFO - Connected
+2018-11-20 15:28:50,297 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc9b0>
+2018-11-20 15:28:50,297 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:28:50,297 - task_manager - INFO - Update task:3 status to finished
+2018-11-20 15:28:50,297 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:50,299 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc9b0>
+2018-11-20 15:28:50,300 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:50,304 - task_manager - INFO - Connected
+2018-11-20 15:28:50,304 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bca90>
+2018-11-20 15:28:50,304 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:28:50,304 - task_manager - INFO - Update task:4 status to in_progress
+2018-11-20 15:28:50,305 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:50,307 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bca90>
+2018-11-20 15:28:50,309 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:50,314 - task_manager - INFO - Connected
+2018-11-20 15:28:50,314 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bcb00>
+2018-11-20 15:28:50,314 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:28:50,314 - task_manager - INFO - Update task:4 status to finished
+2018-11-20 15:28:50,315 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:50,316 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bcb00>
+2018-11-20 15:28:50,318 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:50,321 - task_manager - INFO - Connected
+2018-11-20 15:28:50,322 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc9b0>
+2018-11-20 15:28:50,322 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:28:50,322 - task_manager - INFO - Update task:5 status to in_progress
+2018-11-20 15:28:50,323 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:50,324 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc9b0>
+2018-11-20 15:28:50,325 - task_manager - INFO - Connecting to database
+2018-11-20 15:28:50,328 - task_manager - INFO - Connected
+2018-11-20 15:28:50,328 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bca90>
+2018-11-20 15:28:50,329 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:28:50,329 - task_manager - INFO - Update task:5 status to finished
+2018-11-20 15:28:50,329 - task_manager - INFO - Commiting changes
+2018-11-20 15:28:50,331 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bca90>
+2018-11-20 15:29:20,335 - task_manager - INFO - Connecting to database
+2018-11-20 15:29:20,338 - task_manager - INFO - Connected
+2018-11-20 15:29:20,338 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc828>
+2018-11-20 15:29:20,339 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:29:20,339 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:29:20,340 - task_manager - INFO - Commiting changes
+2018-11-20 15:29:20,341 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc828>
+2018-11-20 15:29:20,343 - task_manager - INFO - Connecting to database
+2018-11-20 15:29:20,346 - task_manager - INFO - Connected
+2018-11-20 15:29:20,346 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bca58>
+2018-11-20 15:29:20,346 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:29:20,346 - task_manager - INFO - Update task:3 status to in_progress
+2018-11-20 15:29:20,347 - task_manager - INFO - Commiting changes
+2018-11-20 15:29:20,349 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bca58>
+2018-11-20 15:29:20,350 - task_manager - INFO - Connecting to database
+2018-11-20 15:29:20,353 - task_manager - INFO - Connected
+2018-11-20 15:29:20,353 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc2e8>
+2018-11-20 15:29:20,353 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:29:20,354 - task_manager - INFO - Update task:3 status to finished
+2018-11-20 15:29:20,354 - task_manager - INFO - Commiting changes
+2018-11-20 15:29:20,356 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc2e8>
+2018-11-20 15:29:20,357 - task_manager - INFO - Connecting to database
+2018-11-20 15:29:20,360 - task_manager - INFO - Connected
+2018-11-20 15:29:20,360 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bcc50>
+2018-11-20 15:29:20,360 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:29:20,361 - task_manager - INFO - Update task:4 status to in_progress
+2018-11-20 15:29:20,361 - task_manager - INFO - Commiting changes
+2018-11-20 15:29:20,363 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bcc50>
+2018-11-20 15:29:20,364 - task_manager - INFO - Connecting to database
+2018-11-20 15:29:20,368 - task_manager - INFO - Connected
+2018-11-20 15:29:20,368 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bca58>
+2018-11-20 15:29:20,368 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:29:20,368 - task_manager - INFO - Update task:4 status to finished
+2018-11-20 15:29:20,369 - task_manager - INFO - Commiting changes
+2018-11-20 15:29:20,371 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bca58>
+2018-11-20 15:29:20,373 - task_manager - INFO - Connecting to database
+2018-11-20 15:29:20,377 - task_manager - INFO - Connected
+2018-11-20 15:29:20,377 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc2e8>
+2018-11-20 15:29:20,378 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:29:20,378 - task_manager - INFO - Update task:5 status to in_progress
+2018-11-20 15:29:20,378 - task_manager - INFO - Commiting changes
+2018-11-20 15:29:20,380 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc2e8>
+2018-11-20 15:29:20,381 - task_manager - INFO - Connecting to database
+2018-11-20 15:29:20,385 - task_manager - INFO - Connected
+2018-11-20 15:29:20,385 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bcc50>
+2018-11-20 15:29:20,385 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:29:20,386 - task_manager - INFO - Update task:5 status to finished
+2018-11-20 15:29:20,386 - task_manager - INFO - Commiting changes
+2018-11-20 15:29:20,388 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bcc50>
+2018-11-20 15:31:17,725 - task_manager - INFO - Connecting to database
+2018-11-20 15:31:17,728 - task_manager - INFO - Connected
+2018-11-20 15:31:17,728 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2b2198>
+2018-11-20 15:31:17,728 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:31:17,729 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:31:17,730 - task_manager - INFO - Commiting changes
+2018-11-20 15:31:17,731 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2b2198>
+2018-11-20 15:31:17,733 - task_manager - INFO - Connecting to database
+2018-11-20 15:31:17,736 - task_manager - INFO - Connected
+2018-11-20 15:31:17,736 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bccc0>
+2018-11-20 15:31:17,736 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:31:17,736 - task_manager - INFO - Update task:3 status to in_progress
+2018-11-20 15:31:17,737 - task_manager - INFO - Commiting changes
+2018-11-20 15:31:17,739 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bccc0>
+2018-11-20 15:31:17,740 - task_manager - INFO - Connecting to database
+2018-11-20 15:31:17,743 - task_manager - INFO - Connected
+2018-11-20 15:31:17,743 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc4a8>
+2018-11-20 15:31:17,743 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:31:17,743 - task_manager - INFO - Update task:3 status to finished
+2018-11-20 15:31:17,744 - task_manager - INFO - Commiting changes
+2018-11-20 15:31:17,745 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc4a8>
+2018-11-20 15:31:47,758 - task_manager - INFO - Connecting to database
+2018-11-20 15:31:47,761 - task_manager - INFO - Connected
+2018-11-20 15:31:47,761 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bc9e8>
+2018-11-20 15:31:47,761 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:31:47,761 - task_manager - INFO - Update task:4 status to in_progress
+2018-11-20 15:31:47,762 - task_manager - INFO - Commiting changes
+2018-11-20 15:31:47,763 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bc9e8>
+2018-11-20 15:31:47,765 - task_manager - INFO - Connecting to database
+2018-11-20 15:31:47,768 - task_manager - INFO - Connected
+2018-11-20 15:31:47,768 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fc79c2bccc0>
+2018-11-20 15:31:47,768 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:31:47,768 - task_manager - INFO - Update task:4 status to finished
+2018-11-20 15:31:47,769 - task_manager - INFO - Commiting changes
+2018-11-20 15:31:47,771 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fc79c2bccc0>
+2018-11-20 15:45:21,673 - task_manager - INFO - Started server
+2018-11-20 15:45:24,609 - task_manager - INFO - Connecting to database
+2018-11-20 15:45:24,612 - task_manager - INFO - Connected
+2018-11-20 15:45:24,613 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a9278>
+2018-11-20 15:45:24,613 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:45:24,613 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:45:24,614 - task_manager - INFO - Commiting changes
+2018-11-20 15:45:24,615 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a9278>
+2018-11-20 15:45:24,617 - task_manager - INFO - Connecting to database
+2018-11-20 15:45:24,620 - task_manager - INFO - Connected
+2018-11-20 15:45:24,620 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a9860>
+2018-11-20 15:45:24,620 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:45:24,620 - task_manager - INFO - Update task:5 status to in_progress
+2018-11-20 15:45:24,621 - task_manager - INFO - Commiting changes
+2018-11-20 15:45:24,625 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a9860>
+2018-11-20 15:45:24,626 - task_manager - INFO - Connecting to database
+2018-11-20 15:45:24,629 - task_manager - INFO - Connected
+2018-11-20 15:45:24,629 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a9518>
+2018-11-20 15:45:24,629 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:45:24,629 - task_manager - INFO - Update task:5 status to finished
+2018-11-20 15:45:24,630 - task_manager - INFO - Commiting changes
+2018-11-20 15:45:24,631 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a9518>
+2018-11-20 15:46:24,681 - task_manager - INFO - Connecting to database
+2018-11-20 15:46:24,684 - task_manager - INFO - Connected
+2018-11-20 15:46:24,684 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a11d0>
+2018-11-20 15:46:24,684 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:46:24,684 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:46:24,686 - task_manager - INFO - Commiting changes
+2018-11-20 15:46:24,686 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a11d0>
+2018-11-20 15:46:54,714 - task_manager - INFO - Connecting to database
+2018-11-20 15:46:54,717 - task_manager - INFO - Connected
+2018-11-20 15:46:54,717 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a98d0>
+2018-11-20 15:46:54,717 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:46:54,717 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:46:54,719 - task_manager - INFO - Commiting changes
+2018-11-20 15:46:54,719 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a98d0>
+2018-11-20 15:46:54,721 - task_manager - INFO - Connecting to database
+2018-11-20 15:46:54,724 - task_manager - INFO - Connected
+2018-11-20 15:46:54,724 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a9c88>
+2018-11-20 15:46:54,725 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:46:54,725 - task_manager - INFO - Update task:3 status to in_progress
+2018-11-20 15:46:54,725 - task_manager - INFO - Commiting changes
+2018-11-20 15:46:54,728 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a9c88>
+2018-11-20 15:46:54,729 - task_manager - INFO - Connecting to database
+2018-11-20 15:46:54,732 - task_manager - INFO - Connected
+2018-11-20 15:46:54,732 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a9320>
+2018-11-20 15:46:54,733 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:46:54,733 - task_manager - INFO - Update task:3 status to finished
+2018-11-20 15:46:54,734 - task_manager - INFO - Commiting changes
+2018-11-20 15:46:54,735 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a9320>
+2018-11-20 15:47:24,756 - task_manager - INFO - Connecting to database
+2018-11-20 15:47:24,760 - task_manager - INFO - Connected
+2018-11-20 15:47:24,761 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a97b8>
+2018-11-20 15:47:24,761 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:47:24,761 - task_manager - INFO - Update task:4 status to in_progress
+2018-11-20 15:47:24,762 - task_manager - INFO - Commiting changes
+2018-11-20 15:47:24,765 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a97b8>
+2018-11-20 15:47:24,766 - task_manager - INFO - Connecting to database
+2018-11-20 15:47:24,769 - task_manager - INFO - Connected
+2018-11-20 15:47:24,769 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a9c88>
+2018-11-20 15:47:24,769 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:47:24,769 - task_manager - INFO - Update task:4 status to finished
+2018-11-20 15:47:24,770 - task_manager - INFO - Commiting changes
+2018-11-20 15:47:24,771 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a9c88>
+2018-11-20 15:47:54,797 - task_manager - INFO - Connecting to database
+2018-11-20 15:47:54,801 - task_manager - INFO - Connected
+2018-11-20 15:47:54,801 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a9320>
+2018-11-20 15:47:54,801 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:47:54,801 - task_manager - INFO - Update task:5 status to in_progress
+2018-11-20 15:47:54,802 - task_manager - INFO - Commiting changes
+2018-11-20 15:47:54,805 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a9320>
+2018-11-20 15:47:54,806 - task_manager - INFO - Connecting to database
+2018-11-20 15:47:54,809 - task_manager - INFO - Connected
+2018-11-20 15:47:54,809 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a97b8>
+2018-11-20 15:47:54,809 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 15:47:54,809 - task_manager - INFO - Update task:5 status to finished
+2018-11-20 15:47:54,810 - task_manager - INFO - Commiting changes
+2018-11-20 15:47:54,811 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a97b8>
+2018-11-20 15:48:54,866 - task_manager - INFO - Connecting to database
+2018-11-20 15:48:54,869 - task_manager - INFO - Connected
+2018-11-20 15:48:54,869 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a11d0>
+2018-11-20 15:48:54,869 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:48:54,869 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:48:54,870 - task_manager - INFO - Commiting changes
+2018-11-20 15:48:54,871 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a11d0>
+2018-11-20 15:49:24,892 - task_manager - INFO - Connecting to database
+2018-11-20 15:49:24,895 - task_manager - INFO - Connected
+2018-11-20 15:49:24,895 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a94e0>
+2018-11-20 15:49:24,895 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:49:24,895 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:49:24,897 - task_manager - INFO - Commiting changes
+2018-11-20 15:49:24,898 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a94e0>
+2018-11-20 15:49:54,906 - task_manager - INFO - Connecting to database
+2018-11-20 15:49:54,908 - task_manager - INFO - Connected
+2018-11-20 15:49:54,909 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7fe3997a11d0>
+2018-11-20 15:49:54,909 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 15:49:54,909 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 15:49:54,910 - task_manager - INFO - Commiting changes
+2018-11-20 15:49:54,911 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7fe3997a11d0>
+2018-11-20 16:01:52,103 - task_manager - INFO - Started server
+2018-11-20 16:01:54,805 - task_manager - INFO - Connecting to database
+2018-11-20 16:01:54,809 - task_manager - INFO - Connected
+2018-11-20 16:01:54,809 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1b7b8>
+2018-11-20 16:01:54,809 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 16:01:54,809 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 16:01:54,811 - task_manager - INFO - Commiting changes
+2018-11-20 16:01:54,812 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1b7b8>
+2018-11-20 16:02:24,826 - task_manager - INFO - Connecting to database
+2018-11-20 16:02:24,829 - task_manager - INFO - Connected
+2018-11-20 16:02:24,829 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2750dec710>
+2018-11-20 16:02:24,829 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 16:02:24,829 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 16:02:24,831 - task_manager - INFO - Commiting changes
+2018-11-20 16:02:24,831 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2750dec710>
+2018-11-20 16:02:24,834 - task_manager - INFO - Connecting to database
+2018-11-20 16:02:24,838 - task_manager - INFO - Connected
+2018-11-20 16:02:24,838 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1beb8>
+2018-11-20 16:02:24,838 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 16:02:24,838 - task_manager - INFO - Update task:3 status to in_progress
+2018-11-20 16:02:24,839 - task_manager - INFO - Commiting changes
+2018-11-20 16:02:24,841 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1beb8>
+2018-11-20 16:02:24,842 - task_manager - INFO - Connecting to database
+2018-11-20 16:02:24,845 - task_manager - INFO - Connected
+2018-11-20 16:02:24,845 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1bd68>
+2018-11-20 16:02:24,845 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 16:02:24,845 - task_manager - INFO - Update task:3 status to finished
+2018-11-20 16:02:24,846 - task_manager - INFO - Commiting changes
+2018-11-20 16:02:24,847 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1bd68>
+2018-11-20 16:02:54,870 - task_manager - INFO - Connecting to database
+2018-11-20 16:02:54,873 - task_manager - INFO - Connected
+2018-11-20 16:02:54,874 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1b9e8>
+2018-11-20 16:02:54,874 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 16:02:54,874 - task_manager - INFO - Update task:4 status to in_progress
+2018-11-20 16:02:54,875 - task_manager - INFO - Commiting changes
+2018-11-20 16:02:54,876 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1b9e8>
+2018-11-20 16:02:54,877 - task_manager - INFO - Connecting to database
+2018-11-20 16:02:54,880 - task_manager - INFO - Connected
+2018-11-20 16:02:54,880 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1beb8>
+2018-11-20 16:02:54,880 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 16:02:54,880 - task_manager - INFO - Update task:4 status to finished
+2018-11-20 16:02:54,881 - task_manager - INFO - Commiting changes
+2018-11-20 16:02:54,882 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1beb8>
+2018-11-20 16:03:24,911 - task_manager - INFO - Connecting to database
+2018-11-20 16:03:24,915 - task_manager - INFO - Connected
+2018-11-20 16:03:24,915 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1bd68>
+2018-11-20 16:03:24,915 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 16:03:24,916 - task_manager - INFO - Update task:5 status to in_progress
+2018-11-20 16:03:24,917 - task_manager - INFO - Commiting changes
+2018-11-20 16:03:24,918 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1bd68>
+2018-11-20 16:03:24,919 - task_manager - INFO - Connecting to database
+2018-11-20 16:03:24,922 - task_manager - INFO - Connected
+2018-11-20 16:03:24,922 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1b9e8>
+2018-11-20 16:03:24,922 - task_manager - DEBUG - Calling func update_task 
+2018-11-20 16:03:24,923 - task_manager - INFO - Update task:5 status to finished
+2018-11-20 16:03:24,923 - task_manager - INFO - Commiting changes
+2018-11-20 16:03:24,925 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1b9e8>
+2018-11-20 16:04:24,940 - task_manager - INFO - Connecting to database
+2018-11-20 16:04:24,943 - task_manager - INFO - Connected
+2018-11-20 16:04:24,943 - task_manager - DEBUG - connection object = <pymysql.connections.Connection object at 0x7f2754f1bb00>
+2018-11-20 16:04:24,943 - task_manager - DEBUG - Calling func job_list 
+2018-11-20 16:04:24,944 - task_manager - INFO - Selecting jobs for client 192.168.56.104
+2018-11-20 16:04:24,945 - task_manager - INFO - Commiting changes
+2018-11-20 16:04:24,945 - task_manager - DEBUG - Closing connection <pymysql.connections.Connection object at 0x7f2754f1bb00>

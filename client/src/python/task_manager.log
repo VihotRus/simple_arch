@@ -22,3 +22,273 @@
 2018-11-18 14:21:27,317 - task_manager - INFO - Make a request to server
 2018-11-18 14:24:12,123 - task_manager - INFO - Make a request to server
 2018-11-18 14:24:17,932 - task_manager - INFO - Make a request to server
+2018-11-18 15:32:23,683 - task_manager - INFO - Make a request to server
+2018-11-18 15:32:51,780 - task_manager - INFO - Make a request to server
+2018-11-18 15:40:23,250 - task_manager - INFO - Make a request to server
+2018-11-19 07:19:16,183 - task_manager - INFO - Make a request to server
+2018-11-19 07:25:06,056 - task_manager - INFO - Make a request to server
+2018-11-19 07:32:32,316 - task_manager - INFO - Make a request to server
+2018-11-19 07:32:43,232 - task_manager - INFO - Make a request to server
+2018-11-19 07:32:58,213 - task_manager - INFO - Make a request to server
+2018-11-19 07:33:07,230 - task_manager - INFO - Make a request to server
+2018-11-19 07:34:33,149 - task_manager - INFO - Make a request to server
+2018-11-19 08:17:05,430 - task_manager - INFO - Make a request to server
+2018-11-19 08:17:16,080 - task_manager - INFO - Make a request to server
+2018-11-19 08:17:23,225 - task_manager - INFO - Make a request to server
+2018-11-19 08:18:27,275 - task_manager - INFO - Make a request to server
+2018-11-19 08:18:30,855 - task_manager - INFO - Make a request to server
+2018-11-19 08:18:44,781 - task_manager - INFO - Make a request to server
+2018-11-19 08:22:53,346 - task_manager - INFO - Make a request to server
+2018-11-19 08:22:53,346 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 08:38:39,729 - task_manager - INFO - Make a request to server
+2018-11-19 08:38:39,730 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 08:38:54,165 - task_manager - INFO - Make a request to server
+2018-11-19 08:38:54,165 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 08:38:58,995 - task_manager - INFO - Make a request to server
+2018-11-19 08:38:58,995 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 08:39:11,114 - task_manager - INFO - Make a request to server
+2018-11-19 08:39:11,114 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 08:39:36,277 - task_manager - INFO - Make a request to server
+2018-11-19 08:39:36,277 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:14:31,980 - task_manager - INFO - Make a request to server
+2018-11-19 09:14:31,980 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:15:17,739 - task_manager - INFO - Make a request to server
+2018-11-19 09:15:17,739 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:17:34,687 - task_manager - INFO - Make a request to server
+2018-11-19 09:17:34,688 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:17:43,397 - task_manager - INFO - Make a request to server
+2018-11-19 09:17:43,397 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:17:48,381 - task_manager - INFO - Make a request to server
+2018-11-19 09:17:48,381 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:18:39,421 - task_manager - INFO - Make a request to server
+2018-11-19 09:18:39,422 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:19:51,578 - task_manager - INFO - Make a request to server
+2018-11-19 09:19:51,578 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:20:04,199 - task_manager - INFO - Make a request to server
+2018-11-19 09:20:04,199 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:21:23,507 - task_manager - INFO - Make a request to server
+2018-11-19 09:21:23,507 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:22:29,653 - task_manager - INFO - Make a request to server
+2018-11-19 09:22:29,653 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:30:47,122 - task_manager - INFO - Make a request to server
+2018-11-19 09:30:47,122 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:30:50,795 - task_manager - INFO - Make a request to server
+2018-11-19 09:30:50,796 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:31:20,042 - task_manager - INFO - Make a request to server
+2018-11-19 09:31:20,042 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:31:32,584 - task_manager - INFO - Make a request to server
+2018-11-19 09:31:32,584 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:32:44,859 - task_manager - INFO - Make a request to server
+2018-11-19 09:32:44,859 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:34:33,826 - task_manager - INFO - Make a request to server
+2018-11-19 09:34:33,827 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:41:57,595 - task_manager - INFO - Make a request to server
+2018-11-19 09:41:57,595 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:42:51,442 - task_manager - INFO - Make a request to server
+2018-11-19 09:42:51,442 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:43:17,398 - task_manager - INFO - Make a request to server
+2018-11-19 09:43:17,398 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:43:48,883 - task_manager - INFO - Make a request to server
+2018-11-19 09:43:48,883 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 09:58:44,820 - task_manager - INFO - Make a request to server
+2018-11-19 09:58:44,820 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 10:00:38,926 - task_manager - INFO - Make a request to server
+2018-11-19 10:00:38,926 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 10:02:00,668 - task_manager - INFO - Make a request to server
+2018-11-19 10:02:00,668 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 10:02:04,592 - task_manager - INFO - Make a request to server
+2018-11-19 10:02:04,592 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 10:02:07,624 - task_manager - INFO - Make a request to server
+2018-11-19 10:02:07,624 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 10:02:18,604 - task_manager - INFO - Make a request to server
+2018-11-19 10:02:18,605 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 10:02:51,321 - task_manager - INFO - Make a request to server
+2018-11-19 10:02:51,321 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 10:03:37,827 - task_manager - INFO - Make a request to server
+2018-11-19 10:03:37,828 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 13:21:13,340 - task_manager - INFO - Make a request to server
+2018-11-19 13:21:13,340 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 13:21:21,513 - task_manager - INFO - Make a request to server
+2018-11-19 13:21:21,514 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 13:39:47,126 - task_manager - INFO - Make a request to server
+2018-11-19 13:39:47,126 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 13:40:14,116 - task_manager - INFO - Make a request to server
+2018-11-19 13:40:14,117 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 13:59:16,417 - task_manager - INFO - Make a request to server
+2018-11-19 13:59:16,418 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 13:59:42,446 - task_manager - INFO - Make a request to server
+2018-11-19 13:59:42,446 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:00:09,646 - task_manager - INFO - Make a request to server
+2018-11-19 14:00:09,647 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:01:34,693 - task_manager - INFO - Make a request to server
+2018-11-19 14:01:34,693 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:02:00,528 - task_manager - INFO - Make a request to server
+2018-11-19 14:02:00,528 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:02:12,337 - task_manager - INFO - Make a request to server
+2018-11-19 14:02:12,337 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:24:17,243 - task_manager - INFO - Make a request to server
+2018-11-19 14:24:17,243 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:24:46,618 - task_manager - INFO - Make a request to server
+2018-11-19 14:24:46,618 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:41:48,395 - task_manager - INFO - Make a request to server
+2018-11-19 14:41:48,395 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:42:32,853 - task_manager - INFO - Make a request to server
+2018-11-19 14:42:32,853 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:43:34,485 - task_manager - INFO - Make a request to server
+2018-11-19 14:43:34,485 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:43:37,433 - task_manager - INFO - Make a request to server
+2018-11-19 14:43:37,433 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:45:27,823 - task_manager - INFO - Make a request to server
+2018-11-19 14:45:27,823 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:46:40,841 - task_manager - INFO - Make a request to server
+2018-11-19 14:46:40,841 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:51:16,325 - task_manager - INFO - Make a request to server
+2018-11-19 14:51:16,325 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:52:11,114 - task_manager - INFO - Make a request to server
+2018-11-19 14:52:11,114 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:56:25,874 - task_manager - INFO - Make a request to server
+2018-11-19 14:56:25,874 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:58:07,631 - task_manager - INFO - Make a request to server
+2018-11-19 14:58:07,631 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 14:58:58,450 - task_manager - INFO - Make a request to server
+2018-11-19 14:58:58,450 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:03:54,976 - task_manager - INFO - Make a request to server
+2018-11-19 15:03:54,976 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:04:57,867 - task_manager - INFO - Make a request to server
+2018-11-19 15:04:57,867 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:07:37,554 - task_manager - INFO - Make a request to server
+2018-11-19 15:07:37,554 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:09:14,598 - task_manager - INFO - Make a request to server
+2018-11-19 15:09:14,598 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:10:24,065 - task_manager - INFO - Make a request to server
+2018-11-19 15:10:24,066 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:13:39,078 - task_manager - INFO - Make a request to server
+2018-11-19 15:13:39,078 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:14:52,001 - task_manager - INFO - Make a request to server
+2018-11-19 15:14:52,001 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:48:26,618 - task_manager - INFO - Make a request to server
+2018-11-19 15:48:26,618 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:48:30,071 - task_manager - INFO - Make a request to server
+2018-11-19 15:48:30,071 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:48:37,228 - task_manager - INFO - Make a request to server
+2018-11-19 15:48:37,228 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:50:02,721 - task_manager - INFO - Make a request to server
+2018-11-19 15:50:02,721 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:53:58,036 - task_manager - INFO - Make a request to server
+2018-11-19 15:53:58,036 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:54:02,402 - task_manager - INFO - Make a request to server
+2018-11-19 15:54:02,402 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:54:05,577 - task_manager - INFO - Make a request to server
+2018-11-19 15:54:05,577 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 15:54:13,013 - task_manager - INFO - Make a request to server
+2018-11-19 15:54:13,013 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 18:15:37,800 - task_manager - INFO - Make a request to server
+2018-11-19 18:15:37,800 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 18:16:05,284 - task_manager - INFO - Make a request to server
+2018-11-19 18:16:05,284 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 18:17:14,507 - task_manager - INFO - Make a request to server
+2018-11-19 18:17:14,507 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 18:19:13,907 - task_manager - INFO - Make a request to server
+2018-11-19 18:19:13,908 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 18:22:17,742 - task_manager - INFO - Make a request to server
+2018-11-19 18:22:17,743 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-19 18:26:46,179 - task_manager - INFO - Make a request to server
+2018-11-19 18:26:46,179 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-20 11:02:09,772 - task_manager - INFO - Make a request to server
+2018-11-20 11:02:09,772 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-20 12:46:40,529 - task_manager - INFO - Make a request to server
+2018-11-20 12:46:40,529 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-20 12:46:52,157 - task_manager - INFO - Make a request to server
+2018-11-20 12:46:52,158 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing'}
+2018-11-20 12:48:45,826 - task_manager - INFO - Make a request to server
+2018-11-20 12:48:45,826 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 12:49:39,605 - task_manager - INFO - Make a request to server
+2018-11-20 12:49:39,606 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 12:51:28,836 - task_manager - INFO - Make a request to server
+2018-11-20 12:51:28,836 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 12:51:32,250 - task_manager - INFO - Make a request to server
+2018-11-20 12:51:32,251 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 12:51:48,756 - task_manager - INFO - Make a request to server
+2018-11-20 12:51:48,756 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 12:53:05,761 - task_manager - INFO - Make a request to server
+2018-11-20 12:53:05,761 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 12:53:11,848 - task_manager - INFO - Make a request to server
+2018-11-20 12:53:11,848 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 12:53:34,645 - task_manager - INFO - Make a request to server
+2018-11-20 12:53:34,645 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 12:53:41,100 - task_manager - INFO - Make a request to server
+2018-11-20 12:53:41,100 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 13:11:06,692 - task_manager - INFO - Make a request to server
+2018-11-20 13:11:06,692 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 13:11:22,205 - task_manager - INFO - Make a request to server
+2018-11-20 13:11:22,205 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 13:18:23,549 - task_manager - INFO - Make a request to server
+2018-11-20 13:18:23,549 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 13:20:28,892 - task_manager - INFO - Make a request to server
+2018-11-20 13:20:28,892 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 13:20:34,208 - task_manager - INFO - Make a request to server
+2018-11-20 13:20:34,208 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 13:20:53,927 - task_manager - INFO - Make a request to server
+2018-11-20 13:20:53,927 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 13:21:16,221 - task_manager - INFO - Make a request to server
+2018-11-20 13:21:16,221 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 13:21:34,299 - task_manager - INFO - Make a request to server
+2018-11-20 13:21:34,299 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 14:46:21,614 - task_manager - INFO - Make a request to server
+2018-11-20 14:46:21,614 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 14:46:55,940 - task_manager - INFO - Make a request to server
+2018-11-20 14:46:55,941 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 14:54:09,984 - task_manager - INFO - Make a request to server
+2018-11-20 14:54:09,984 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 14:55:28,175 - task_manager - INFO - Make a request to server
+2018-11-20 14:55:28,175 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 15:04:44,769 - task_manager - INFO - Make a request to server
+2018-11-20 15:04:44,770 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:05:22,597 - task_manager - INFO - Make a request to server
+2018-11-20 15:05:22,597 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 15:05:32,138 - task_manager - INFO - Make a request to server
+2018-11-20 15:05:32,139 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': None}
+2018-11-20 15:06:26,044 - task_manager - INFO - Make a request to server
+2018-11-20 15:06:26,044 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:07:01,894 - task_manager - INFO - Make a request to server
+2018-11-20 15:07:01,895 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:07:33,065 - task_manager - INFO - Make a request to server
+2018-11-20 15:07:33,065 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:08:06,522 - task_manager - INFO - Make a request to server
+2018-11-20 15:08:06,522 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:09:22,555 - task_manager - INFO - Make a request to server
+2018-11-20 15:09:22,555 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:10:03,033 - task_manager - INFO - Make a request to server
+2018-11-20 15:10:03,033 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:10:26,375 - task_manager - INFO - Make a request to server
+2018-11-20 15:10:26,376 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:11:24,326 - task_manager - INFO - Make a request to server
+2018-11-20 15:11:24,326 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:12:01,207 - task_manager - INFO - Make a request to server
+2018-11-20 15:12:01,207 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:14:41,623 - task_manager - INFO - Make a request to server
+2018-11-20 15:14:41,623 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:16:12,924 - task_manager - INFO - Make a request to server
+2018-11-20 15:16:12,925 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:17:52,597 - task_manager - INFO - Make a request to server
+2018-11-20 15:17:52,598 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:17:55,233 - task_manager - INFO - Make a request to server
+2018-11-20 15:17:55,233 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:18:32,827 - task_manager - INFO - Make a request to server
+2018-11-20 15:18:32,828 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:20:05,201 - task_manager - INFO - Make a request to server
+2018-11-20 15:20:05,201 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:21:15,848 - task_manager - INFO - Make a request to server
+2018-11-20 15:21:15,848 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:24:07,397 - task_manager - INFO - Make a request to server
+2018-11-20 15:24:07,397 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:27:20,152 - task_manager - INFO - Make a request to server
+2018-11-20 15:27:20,152 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:31:17,719 - task_manager - INFO - Make a request to server
+2018-11-20 15:31:17,720 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 15:45:24,603 - task_manager - INFO - Make a request to server
+2018-11-20 15:45:24,603 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 16:01:54,798 - task_manager - INFO - Make a request to server
+2018-11-20 16:01:54,799 - task_manager - DEBUG - Make a request to server with data:{'task_type': 'random', 'argument': 'nothing', 'run': 'start'}
+2018-11-20 17:37:56,567 - task_manager - INFO - Make a request to server
+2018-11-20 17:37:56,567 - task_manager - DEBUG - Make a request to server with data:None

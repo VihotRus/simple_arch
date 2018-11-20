@@ -1,43 +1,98 @@
 #!/usr/bin/env python3.7
 
-import http.client
 import json
+import http.client
+import time
 
-from argparse import ArgumentParser, RawTextHelpFormatter, SUPPRESS
+from argparse import ArgumentParser, RawTextHelpFormatter
 from tools.config_init import logger, config
 
 #get http server ip
 HOST = config.get('server', 'host')
 PORT = config.get('server', 'port')
 
+# def args_parser():
+#     # Parsing command line arguments to run API
+#     parser = ArgumentParser(description='client settings',
+#                             formatter_class=RawTextHelpFormatter)
+#     parser.add_argument('-t', '--task_type',
+#                         choices = ['count', 'create', 'delete', 'execute', 'random'],
+#                         metavar = 'task type',
+#                         default='random',
+#                         # required=True,
+#                         help='Determine task to do'
+#                              'by default random task')
+#     parser.add_argument('-a', '--argument',
+#                         metavar = 'argument',
+#                         default='nothing',
+#                         # required=True,
+#                         help='file_path / shell_command')
+#     parser.add_argument('-r', '--run',
+#                         choices = ['start', 'stop'],
+#                         metavar = 'run',
+#                         help = 'run/stop job checker')
+#     return parser.parse_args().__dict__
+
 def args_parser():
     # Parsing command line arguments to run API
-    parser = ArgumentParser(description='client settings',
+    parser = ArgumentParser(description='client options',
                             formatter_class=RawTextHelpFormatter)
-    parser.add_argument('-t', '--task_type',
-                        metavar = 'task type',
-                        default='random',
-                        help='Determine task to do'
-                             'by default random task')
-    parser.add_argument('-a', '--argument',
-                        metavar = 'argument',
-                        default='nothing',
-                        help='file_path / shell_command')
-    parser.add_argument('-d', '--debug',
-                        action='store_true',
-                        help=SUPPRESS)
+    # parser.add_argument(dest='purpose',
+    #                     choices=['start', 'create_task'],
+    #                     metavar='start/create_task',
+    #                     action='store',
+    #                     help='client purpose')
+    subparsers = parser.add_subparsers(help='Client has two purposes:')
+    start_parser = subparsers.add_parser('start', help='Start checking jobs')
+    start_parser.add_argument(dest='start',
+                              action='store',
+                              help='Use client.py start to begin checking jobs')
+    # start_parser.add_argument(dest='purpose', action='store_const', const='start', help='start checking jobs')
+    task_parser = subparsers.add_parser('create_task', help='Create a new task')
+
+
     return parser.parse_args().__dict__
 
+class Connection:
 
-class TaskCreator():
+    def __init__(self, host, port):
+        self.__host = host
+        self.__port = port
+        self.__tcp = self.__host + ':' + self.__port
 
-    def __init__(self, **kwargs):
-        self.__server = HOST + ':' + PORT
-        self.args = kwargs.get('args') if kwargs.get('args') else {}
+    def __enter__(self):
+        """Open connection"""
 
-    def start_task(self):
+        self.conn = http.client.HTTPConnection(self.__tcp)
+        return self.conn
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Close connection"""
+
+        self.conn.close()
+        if exc_val:
+            raise
+
+
+class TaskManager:
+
+    def __init__(self, args):
+        self.args = args
+
+
+    def with_connection(func):
+        """Connection decorator"""
+
+        def execute_func(self, *args):
+            with Connection(HOST, PORT) as conn:
+                func(self, conn, *args)
+
+        return execute_func
+
+
+    @with_connection
+    def send_task(self, conn):
         #create a connection
-        conn = http.client.HTTPConnection(self.__server)
         cmd = 'task'
 
         data = json.dumps(self.args)
@@ -53,13 +108,60 @@ class TaskCreator():
         data_received = rsp.read()
         print(data_received)
 
-        conn.close()
 
+    @with_connection
+    def check_job(self, conn):
+        """Check if there are any jobs for client"""
+        try:
+            while(True):
 
+                conn.request('GET', 'check_job')
+                rsp = conn.getresponse()
+
+                print(rsp.status, rsp.reason)
+                data_received = rsp.read()
+
+                job_list = json.loads(data_received)
+                print(job_list)
+                if job_list:
+                    for job in job_list:
+                        if job.get('status') == 'open':
+                            task_id = job.get('task_id')
+                            status = 'in_progress'
+                            update_task = {'task_id' : task_id, 'status' : status}
+                            conn.request('PUT', 'update', body = json.dumps(update_task))
+                            rsp = conn.getresponse()
+                            print(rsp.status, rsp.reason)
+                            try:
+                                print('Doing job')
+                                print('1.')
+                                print('2..')
+                                print('3...')
+                                result = 'passed'
+                            except:
+                                result = 'errored'
+                            finally:
+                                status = 'finished'
+                                update_task = {'task_id' : task_id, 'status' : status}
+                                conn.request('PUT', 'update', body = json.dumps(update_task))
+                                rsp = conn.getresponse()
+                                print(rsp.status, rsp.reason)
+                                time.sleep(30)
+
+                time.sleep(30)
+
+        except KeyboardInterrupt:
+            print('\nStop checking jobs')
 
 
 if __name__ == "__main__":
     args = args_parser()
-    logger.info("Make a request to server")
-    task = TaskCreator(args=args)
-    task.start_task()
+    print(args)
+    # logger.info('Make a request to server')
+    # logger.debug(f"Make a request to server with data:{args}")
+    # task = TaskManager(args=args)
+    # # if args.get('run') == 'start':
+    # #     task.check_job()
+    # # else:
+    # #     task.send_task()
+    # task.check_job()
