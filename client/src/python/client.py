@@ -120,7 +120,7 @@ class TaskManager:
         data = json.dumps(data)
         # Request command to server
         conn.request('POST', cmd, body=data)
-        self.validate_response(conn)
+        self.validate_response(conn, 201)
 
     @with_connection
     def check_job(self, conn):
@@ -144,7 +144,7 @@ class TaskManager:
                     try:
                         job_type = job.get('job_type')
                         argument = job.get('argument')
-                        print('Executing task')
+                        logger.info(f'Executing task: {job_type} {argument}')
                         result = self._executor.execute(job_type, argument)
                     except ExecutionError as error:
                         logger.warning(f'Error in job execution: {error}')

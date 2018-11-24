@@ -58,14 +58,17 @@ class Executor:
     @staticmethod
     def execute_command(cmd):
         try:
-            cmd_result = subprocess.run(cmd.split())
+            cmd_result = subprocess.run(cmd.split(), encoding='utf-8',
+                                        stdout=subprocess.PIPE)
+            logger.debug(cmd_result)
             dump_file = os.path.join(DUMP_DIR, 'command_result')
             assert cmd_result.returncode == 0, \
                 f'{cmd_result.stderr}'
-            with open(dump_file, 'w+') as f:
-                f.write(cmd_result.stdout)
+            with open(dump_file, 'w') as f:
+                output = '\n'.join((cmd, str(cmd_result.stdout)))
+                f.write(output)
         except Exception as error:
-            logger.warning(f'Error {error} when executing command: {cmd}')
+            logger.warning(f'Error <{error}> when executing command: {cmd}')
             raise ExecutionError(error)
         logger.info(f'{cmd} result saved to {dump_file}')
         result = 'Cmd result saved'
