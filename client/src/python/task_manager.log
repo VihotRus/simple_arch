@@ -1,0 +1,598 @@
+2018-11-24 17:32:16,025 - task_manager - INFO - Start generate random tasks
+2018-11-24 17:32:23,303 - task_manager - INFO - Start generate random tasks
+2018-11-24 17:32:23,316 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,322 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,328 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,336 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,342 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,350 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,358 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,365 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,371 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,379 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,384 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,391 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,398 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,405 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,413 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,419 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,425 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,431 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,437 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,443 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,450 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,457 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,464 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,470 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,475 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,483 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,490 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,497 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,504 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,509 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,515 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,521 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,527 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,532 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,538 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,546 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,552 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,558 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,563 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,569 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,576 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,582 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,589 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,595 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,601 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,607 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,613 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,619 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,626 - task_manager - ERROR - POST task
+2018-11-24 17:32:23,632 - task_manager - ERROR - POST task
+2018-11-24 17:32:56,338 - task_manager - INFO - Starting checking jobs for execution
+2018-11-24 17:32:56,352 - task_manager - INFO - Received job: {'task_id': 1, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cbaaacbabb', 'status': 'open'}
+2018-11-24 17:32:56,358 - task_manager - INFO - Task updated
+2018-11-24 17:32:56,358 - task_manager - INFO - Count unique words in file /tmp/cbaaacbabb
+2018-11-24 17:32:56,359 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cbaaacbabb'
+2018-11-24 17:32:56,365 - task_manager - INFO - Task updated
+2018-11-24 17:33:26,396 - task_manager - INFO - Received job: {'task_id': 2, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/bbccbbbcbc', 'status': 'open'}
+2018-11-24 17:33:26,403 - task_manager - INFO - Task updated
+2018-11-24 17:33:26,403 - task_manager - WARNING - Error when deleting file: /tmp/bbccbbbcbc
+2018-11-24 17:33:26,403 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbccbbbcbc'
+2018-11-24 17:33:26,410 - task_manager - INFO - Task updated
+2018-11-24 17:33:47,905 - task_manager - INFO - Starting checking jobs for execution
+2018-11-24 17:33:47,922 - task_manager - INFO - Received job: {'task_id': 3, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/acabcacabc', 'status': 'open'}
+2018-11-24 17:33:47,928 - task_manager - INFO - Task updated
+2018-11-24 17:33:47,929 - task_manager - WARNING - Error when deleting file: /tmp/acabcacabc
+2018-11-24 17:33:47,929 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acabcacabc'
+2018-11-24 17:33:47,936 - task_manager - INFO - Task updated
+2018-11-24 17:33:52,950 - task_manager - INFO - Received job: {'task_id': 4, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/bbabbbcaac', 'status': 'open'}
+2018-11-24 17:33:52,957 - task_manager - INFO - Task updated
+2018-11-24 17:33:52,957 - task_manager - INFO - Creating file /tmp/bbabbbcaac
+2018-11-24 17:33:52,958 - task_manager - INFO - Created file /tmp/bbabbbcaac
+2018-11-24 17:33:52,965 - task_manager - INFO - Task updated
+2018-11-24 17:33:57,980 - task_manager - INFO - Received job: {'task_id': 5, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/ccccbbccab', 'status': 'open'}
+2018-11-24 17:33:57,987 - task_manager - INFO - Task updated
+2018-11-24 17:33:57,988 - task_manager - INFO - Creating file /tmp/ccccbbccab
+2018-11-24 17:33:57,988 - task_manager - INFO - Created file /tmp/ccccbbccab
+2018-11-24 17:33:57,995 - task_manager - INFO - Task updated
+2018-11-24 17:34:03,006 - task_manager - INFO - Received job: {'task_id': 6, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/bccbcabacb', 'status': 'open'}
+2018-11-24 17:34:03,013 - task_manager - INFO - Task updated
+2018-11-24 17:34:03,013 - task_manager - INFO - Count unique words in file /tmp/bccbcabacb
+2018-11-24 17:34:03,013 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bccbcabacb'
+2018-11-24 17:34:03,020 - task_manager - INFO - Task updated
+2018-11-24 17:34:08,032 - task_manager - INFO - Received job: {'task_id': 7, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/bcacbbbbbb', 'status': 'open'}
+2018-11-24 17:34:08,039 - task_manager - INFO - Task updated
+2018-11-24 17:34:08,040 - task_manager - WARNING - Error when deleting file: /tmp/bcacbbbbbb
+2018-11-24 17:34:08,040 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcacbbbbbb'
+2018-11-24 17:34:08,046 - task_manager - INFO - Task updated
+2018-11-24 17:34:13,056 - task_manager - INFO - Received job: {'task_id': 8, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/caccbabcab', 'status': 'open'}
+2018-11-24 17:34:13,064 - task_manager - INFO - Task updated
+2018-11-24 17:34:13,064 - task_manager - INFO - Creating file /tmp/caccbabcab
+2018-11-24 17:34:13,065 - task_manager - INFO - Created file /tmp/caccbabcab
+2018-11-24 17:34:13,072 - task_manager - INFO - Task updated
+2018-11-24 17:34:18,088 - task_manager - INFO - Received job: {'task_id': 9, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/bbcbcbbbbb', 'status': 'open'}
+2018-11-24 17:34:18,094 - task_manager - INFO - Task updated
+2018-11-24 17:34:18,094 - task_manager - INFO - Count unique words in file /tmp/bbcbcbbbbb
+2018-11-24 17:34:18,094 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbcbcbbbbb'
+2018-11-24 17:34:18,100 - task_manager - INFO - Task updated
+2018-11-24 17:34:23,116 - task_manager - INFO - Received job: {'task_id': 10, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/bccbbcbaca', 'status': 'open'}
+2018-11-24 17:34:23,123 - task_manager - INFO - Task updated
+2018-11-24 17:34:23,124 - task_manager - WARNING - Error when deleting file: /tmp/bccbbcbaca
+2018-11-24 17:34:23,124 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bccbbcbaca'
+2018-11-24 17:34:23,130 - task_manager - INFO - Task updated
+2018-11-24 17:34:28,145 - task_manager - INFO - Received job: {'task_id': 11, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/baacaababb', 'status': 'open'}
+2018-11-24 17:34:28,152 - task_manager - INFO - Task updated
+2018-11-24 17:34:28,152 - task_manager - INFO - Count unique words in file /tmp/baacaababb
+2018-11-24 17:34:28,152 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/baacaababb'
+2018-11-24 17:34:28,158 - task_manager - INFO - Task updated
+2018-11-24 17:34:33,172 - task_manager - INFO - Received job: {'task_id': 12, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/acbcacbbbc', 'status': 'open'}
+2018-11-24 17:34:33,179 - task_manager - INFO - Task updated
+2018-11-24 17:34:33,179 - task_manager - WARNING - Error when deleting file: /tmp/acbcacbbbc
+2018-11-24 17:34:33,179 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acbcacbbbc'
+2018-11-24 17:34:33,186 - task_manager - INFO - Task updated
+2018-11-24 17:34:38,201 - task_manager - INFO - Received job: {'task_id': 13, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/cbbbbbcbab', 'status': 'open'}
+2018-11-24 17:34:38,208 - task_manager - INFO - Task updated
+2018-11-24 17:34:38,208 - task_manager - WARNING - Error when deleting file: /tmp/cbbbbbcbab
+2018-11-24 17:34:38,208 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cbbbbbcbab'
+2018-11-24 17:34:38,214 - task_manager - INFO - Task updated
+2018-11-24 17:34:43,232 - task_manager - INFO - Received job: {'task_id': 14, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/babbbbbabc', 'status': 'open'}
+2018-11-24 17:34:43,238 - task_manager - INFO - Task updated
+2018-11-24 17:34:43,238 - task_manager - WARNING - Error when deleting file: /tmp/babbbbbabc
+2018-11-24 17:34:43,238 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/babbbbbabc'
+2018-11-24 17:34:43,245 - task_manager - INFO - Task updated
+2018-11-24 17:34:48,261 - task_manager - INFO - Received job: {'task_id': 15, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/acabbbacbc', 'status': 'open'}
+2018-11-24 17:34:48,267 - task_manager - INFO - Task updated
+2018-11-24 17:34:48,267 - task_manager - INFO - Count unique words in file /tmp/acabbbacbc
+2018-11-24 17:34:48,267 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acabbbacbc'
+2018-11-24 17:34:48,274 - task_manager - INFO - Task updated
+2018-11-24 17:34:53,288 - task_manager - INFO - Received job: {'task_id': 16, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/caabcacccb', 'status': 'open'}
+2018-11-24 17:34:53,296 - task_manager - INFO - Task updated
+2018-11-24 17:34:53,296 - task_manager - INFO - Count unique words in file /tmp/caabcacccb
+2018-11-24 17:34:53,296 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/caabcacccb'
+2018-11-24 17:34:53,303 - task_manager - INFO - Task updated
+2018-11-24 17:34:58,317 - task_manager - INFO - Received job: {'task_id': 17, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/acccacaccb', 'status': 'open'}
+2018-11-24 17:34:58,323 - task_manager - INFO - Task updated
+2018-11-24 17:34:58,324 - task_manager - INFO - Count unique words in file /tmp/acccacaccb
+2018-11-24 17:34:58,324 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acccacaccb'
+2018-11-24 17:34:58,331 - task_manager - INFO - Task updated
+2018-11-24 17:35:03,347 - task_manager - INFO - Received job: {'task_id': 18, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/acaababacc', 'status': 'open'}
+2018-11-24 17:35:03,353 - task_manager - INFO - Task updated
+2018-11-24 17:35:03,354 - task_manager - WARNING - Error when deleting file: /tmp/acaababacc
+2018-11-24 17:35:03,354 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acaababacc'
+2018-11-24 17:35:03,360 - task_manager - INFO - Task updated
+2018-11-24 17:35:08,371 - task_manager - INFO - Received job: {'task_id': 19, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/abccbcabab', 'status': 'open'}
+2018-11-24 17:35:08,378 - task_manager - INFO - Task updated
+2018-11-24 17:35:08,378 - task_manager - INFO - Count unique words in file /tmp/abccbcabab
+2018-11-24 17:35:08,378 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/abccbcabab'
+2018-11-24 17:35:08,385 - task_manager - INFO - Task updated
+2018-11-24 17:35:13,401 - task_manager - INFO - Received job: {'task_id': 20, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cacbabacbc', 'status': 'open'}
+2018-11-24 17:35:13,407 - task_manager - INFO - Task updated
+2018-11-24 17:35:13,407 - task_manager - INFO - Count unique words in file /tmp/cacbabacbc
+2018-11-24 17:35:13,408 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cacbabacbc'
+2018-11-24 17:35:13,415 - task_manager - INFO - Task updated
+2018-11-24 17:35:18,430 - task_manager - INFO - Received job: {'task_id': 21, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/bcacbbabac', 'status': 'open'}
+2018-11-24 17:35:18,437 - task_manager - INFO - Task updated
+2018-11-24 17:35:18,438 - task_manager - WARNING - Error when deleting file: /tmp/bcacbbabac
+2018-11-24 17:35:18,438 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcacbbabac'
+2018-11-24 17:35:18,445 - task_manager - INFO - Task updated
+2018-11-24 17:35:23,460 - task_manager - INFO - Received job: {'task_id': 22, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cbabbbbcac', 'status': 'open'}
+2018-11-24 17:35:23,468 - task_manager - INFO - Task updated
+2018-11-24 17:35:23,468 - task_manager - INFO - Count unique words in file /tmp/cbabbbbcac
+2018-11-24 17:35:23,468 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cbabbbbcac'
+2018-11-24 17:35:23,475 - task_manager - INFO - Task updated
+2018-11-24 17:35:28,493 - task_manager - INFO - Received job: {'task_id': 23, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/acaaaaccaa', 'status': 'open'}
+2018-11-24 17:35:28,501 - task_manager - INFO - Task updated
+2018-11-24 17:35:28,501 - task_manager - INFO - Creating file /tmp/acaaaaccaa
+2018-11-24 17:35:28,502 - task_manager - INFO - Created file /tmp/acaaaaccaa
+2018-11-24 17:35:28,509 - task_manager - INFO - Task updated
+2018-11-24 17:35:33,524 - task_manager - INFO - Received job: {'task_id': 24, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/ccaccccccb', 'status': 'open'}
+2018-11-24 17:35:33,530 - task_manager - INFO - Task updated
+2018-11-24 17:35:33,531 - task_manager - WARNING - Error when deleting file: /tmp/ccaccccccb
+2018-11-24 17:35:33,531 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccaccccccb'
+2018-11-24 17:35:33,538 - task_manager - INFO - Task updated
+2018-11-24 17:35:38,554 - task_manager - INFO - Received job: {'task_id': 25, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cbbcaaabba', 'status': 'open'}
+2018-11-24 17:35:38,559 - task_manager - INFO - Task updated
+2018-11-24 17:35:38,560 - task_manager - INFO - Count unique words in file /tmp/cbbcaaabba
+2018-11-24 17:35:38,560 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cbbcaaabba'
+2018-11-24 17:35:38,567 - task_manager - INFO - Task updated
+2018-11-24 17:35:43,580 - task_manager - INFO - Received job: {'task_id': 26, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/cabcabbaac', 'status': 'open'}
+2018-11-24 17:35:43,586 - task_manager - INFO - Task updated
+2018-11-24 17:35:43,586 - task_manager - INFO - Creating file /tmp/cabcabbaac
+2018-11-24 17:35:43,587 - task_manager - INFO - Created file /tmp/cabcabbaac
+2018-11-24 17:35:43,594 - task_manager - INFO - Task updated
+2018-11-24 17:35:48,606 - task_manager - INFO - Received job: {'task_id': 27, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/ccababacbc', 'status': 'open'}
+2018-11-24 17:35:48,612 - task_manager - INFO - Task updated
+2018-11-24 17:35:48,612 - task_manager - INFO - Count unique words in file /tmp/ccababacbc
+2018-11-24 17:35:48,612 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccababacbc'
+2018-11-24 17:35:48,620 - task_manager - INFO - Task updated
+2018-11-24 17:35:53,635 - task_manager - INFO - Received job: {'task_id': 28, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cbcccbccbb', 'status': 'open'}
+2018-11-24 17:35:53,641 - task_manager - INFO - Task updated
+2018-11-24 17:35:53,642 - task_manager - INFO - Count unique words in file /tmp/cbcccbccbb
+2018-11-24 17:35:53,642 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cbcccbccbb'
+2018-11-24 17:35:53,648 - task_manager - INFO - Task updated
+2018-11-24 17:35:58,664 - task_manager - INFO - Received job: {'task_id': 29, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/acbbbccaaa', 'status': 'open'}
+2018-11-24 17:35:58,670 - task_manager - INFO - Task updated
+2018-11-24 17:35:58,671 - task_manager - INFO - Count unique words in file /tmp/acbbbccaaa
+2018-11-24 17:35:58,671 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acbbbccaaa'
+2018-11-24 17:35:58,680 - task_manager - INFO - Task updated
+2018-11-24 17:36:03,695 - task_manager - INFO - Received job: {'task_id': 30, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/abbbbabccb', 'status': 'open'}
+2018-11-24 17:36:03,702 - task_manager - INFO - Task updated
+2018-11-24 17:36:03,703 - task_manager - INFO - Count unique words in file /tmp/abbbbabccb
+2018-11-24 17:36:03,703 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/abbbbabccb'
+2018-11-24 17:36:03,710 - task_manager - INFO - Task updated
+2018-11-24 17:36:08,725 - task_manager - INFO - Received job: {'task_id': 31, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cabababbcc', 'status': 'open'}
+2018-11-24 17:36:08,731 - task_manager - INFO - Task updated
+2018-11-24 17:36:08,731 - task_manager - INFO - Count unique words in file /tmp/cabababbcc
+2018-11-24 17:36:08,732 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cabababbcc'
+2018-11-24 17:36:08,738 - task_manager - INFO - Task updated
+2018-11-24 17:36:13,753 - task_manager - INFO - Received job: {'task_id': 32, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/ccbcbcacca', 'status': 'open'}
+2018-11-24 17:36:13,761 - task_manager - INFO - Task updated
+2018-11-24 17:36:13,761 - task_manager - WARNING - Error when deleting file: /tmp/ccbcbcacca
+2018-11-24 17:36:13,761 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccbcbcacca'
+2018-11-24 17:36:13,767 - task_manager - INFO - Task updated
+2018-11-24 17:36:18,782 - task_manager - INFO - Received job: {'task_id': 33, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/bbcaabbbbc', 'status': 'open'}
+2018-11-24 17:36:18,789 - task_manager - INFO - Task updated
+2018-11-24 17:36:18,789 - task_manager - INFO - Creating file /tmp/bbcaabbbbc
+2018-11-24 17:36:18,789 - task_manager - INFO - Created file /tmp/bbcaabbbbc
+2018-11-24 17:36:18,795 - task_manager - INFO - Task updated
+2018-11-24 17:36:23,808 - task_manager - INFO - Received job: {'task_id': 34, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/aabbbacbab', 'status': 'open'}
+2018-11-24 17:36:23,814 - task_manager - INFO - Task updated
+2018-11-24 17:36:23,814 - task_manager - INFO - Count unique words in file /tmp/aabbbacbab
+2018-11-24 17:36:23,815 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/aabbbacbab'
+2018-11-24 17:36:23,821 - task_manager - INFO - Task updated
+2018-11-24 17:36:28,832 - task_manager - INFO - Received job: {'task_id': 35, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/bbccaccbac', 'status': 'open'}
+2018-11-24 17:36:28,839 - task_manager - INFO - Task updated
+2018-11-24 17:36:28,839 - task_manager - WARNING - Error when deleting file: /tmp/bbccaccbac
+2018-11-24 17:36:28,839 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbccaccbac'
+2018-11-24 17:36:28,845 - task_manager - INFO - Task updated
+2018-11-24 17:36:33,858 - task_manager - INFO - Received job: {'task_id': 36, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/ccbaabcccc', 'status': 'open'}
+2018-11-24 17:36:33,864 - task_manager - INFO - Task updated
+2018-11-24 17:36:33,865 - task_manager - INFO - Count unique words in file /tmp/ccbaabcccc
+2018-11-24 17:36:33,865 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccbaabcccc'
+2018-11-24 17:36:33,871 - task_manager - INFO - Task updated
+2018-11-24 17:36:38,887 - task_manager - INFO - Received job: {'task_id': 37, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/ccbbcaabba', 'status': 'open'}
+2018-11-24 17:36:38,894 - task_manager - INFO - Task updated
+2018-11-24 17:36:38,894 - task_manager - WARNING - Error when deleting file: /tmp/ccbbcaabba
+2018-11-24 17:36:38,894 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccbbcaabba'
+2018-11-24 17:36:38,901 - task_manager - INFO - Task updated
+2018-11-24 17:36:43,911 - task_manager - INFO - Received job: {'task_id': 38, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cabaabacbb', 'status': 'open'}
+2018-11-24 17:36:43,918 - task_manager - INFO - Task updated
+2018-11-24 17:36:43,918 - task_manager - INFO - Count unique words in file /tmp/cabaabacbb
+2018-11-24 17:36:43,918 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cabaabacbb'
+2018-11-24 17:36:43,925 - task_manager - INFO - Task updated
+2018-11-24 17:36:48,943 - task_manager - INFO - Received job: {'task_id': 39, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/baaaabccbb', 'status': 'open'}
+2018-11-24 17:36:48,950 - task_manager - INFO - Task updated
+2018-11-24 17:36:48,950 - task_manager - INFO - Count unique words in file /tmp/baaaabccbb
+2018-11-24 17:36:48,950 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/baaaabccbb'
+2018-11-24 17:36:48,958 - task_manager - INFO - Task updated
+2018-11-24 17:36:53,972 - task_manager - INFO - Received job: {'task_id': 40, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/ccccbabaca', 'status': 'open'}
+2018-11-24 17:36:53,981 - task_manager - INFO - Task updated
+2018-11-24 17:36:53,981 - task_manager - INFO - Creating file /tmp/ccccbabaca
+2018-11-24 17:36:53,981 - task_manager - INFO - Created file /tmp/ccccbabaca
+2018-11-24 17:36:53,990 - task_manager - INFO - Task updated
+2018-11-24 17:36:59,002 - task_manager - INFO - Received job: {'task_id': 41, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/acbbbbaaba', 'status': 'open'}
+2018-11-24 17:36:59,012 - task_manager - INFO - Task updated
+2018-11-24 17:36:59,012 - task_manager - WARNING - Error when deleting file: /tmp/acbbbbaaba
+2018-11-24 17:36:59,012 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acbbbbaaba'
+2018-11-24 17:36:59,020 - task_manager - INFO - Task updated
+2018-11-24 17:37:04,038 - task_manager - INFO - Received job: {'task_id': 42, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/abacbacbab', 'status': 'open'}
+2018-11-24 17:37:04,045 - task_manager - INFO - Task updated
+2018-11-24 17:37:04,045 - task_manager - INFO - Count unique words in file /tmp/abacbacbab
+2018-11-24 17:37:04,045 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/abacbacbab'
+2018-11-24 17:37:04,052 - task_manager - INFO - Task updated
+2018-11-24 17:37:09,070 - task_manager - INFO - Received job: {'task_id': 43, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/accbbabbbc', 'status': 'open'}
+2018-11-24 17:37:09,078 - task_manager - INFO - Task updated
+2018-11-24 17:37:09,078 - task_manager - INFO - Creating file /tmp/accbbabbbc
+2018-11-24 17:37:09,078 - task_manager - INFO - Created file /tmp/accbbabbbc
+2018-11-24 17:37:09,086 - task_manager - INFO - Task updated
+2018-11-24 17:37:14,103 - task_manager - INFO - Received job: {'task_id': 44, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/bbcbccaaba', 'status': 'open'}
+2018-11-24 17:37:14,115 - task_manager - INFO - Task updated
+2018-11-24 17:37:14,115 - task_manager - INFO - Count unique words in file /tmp/bbcbccaaba
+2018-11-24 17:37:14,116 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbcbccaaba'
+2018-11-24 17:37:14,124 - task_manager - INFO - Task updated
+2018-11-24 17:37:19,142 - task_manager - INFO - Received job: {'task_id': 45, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/bbcaababcb', 'status': 'open'}
+2018-11-24 17:37:19,150 - task_manager - INFO - Task updated
+2018-11-24 17:37:19,150 - task_manager - WARNING - Error when deleting file: /tmp/bbcaababcb
+2018-11-24 17:37:19,150 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbcaababcb'
+2018-11-24 17:37:19,157 - task_manager - INFO - Task updated
+2018-11-24 17:37:24,174 - task_manager - INFO - Received job: {'task_id': 46, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/aacbbaaacb', 'status': 'open'}
+2018-11-24 17:37:24,181 - task_manager - INFO - Task updated
+2018-11-24 17:37:24,181 - task_manager - INFO - Creating file /tmp/aacbbaaacb
+2018-11-24 17:37:24,182 - task_manager - INFO - Created file /tmp/aacbbaaacb
+2018-11-24 17:37:24,190 - task_manager - INFO - Task updated
+2018-11-24 17:37:29,208 - task_manager - INFO - Received job: {'task_id': 47, 'client_host': '127.0.0.1', 'job_type': 'count', 'argument': '/tmp/cbccacabaa', 'status': 'open'}
+2018-11-24 17:37:29,215 - task_manager - INFO - Task updated
+2018-11-24 17:37:29,216 - task_manager - INFO - Count unique words in file /tmp/cbccacabaa
+2018-11-24 17:37:29,216 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cbccacabaa'
+2018-11-24 17:37:29,223 - task_manager - INFO - Task updated
+2018-11-24 17:37:34,237 - task_manager - INFO - Received job: {'task_id': 48, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/cacbbbccac', 'status': 'open'}
+2018-11-24 17:37:34,244 - task_manager - INFO - Task updated
+2018-11-24 17:37:34,244 - task_manager - INFO - Creating file /tmp/cacbbbccac
+2018-11-24 17:37:34,244 - task_manager - INFO - Created file /tmp/cacbbbccac
+2018-11-24 17:37:34,252 - task_manager - INFO - Task updated
+2018-11-24 17:37:39,269 - task_manager - INFO - Received job: {'task_id': 49, 'client_host': '127.0.0.1', 'job_type': 'delete', 'argument': '/tmp/caaaccbaac', 'status': 'open'}
+2018-11-24 17:37:39,276 - task_manager - INFO - Task updated
+2018-11-24 17:37:39,277 - task_manager - WARNING - Error when deleting file: /tmp/caaaccbaac
+2018-11-24 17:37:39,277 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/caaaccbaac'
+2018-11-24 17:37:39,284 - task_manager - INFO - Task updated
+2018-11-24 17:37:44,301 - task_manager - INFO - Received job: {'task_id': 50, 'client_host': '127.0.0.1', 'job_type': 'create', 'argument': '/tmp/aacbccbbab', 'status': 'open'}
+2018-11-24 17:37:44,308 - task_manager - INFO - Task updated
+2018-11-24 17:37:44,308 - task_manager - INFO - Creating file /tmp/aacbccbbab
+2018-11-24 17:37:44,309 - task_manager - INFO - Created file /tmp/aacbccbbab
+2018-11-24 17:37:44,316 - task_manager - INFO - Task updated
+2018-11-24 17:37:49,324 - task_manager - INFO - Received job: None
+2018-11-24 17:37:54,334 - task_manager - INFO - Received job: None
+2018-11-24 17:37:59,345 - task_manager - INFO - Received job: None
+2018-11-24 17:38:04,355 - task_manager - INFO - Received job: None
+2018-11-24 17:38:09,363 - task_manager - INFO - Received job: None
+2018-11-24 17:38:14,376 - task_manager - INFO - Received job: None
+2018-11-24 17:38:19,388 - task_manager - INFO - Received job: None
+2018-11-24 17:38:24,401 - task_manager - INFO - Received job: None
+2018-11-24 17:38:29,412 - task_manager - INFO - Received job: None
+2018-11-24 17:38:34,422 - task_manager - INFO - Received job: None
+2018-11-24 17:38:39,428 - task_manager - INFO - Error in job receiving: Expecting value: line 1 column 1 (char 0)
+2018-11-24 17:38:39,428 - task_manager - INFO - Received job: None
+2018-11-24 17:45:35,126 - task_manager - INFO - Start generate random tasks
+2018-11-24 17:45:35,140 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,146 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,153 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,161 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,168 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,177 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,186 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,193 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,204 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,210 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,219 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,228 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,238 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,245 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,252 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,259 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,265 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,272 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,280 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,289 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,295 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,302 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,309 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,316 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,325 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,333 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,339 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,346 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,353 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,360 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,367 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,376 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,383 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,391 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,398 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,405 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,412 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,420 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,426 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,433 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,440 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,446 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,453 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,461 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,467 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,475 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,481 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,489 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,497 - task_manager - ERROR - POST task
+2018-11-24 17:45:35,503 - task_manager - ERROR - POST task
+2018-11-24 17:46:01,230 - task_manager - INFO - Starting checking jobs for execution
+2018-11-24 17:46:01,247 - task_manager - INFO - Received job: {'task_id': 1, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bcccbaabca', 'status': 'open'}
+2018-11-24 17:46:01,254 - task_manager - INFO - Task updated
+2018-11-24 17:46:01,254 - task_manager - INFO - Count unique words in file /tmp/bcccbaabca
+2018-11-24 17:46:01,254 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcccbaabca'
+2018-11-24 17:46:01,261 - task_manager - INFO - Task updated
+2018-11-24 17:46:06,278 - task_manager - INFO - Received job: {'task_id': 2, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bcbbaacbcc', 'status': 'open'}
+2018-11-24 17:46:06,286 - task_manager - INFO - Task updated
+2018-11-24 17:46:06,286 - task_manager - INFO - Count unique words in file /tmp/bcbbaacbcc
+2018-11-24 17:46:06,286 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcbbaacbcc'
+2018-11-24 17:46:06,295 - task_manager - INFO - Task updated
+2018-11-24 17:46:11,307 - task_manager - INFO - Received job: {'task_id': 3, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/aabcccccaa', 'status': 'open'}
+2018-11-24 17:46:11,315 - task_manager - INFO - Task updated
+2018-11-24 17:46:11,315 - task_manager - INFO - Count unique words in file /tmp/aabcccccaa
+2018-11-24 17:46:11,315 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/aabcccccaa'
+2018-11-24 17:46:11,324 - task_manager - INFO - Task updated
+2018-11-24 17:46:16,341 - task_manager - INFO - Received job: {'task_id': 5, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/acccbcabca', 'status': 'open'}
+2018-11-24 17:46:16,349 - task_manager - INFO - Task updated
+2018-11-24 17:46:16,349 - task_manager - WARNING - Error when deleting file: /tmp/acccbcabca
+2018-11-24 17:46:16,349 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acccbcabca'
+2018-11-24 17:46:16,357 - task_manager - INFO - Task updated
+2018-11-24 17:46:21,377 - task_manager - INFO - Received job: {'task_id': 6, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bababbccbb', 'status': 'open'}
+2018-11-24 17:46:21,384 - task_manager - INFO - Task updated
+2018-11-24 17:46:21,384 - task_manager - INFO - Count unique words in file /tmp/bababbccbb
+2018-11-24 17:46:21,384 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bababbccbb'
+2018-11-24 17:46:21,391 - task_manager - INFO - Task updated
+2018-11-24 17:46:26,410 - task_manager - INFO - Received job: {'task_id': 7, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/cbbbabcbaa', 'status': 'open'}
+2018-11-24 17:46:26,418 - task_manager - INFO - Task updated
+2018-11-24 17:46:26,419 - task_manager - INFO - Creating file /tmp/cbbbabcbaa
+2018-11-24 17:46:26,420 - task_manager - INFO - Created file /tmp/cbbbabcbaa
+2018-11-24 17:46:26,429 - task_manager - INFO - Task updated
+2018-11-24 17:46:31,451 - task_manager - INFO - Received job: {'task_id': 8, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/abbbacaaba', 'status': 'open'}
+2018-11-24 17:46:31,458 - task_manager - INFO - Task updated
+2018-11-24 17:46:31,458 - task_manager - INFO - Creating file /tmp/abbbacaaba
+2018-11-24 17:46:31,458 - task_manager - INFO - Created file /tmp/abbbacaaba
+2018-11-24 17:46:31,466 - task_manager - INFO - Task updated
+2018-11-24 17:46:36,486 - task_manager - INFO - Received job: {'task_id': 9, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/bbcbaaaaca', 'status': 'open'}
+2018-11-24 17:46:36,494 - task_manager - INFO - Task updated
+2018-11-24 17:46:36,494 - task_manager - INFO - Creating file /tmp/bbcbaaaaca
+2018-11-24 17:46:36,495 - task_manager - INFO - Created file /tmp/bbcbaaaaca
+2018-11-24 17:46:36,502 - task_manager - INFO - Task updated
+2018-11-24 17:46:41,521 - task_manager - INFO - Received job: {'task_id': 10, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/baaacbbcab', 'status': 'open'}
+2018-11-24 17:46:41,528 - task_manager - INFO - Task updated
+2018-11-24 17:46:41,528 - task_manager - INFO - Count unique words in file /tmp/baaacbbcab
+2018-11-24 17:46:41,529 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/baaacbbcab'
+2018-11-24 17:46:41,539 - task_manager - INFO - Task updated
+2018-11-24 17:46:46,559 - task_manager - INFO - Received job: {'task_id': 11, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/bbbbababca', 'status': 'open'}
+2018-11-24 17:46:46,567 - task_manager - INFO - Task updated
+2018-11-24 17:46:46,567 - task_manager - INFO - Creating file /tmp/bbbbababca
+2018-11-24 17:46:46,568 - task_manager - INFO - Created file /tmp/bbbbababca
+2018-11-24 17:46:46,575 - task_manager - INFO - Task updated
+2018-11-24 17:46:51,596 - task_manager - INFO - Received job: {'task_id': 13, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/bababaacab', 'status': 'open'}
+2018-11-24 17:46:51,604 - task_manager - INFO - Task updated
+2018-11-24 17:46:51,605 - task_manager - WARNING - Error when deleting file: /tmp/bababaacab
+2018-11-24 17:46:51,605 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bababaacab'
+2018-11-24 17:46:51,613 - task_manager - INFO - Task updated
+2018-11-24 17:46:56,631 - task_manager - INFO - Received job: {'task_id': 14, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bcacccccab', 'status': 'open'}
+2018-11-24 17:46:56,639 - task_manager - INFO - Task updated
+2018-11-24 17:46:56,639 - task_manager - INFO - Count unique words in file /tmp/bcacccccab
+2018-11-24 17:46:56,639 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcacccccab'
+2018-11-24 17:46:56,646 - task_manager - INFO - Task updated
+2018-11-24 17:47:01,668 - task_manager - INFO - Received job: {'task_id': 15, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bcbccabcca', 'status': 'open'}
+2018-11-24 17:47:01,675 - task_manager - INFO - Task updated
+2018-11-24 17:47:01,675 - task_manager - INFO - Count unique words in file /tmp/bcbccabcca
+2018-11-24 17:47:01,675 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcbccabcca'
+2018-11-24 17:47:01,683 - task_manager - INFO - Task updated
+2018-11-24 17:47:06,705 - task_manager - INFO - Received job: {'task_id': 16, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/ccbcbcaaba', 'status': 'open'}
+2018-11-24 17:47:06,712 - task_manager - INFO - Task updated
+2018-11-24 17:47:06,712 - task_manager - INFO - Creating file /tmp/ccbcbcaaba
+2018-11-24 17:47:06,714 - task_manager - INFO - Created file /tmp/ccbcbcaaba
+2018-11-24 17:47:06,722 - task_manager - INFO - Task updated
+2018-11-24 17:47:11,755 - task_manager - INFO - Received job: {'task_id': 17, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/babaaaaaab', 'status': 'open'}
+2018-11-24 17:47:11,774 - task_manager - INFO - Task updated
+2018-11-24 17:47:11,774 - task_manager - WARNING - Error when deleting file: /tmp/babaaaaaab
+2018-11-24 17:47:11,774 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/babaaaaaab'
+2018-11-24 17:47:11,781 - task_manager - INFO - Task updated
+2018-11-24 17:47:16,799 - task_manager - INFO - Received job: {'task_id': 18, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/bbbbcbcbac', 'status': 'open'}
+2018-11-24 17:47:16,806 - task_manager - INFO - Task updated
+2018-11-24 17:47:16,806 - task_manager - INFO - Creating file /tmp/bbbbcbcbac
+2018-11-24 17:47:16,807 - task_manager - INFO - Created file /tmp/bbbbcbcbac
+2018-11-24 17:47:16,814 - task_manager - INFO - Task updated
+2018-11-24 17:47:21,834 - task_manager - INFO - Received job: {'task_id': 20, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bcabbcabbc', 'status': 'open'}
+2018-11-24 17:47:21,842 - task_manager - INFO - Task updated
+2018-11-24 17:47:21,843 - task_manager - INFO - Count unique words in file /tmp/bcabbcabbc
+2018-11-24 17:47:21,843 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcabbcabbc'
+2018-11-24 17:47:21,851 - task_manager - INFO - Task updated
+2018-11-24 17:47:26,870 - task_manager - INFO - Received job: {'task_id': 21, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/baaabbccca', 'status': 'open'}
+2018-11-24 17:47:26,879 - task_manager - INFO - Task updated
+2018-11-24 17:47:26,879 - task_manager - WARNING - Error when deleting file: /tmp/baaabbccca
+2018-11-24 17:47:26,879 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/baaabbccca'
+2018-11-24 17:47:26,891 - task_manager - INFO - Task updated
+2018-11-24 17:47:31,909 - task_manager - INFO - Received job: {'task_id': 22, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/acbbccbaba', 'status': 'open'}
+2018-11-24 17:47:31,916 - task_manager - INFO - Task updated
+2018-11-24 17:47:31,916 - task_manager - INFO - Count unique words in file /tmp/acbbccbaba
+2018-11-24 17:47:31,916 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acbbccbaba'
+2018-11-24 17:47:31,923 - task_manager - INFO - Task updated
+2018-11-24 17:47:36,940 - task_manager - INFO - Received job: {'task_id': 23, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/ccacccacab', 'status': 'open'}
+2018-11-24 17:47:36,949 - task_manager - INFO - Task updated
+2018-11-24 17:47:36,949 - task_manager - WARNING - Error when deleting file: /tmp/ccacccacab
+2018-11-24 17:47:36,950 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccacccacab'
+2018-11-24 17:47:36,958 - task_manager - INFO - Task updated
+2018-11-24 17:47:41,975 - task_manager - INFO - Received job: {'task_id': 24, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/cabcbcccbb', 'status': 'open'}
+2018-11-24 17:47:41,983 - task_manager - INFO - Task updated
+2018-11-24 17:47:41,984 - task_manager - INFO - Creating file /tmp/cabcbcccbb
+2018-11-24 17:47:41,984 - task_manager - INFO - Created file /tmp/cabcbcccbb
+2018-11-24 17:47:41,992 - task_manager - INFO - Task updated
+2018-11-24 17:47:47,005 - task_manager - INFO - Received job: {'task_id': 25, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/aacababaaa', 'status': 'open'}
+2018-11-24 17:47:47,013 - task_manager - INFO - Task updated
+2018-11-24 17:47:47,013 - task_manager - INFO - Count unique words in file /tmp/aacababaaa
+2018-11-24 17:47:47,013 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/aacababaaa'
+2018-11-24 17:47:47,021 - task_manager - INFO - Task updated
+2018-11-24 17:47:52,045 - task_manager - INFO - Received job: {'task_id': 26, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/cacacabcac', 'status': 'open'}
+2018-11-24 17:47:52,055 - task_manager - INFO - Task updated
+2018-11-24 17:47:52,055 - task_manager - WARNING - Error when deleting file: /tmp/cacacabcac
+2018-11-24 17:47:52,055 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cacacabcac'
+2018-11-24 17:47:52,065 - task_manager - INFO - Task updated
+2018-11-24 17:47:57,083 - task_manager - INFO - Received job: {'task_id': 28, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/accabacccb', 'status': 'open'}
+2018-11-24 17:47:57,090 - task_manager - INFO - Task updated
+2018-11-24 17:47:57,090 - task_manager - INFO - Creating file /tmp/accabacccb
+2018-11-24 17:47:57,091 - task_manager - INFO - Created file /tmp/accabacccb
+2018-11-24 17:47:57,099 - task_manager - INFO - Task updated
+2018-11-24 17:48:02,116 - task_manager - INFO - Received job: {'task_id': 29, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/bccbaabbca', 'status': 'open'}
+2018-11-24 17:48:02,125 - task_manager - INFO - Task updated
+2018-11-24 17:48:02,125 - task_manager - WARNING - Error when deleting file: /tmp/bccbaabbca
+2018-11-24 17:48:02,125 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bccbaabbca'
+2018-11-24 17:48:02,133 - task_manager - INFO - Task updated
+2018-11-24 17:48:07,153 - task_manager - INFO - Received job: {'task_id': 30, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/cacaaaaabc', 'status': 'open'}
+2018-11-24 17:48:07,160 - task_manager - INFO - Task updated
+2018-11-24 17:48:07,161 - task_manager - INFO - Count unique words in file /tmp/cacaaaaabc
+2018-11-24 17:48:07,161 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cacaaaaabc'
+2018-11-24 17:48:07,168 - task_manager - INFO - Task updated
+2018-11-24 17:48:12,188 - task_manager - INFO - Received job: {'task_id': 31, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bbcbaccaca', 'status': 'open'}
+2018-11-24 17:48:12,195 - task_manager - INFO - Task updated
+2018-11-24 17:48:12,196 - task_manager - INFO - Count unique words in file /tmp/bbcbaccaca
+2018-11-24 17:48:12,196 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbcbaccaca'
+2018-11-24 17:48:12,204 - task_manager - INFO - Task updated
+2018-11-24 17:48:17,234 - task_manager - INFO - Received job: {'task_id': 32, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/bbbcacccba', 'status': 'open'}
+2018-11-24 17:48:17,242 - task_manager - INFO - Task updated
+2018-11-24 17:48:17,243 - task_manager - WARNING - Error when deleting file: /tmp/bbbcacccba
+2018-11-24 17:48:17,243 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbbcacccba'
+2018-11-24 17:48:17,254 - task_manager - INFO - Task updated
+2018-11-24 17:48:22,274 - task_manager - INFO - Received job: {'task_id': 33, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/acbacacaaa', 'status': 'open'}
+2018-11-24 17:48:22,282 - task_manager - INFO - Task updated
+2018-11-24 17:48:22,282 - task_manager - INFO - Creating file /tmp/acbacacaaa
+2018-11-24 17:48:22,283 - task_manager - INFO - Created file /tmp/acbacacaaa
+2018-11-24 17:48:22,290 - task_manager - INFO - Task updated
+2018-11-24 17:48:27,308 - task_manager - INFO - Received job: {'task_id': 35, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/acacbcbbcb', 'status': 'open'}
+2018-11-24 17:48:27,317 - task_manager - INFO - Task updated
+2018-11-24 17:48:27,318 - task_manager - WARNING - Error when deleting file: /tmp/acacbcbbcb
+2018-11-24 17:48:27,318 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/acacbcbbcb'
+2018-11-24 17:48:27,326 - task_manager - INFO - Task updated
+2018-11-24 17:48:32,348 - task_manager - INFO - Received job: {'task_id': 36, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/cabbbbbacb', 'status': 'open'}
+2018-11-24 17:48:32,355 - task_manager - INFO - Task updated
+2018-11-24 17:48:32,355 - task_manager - WARNING - Error when deleting file: /tmp/cabbbbbacb
+2018-11-24 17:48:32,355 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cabbbbbacb'
+2018-11-24 17:48:32,362 - task_manager - INFO - Task updated
+2018-11-24 17:48:37,384 - task_manager - INFO - Received job: {'task_id': 37, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/aacaababab', 'status': 'open'}
+2018-11-24 17:48:37,391 - task_manager - INFO - Task updated
+2018-11-24 17:48:37,391 - task_manager - INFO - Creating file /tmp/aacaababab
+2018-11-24 17:48:37,392 - task_manager - INFO - Created file /tmp/aacaababab
+2018-11-24 17:48:37,399 - task_manager - INFO - Task updated
+2018-11-24 17:48:42,418 - task_manager - INFO - Received job: {'task_id': 38, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/ccbabaaaca', 'status': 'open'}
+2018-11-24 17:48:42,425 - task_manager - INFO - Task updated
+2018-11-24 17:48:42,426 - task_manager - WARNING - Error when deleting file: /tmp/ccbabaaaca
+2018-11-24 17:48:42,426 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccbabaaaca'
+2018-11-24 17:48:42,433 - task_manager - INFO - Task updated
+2018-11-24 17:48:47,451 - task_manager - INFO - Received job: {'task_id': 39, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/aaccaacaca', 'status': 'open'}
+2018-11-24 17:48:47,458 - task_manager - INFO - Task updated
+2018-11-24 17:48:47,458 - task_manager - INFO - Count unique words in file /tmp/aaccaacaca
+2018-11-24 17:48:47,458 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/aaccaacaca'
+2018-11-24 17:48:47,465 - task_manager - INFO - Task updated
+2018-11-24 17:48:52,485 - task_manager - INFO - Received job: {'task_id': 40, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/bcbccbaabb', 'status': 'open'}
+2018-11-24 17:48:52,494 - task_manager - INFO - Task updated
+2018-11-24 17:48:52,494 - task_manager - INFO - Count unique words in file /tmp/bcbccbaabb
+2018-11-24 17:48:52,494 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bcbccbaabb'
+2018-11-24 17:48:52,502 - task_manager - INFO - Task updated
+2018-11-24 17:48:57,524 - task_manager - INFO - Received job: {'task_id': 41, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/accaacbacc', 'status': 'open'}
+2018-11-24 17:48:57,532 - task_manager - INFO - Task updated
+2018-11-24 17:48:57,533 - task_manager - INFO - Creating file /tmp/accaacbacc
+2018-11-24 17:48:57,533 - task_manager - INFO - Created file /tmp/accaacbacc
+2018-11-24 17:48:57,540 - task_manager - INFO - Task updated
+2018-11-24 17:49:02,551 - task_manager - INFO - Received job: {'task_id': 43, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/bbccbabaca', 'status': 'open'}
+2018-11-24 17:49:02,562 - task_manager - INFO - Task updated
+2018-11-24 17:49:02,562 - task_manager - INFO - Creating file /tmp/bbccbabaca
+2018-11-24 17:49:02,562 - task_manager - INFO - Created file /tmp/bbccbabaca
+2018-11-24 17:49:02,572 - task_manager - INFO - Task updated
+2018-11-24 17:49:07,589 - task_manager - INFO - Received job: {'task_id': 44, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/cbbabacaaa', 'status': 'open'}
+2018-11-24 17:49:07,597 - task_manager - INFO - Task updated
+2018-11-24 17:49:07,597 - task_manager - INFO - Count unique words in file /tmp/cbbabacaaa
+2018-11-24 17:49:07,597 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cbbabacaaa'
+2018-11-24 17:49:07,604 - task_manager - INFO - Task updated
+2018-11-24 17:49:12,619 - task_manager - INFO - Received job: {'task_id': 45, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/bbbcaccaac', 'status': 'open'}
+2018-11-24 17:49:12,627 - task_manager - INFO - Task updated
+2018-11-24 17:49:12,627 - task_manager - WARNING - Error when deleting file: /tmp/bbbcaccaac
+2018-11-24 17:49:12,627 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/bbbcaccaac'
+2018-11-24 17:49:12,634 - task_manager - INFO - Task updated
+2018-11-24 17:49:17,653 - task_manager - INFO - Received job: {'task_id': 46, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/babaabbccb', 'status': 'open'}
+2018-11-24 17:49:17,661 - task_manager - INFO - Task updated
+2018-11-24 17:49:17,661 - task_manager - INFO - Count unique words in file /tmp/babaabbccb
+2018-11-24 17:49:17,662 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/babaabbccb'
+2018-11-24 17:49:17,672 - task_manager - INFO - Task updated
+2018-11-24 17:49:22,686 - task_manager - INFO - Received job: {'task_id': 47, 'client_host': '192.168.56.102', 'job_type': 'count', 'argument': '/tmp/aabbabccaa', 'status': 'open'}
+2018-11-24 17:49:22,693 - task_manager - INFO - Task updated
+2018-11-24 17:49:22,694 - task_manager - INFO - Count unique words in file /tmp/aabbabccaa
+2018-11-24 17:49:22,694 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/aabbabccaa'
+2018-11-24 17:49:22,702 - task_manager - INFO - Task updated
+2018-11-24 17:49:27,720 - task_manager - INFO - Received job: {'task_id': 48, 'client_host': '192.168.56.102', 'job_type': 'create', 'argument': '/tmp/caaaccabcc', 'status': 'open'}
+2018-11-24 17:49:27,728 - task_manager - INFO - Task updated
+2018-11-24 17:49:27,728 - task_manager - INFO - Creating file /tmp/caaaccabcc
+2018-11-24 17:49:27,728 - task_manager - INFO - Created file /tmp/caaaccabcc
+2018-11-24 17:49:27,736 - task_manager - INFO - Task updated
+2018-11-24 17:49:32,753 - task_manager - INFO - Received job: {'task_id': 50, 'client_host': '192.168.56.102', 'job_type': 'delete', 'argument': '/tmp/accbcbcccb', 'status': 'open'}
+2018-11-24 17:49:32,761 - task_manager - INFO - Task updated
+2018-11-24 17:49:32,761 - task_manager - WARNING - Error when deleting file: /tmp/accbcbcccb
+2018-11-24 17:49:32,761 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/accbcbcccb'
+2018-11-24 17:49:32,769 - task_manager - INFO - Task updated
+2018-11-24 17:49:37,788 - task_manager - INFO - Received job: {'task_id': 51, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/ccaacccbaa', 'status': 'open'}
+2018-11-24 17:49:37,795 - task_manager - INFO - Task updated
+2018-11-24 17:49:37,795 - task_manager - WARNING - Error when deleting file: /tmp/ccaacccbaa
+2018-11-24 17:49:37,795 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/ccaacccbaa'
+2018-11-24 17:49:37,804 - task_manager - INFO - Task updated
+2018-11-24 17:49:42,823 - task_manager - INFO - Received job: {'task_id': 52, 'client_host': '192.168.56.104', 'job_type': 'create', 'argument': '/tmp/bbcbaaaacb', 'status': 'open'}
+2018-11-24 17:49:42,830 - task_manager - INFO - Task updated
+2018-11-24 17:49:42,830 - task_manager - INFO - Creating file /tmp/bbcbaaaacb
+2018-11-24 17:49:42,831 - task_manager - INFO - Created file /tmp/bbcbaaaacb
+2018-11-24 17:49:42,838 - task_manager - INFO - Task updated
+2018-11-24 17:49:47,850 - task_manager - INFO - Received job: {'task_id': 53, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/cacabbabcb', 'status': 'open'}
+2018-11-24 17:49:47,858 - task_manager - INFO - Task updated
+2018-11-24 17:49:47,859 - task_manager - WARNING - Error when deleting file: /tmp/cacabbabcb
+2018-11-24 17:49:47,859 - task_manager - WARNING - Error in job execution: [Errno 2] No such file or directory: '/tmp/cacabbabcb'
+2018-11-24 17:49:47,866 - task_manager - INFO - Task updated
