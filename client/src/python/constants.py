@@ -9,5 +9,5 @@ PORT = config.get('server', 'port')
 DUMP_DIR = config.get('shared_dir', 'dump_dir')
 # Lenth of generated random file names.
 RAND_LEN = eval(config.get('shared_dir', 'random_file_lenth'))
-# Timeout for checking jobs
-TIMEOUT = eval(config.get('job_executor', 'check_timeout'))
+# Wait time for checking jobs
+WAIT = eval(config.get('job_executor', 'wait_time'))

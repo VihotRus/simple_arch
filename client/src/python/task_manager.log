@@ -986,3 +986,275 @@
 2018-11-24 18:49:45,803 - task_manager - INFO - Task updated
 2018-11-24 18:49:50,813 - task_manager - INFO - Received job: None
 2018-11-24 18:49:55,825 - task_manager - INFO - Received job: None
+2018-11-24 19:20:36,279 - task_manager - INFO - Creating new task
+2018-11-24 19:20:36,296 - task_manager - INFO - POST task
+2018-11-24 19:20:54,368 - task_manager - INFO - Starting checking jobs for execution
+2018-11-24 19:20:54,385 - task_manager - INFO - Received job: {'task_id': 17, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/baccbbcbbb', 'status': 'open'}
+2018-11-24 19:20:54,393 - task_manager - INFO - Task updated
+2018-11-24 19:20:54,393 - task_manager - INFO - Executing task: count /tmp/baccbbcbbb
+2018-11-24 19:20:54,394 - task_manager - INFO - Count unique words in file /tmp/baccbbcbbb
+2018-11-24 19:20:54,401 - task_manager - INFO - Task updated
+2018-11-24 19:20:59,411 - task_manager - INFO - Received job: None
+2018-11-24 19:21:04,419 - task_manager - INFO - Received job: None
+2018-11-24 19:21:09,428 - task_manager - INFO - Received job: None
+2018-11-24 19:21:14,439 - task_manager - INFO - Received job: None
+2018-11-24 19:33:05,990 - [28764:139642822711104] - [task_manager:client] - INFO: Creating new task
+2018-11-24 19:33:13,281 - [28774:140550456956736] - [task_manager:client] - INFO: Creating new task
+2018-11-24 19:33:13,295 - [28774:140550456956736] - [task_manager:client] - INFO: POST task
+2018-11-24 19:33:16,295 - [28778:139829565966144] - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-24 19:33:16,312 - [28778:139829565966144] - [task_manager:client] - INFO: Received job: {'task_id': 1, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/baccbbcbbb', 'status': 'open'}
+2018-11-24 19:33:16,319 - [28778:139829565966144] - [task_manager:client] - INFO: Task updated
+2018-11-24 19:33:16,319 - [28778:139829565966144] - [task_manager:client] - INFO: Executing task: count /tmp/baccbbcbbb
+2018-11-24 19:33:16,319 - [28778:139829565966144] - [task_manager:executor] - INFO: Count unique words in file /tmp/baccbbcbbb
+2018-11-24 19:33:16,328 - [28778:139829565966144] - [task_manager:client] - INFO: Task updated
+2018-11-24 19:33:21,341 - [28778:139829565966144] - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:33:26,348 - [28778:139829565966144] - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:33:31,359 - [28778:139829565966144] - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:37:03,392 - [task_manager:client] - INFO: Start generate random tasks
+2018-11-24 19:37:03,404 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,411 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,419 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,426 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,436 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,447 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,455 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,462 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,471 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,478 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,486 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,495 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,504 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,512 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,520 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,527 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,536 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,545 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,553 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,560 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,567 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,576 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,582 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,589 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,598 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,607 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,614 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,621 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,628 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,635 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,644 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,651 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,659 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,667 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,674 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,683 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,691 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,700 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,709 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,718 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,725 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,732 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,740 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,748 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,755 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,762 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,769 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,778 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,785 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,793 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,800 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,808 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,816 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,822 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,830 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,836 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,846 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,852 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,859 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,866 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,874 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,882 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,889 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,896 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,903 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,912 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,918 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,925 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,933 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,939 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,948 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,954 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,961 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,969 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,976 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,983 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,990 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:03,997 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,004 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,012 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,019 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,026 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,033 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,040 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,048 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,055 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,062 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,069 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,076 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,085 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,091 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,098 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,105 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,114 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,120 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,127 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,135 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,141 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,150 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:04,157 - [task_manager:client] - INFO: POST task
+2018-11-24 19:37:14,027 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-24 19:37:14,045 - [task_manager:client] - INFO: Received job: {'task_id': 2, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/baabacacbb', 'status': 'open'}
+2018-11-24 19:37:14,055 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:14,055 - [task_manager:client] - INFO: Executing task: delete /tmp/baabacacbb
+2018-11-24 19:37:14,055 - [task_manager:executor] - WARNING: Error when deleting file: /tmp/baabacacbb
+2018-11-24 19:37:14,055 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/baabacacbb'
+2018-11-24 19:37:14,065 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:19,079 - [task_manager:client] - INFO: Received job: {'task_id': 3, 'client_host': '192.168.56.104', 'job_type': 'create', 'argument': '/tmp/cabcacccca', 'status': 'open'}
+2018-11-24 19:37:19,087 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:19,088 - [task_manager:client] - INFO: Executing task: create /tmp/cabcacccca
+2018-11-24 19:37:19,088 - [task_manager:executor] - INFO: Creating file /tmp/cabcacccca
+2018-11-24 19:37:19,088 - [task_manager:executor] - INFO: Created file /tmp/cabcacccca
+2018-11-24 19:37:19,098 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:24,115 - [task_manager:client] - INFO: Received job: {'task_id': 4, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/bcbcaaabac', 'status': 'open'}
+2018-11-24 19:37:24,122 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:24,123 - [task_manager:client] - INFO: Executing task: count /tmp/bcbcaaabac
+2018-11-24 19:37:24,123 - [task_manager:executor] - INFO: Count unique words in file /tmp/bcbcaaabac
+2018-11-24 19:37:24,123 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/bcbcaaabac'
+2018-11-24 19:37:24,131 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:29,144 - [task_manager:client] - INFO: Received job: {'task_id': 5, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/caccccacac', 'status': 'open'}
+2018-11-24 19:37:29,153 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:29,153 - [task_manager:client] - INFO: Executing task: delete /tmp/caccccacac
+2018-11-24 19:37:29,153 - [task_manager:executor] - WARNING: Error when deleting file: /tmp/caccccacac
+2018-11-24 19:37:29,154 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/caccccacac'
+2018-11-24 19:37:29,161 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:34,179 - [task_manager:client] - INFO: Received job: {'task_id': 6, 'client_host': '192.168.56.104', 'job_type': 'create', 'argument': '/tmp/caabaaccbb', 'status': 'open'}
+2018-11-24 19:37:34,186 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:34,187 - [task_manager:client] - INFO: Executing task: create /tmp/caabaaccbb
+2018-11-24 19:37:34,187 - [task_manager:executor] - INFO: Creating file /tmp/caabaaccbb
+2018-11-24 19:37:34,187 - [task_manager:executor] - INFO: Created file /tmp/caabaaccbb
+2018-11-24 19:37:34,197 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:39,214 - [task_manager:client] - INFO: Received job: {'task_id': 7, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/bbabcccaaa', 'status': 'open'}
+2018-11-24 19:37:39,221 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:39,221 - [task_manager:client] - INFO: Executing task: count /tmp/bbabcccaaa
+2018-11-24 19:37:39,222 - [task_manager:executor] - INFO: Count unique words in file /tmp/bbabcccaaa
+2018-11-24 19:37:39,222 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/bbabcccaaa'
+2018-11-24 19:37:39,230 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:44,248 - [task_manager:client] - INFO: Received job: {'task_id': 8, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/aacbacbacc', 'status': 'open'}
+2018-11-24 19:37:44,256 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:44,256 - [task_manager:client] - INFO: Executing task: count /tmp/aacbacbacc
+2018-11-24 19:37:44,256 - [task_manager:executor] - INFO: Count unique words in file /tmp/aacbacbacc
+2018-11-24 19:37:44,257 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/aacbacbacc'
+2018-11-24 19:37:44,266 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:49,285 - [task_manager:client] - INFO: Received job: {'task_id': 9, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/bbccbcabcc', 'status': 'open'}
+2018-11-24 19:37:49,293 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:49,293 - [task_manager:client] - INFO: Executing task: count /tmp/bbccbcabcc
+2018-11-24 19:37:49,294 - [task_manager:executor] - INFO: Count unique words in file /tmp/bbccbcabcc
+2018-11-24 19:37:49,294 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/bbccbcabcc'
+2018-11-24 19:37:49,301 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:54,319 - [task_manager:client] - INFO: Received job: {'task_id': 10, 'client_host': '192.168.56.104', 'job_type': 'create', 'argument': '/tmp/babbaabaaa', 'status': 'open'}
+2018-11-24 19:37:54,327 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:54,327 - [task_manager:client] - INFO: Executing task: create /tmp/babbaabaaa
+2018-11-24 19:37:54,327 - [task_manager:executor] - INFO: Creating file /tmp/babbaabaaa
+2018-11-24 19:37:54,327 - [task_manager:executor] - INFO: Created file /tmp/babbaabaaa
+2018-11-24 19:37:54,335 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:59,355 - [task_manager:client] - INFO: Received job: {'task_id': 11, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/cbcbaacaca', 'status': 'open'}
+2018-11-24 19:37:59,365 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:37:59,365 - [task_manager:client] - INFO: Executing task: delete /tmp/cbcbaacaca
+2018-11-24 19:37:59,366 - [task_manager:executor] - WARNING: Error when deleting file: /tmp/cbcbaacaca
+2018-11-24 19:37:59,366 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/cbcbaacaca'
+2018-11-24 19:37:59,373 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:04,385 - [task_manager:client] - INFO: Received job: {'task_id': 12, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/bcbabbaabb', 'status': 'open'}
+2018-11-24 19:38:04,393 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:04,393 - [task_manager:client] - INFO: Executing task: count /tmp/bcbabbaabb
+2018-11-24 19:38:04,393 - [task_manager:executor] - INFO: Count unique words in file /tmp/bcbabbaabb
+2018-11-24 19:38:04,393 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/bcbabbaabb'
+2018-11-24 19:38:04,401 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:09,414 - [task_manager:client] - INFO: Received job: {'task_id': 13, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/aaaccabcab', 'status': 'open'}
+2018-11-24 19:38:09,421 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:09,422 - [task_manager:client] - INFO: Executing task: delete /tmp/aaaccabcab
+2018-11-24 19:38:09,422 - [task_manager:executor] - WARNING: Error when deleting file: /tmp/aaaccabcab
+2018-11-24 19:38:09,422 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/aaaccabcab'
+2018-11-24 19:38:09,429 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:14,484 - [task_manager:client] - INFO: Received job: {'task_id': 14, 'client_host': '192.168.56.104', 'job_type': 'create', 'argument': '/tmp/ccbacaacab', 'status': 'open'}
+2018-11-24 19:38:14,491 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:14,491 - [task_manager:client] - INFO: Executing task: create /tmp/ccbacaacab
+2018-11-24 19:38:14,491 - [task_manager:executor] - INFO: Creating file /tmp/ccbacaacab
+2018-11-24 19:38:14,492 - [task_manager:executor] - INFO: Created file /tmp/ccbacaacab
+2018-11-24 19:38:14,498 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:19,511 - [task_manager:client] - INFO: Received job: {'task_id': 15, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/abcaaaacbb', 'status': 'open'}
+2018-11-24 19:38:19,519 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:19,519 - [task_manager:client] - INFO: Executing task: delete /tmp/abcaaaacbb
+2018-11-24 19:38:19,519 - [task_manager:executor] - WARNING: Error when deleting file: /tmp/abcaaaacbb
+2018-11-24 19:38:19,519 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/abcaaaacbb'
+2018-11-24 19:38:19,527 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:24,546 - [task_manager:client] - INFO: Received job: {'task_id': 16, 'client_host': '192.168.56.104', 'job_type': 'create', 'argument': '/tmp/caabbcbaab', 'status': 'open'}
+2018-11-24 19:38:24,554 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:24,555 - [task_manager:client] - INFO: Executing task: create /tmp/caabbcbaab
+2018-11-24 19:38:24,555 - [task_manager:executor] - INFO: Creating file /tmp/caabbcbaab
+2018-11-24 19:38:24,555 - [task_manager:executor] - INFO: Created file /tmp/caabbcbaab
+2018-11-24 19:38:24,563 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:29,581 - [task_manager:client] - INFO: Received job: {'task_id': 17, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/ccabbaacca', 'status': 'open'}
+2018-11-24 19:38:29,589 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:29,590 - [task_manager:client] - INFO: Executing task: count /tmp/ccabbaacca
+2018-11-24 19:38:29,590 - [task_manager:executor] - INFO: Count unique words in file /tmp/ccabbaacca
+2018-11-24 19:38:29,590 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/ccabbaacca'
+2018-11-24 19:38:29,598 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:34,618 - [task_manager:client] - INFO: Received job: {'task_id': 18, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/cbbcccacca', 'status': 'open'}
+2018-11-24 19:38:34,626 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:34,626 - [task_manager:client] - INFO: Executing task: count /tmp/cbbcccacca
+2018-11-24 19:38:34,626 - [task_manager:executor] - INFO: Count unique words in file /tmp/cbbcccacca
+2018-11-24 19:38:34,626 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/cbbcccacca'
+2018-11-24 19:38:34,634 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:39,647 - [task_manager:client] - INFO: Received job: {'task_id': 19, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/bcabbaaaaa', 'status': 'open'}
+2018-11-24 19:38:39,655 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:39,656 - [task_manager:client] - INFO: Executing task: delete /tmp/bcabbaaaaa
+2018-11-24 19:38:39,656 - [task_manager:executor] - WARNING: Error when deleting file: /tmp/bcabbaaaaa
+2018-11-24 19:38:39,656 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/bcabbaaaaa'
+2018-11-24 19:38:39,664 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:44,677 - [task_manager:client] - INFO: Received job: {'task_id': 20, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/caabacbcac', 'status': 'open'}
+2018-11-24 19:38:44,684 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:44,684 - [task_manager:client] - INFO: Executing task: count /tmp/caabacbcac
+2018-11-24 19:38:44,684 - [task_manager:executor] - INFO: Count unique words in file /tmp/caabacbcac
+2018-11-24 19:38:44,685 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/caabacbcac'
+2018-11-24 19:38:44,693 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:49,713 - [task_manager:client] - INFO: Received job: {'task_id': 21, 'client_host': '192.168.56.104', 'job_type': 'delete', 'argument': '/tmp/babaabccac', 'status': 'open'}
+2018-11-24 19:38:49,720 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:49,721 - [task_manager:client] - INFO: Executing task: delete /tmp/babaabccac
+2018-11-24 19:38:49,721 - [task_manager:executor] - WARNING: Error when deleting file: /tmp/babaabccac
+2018-11-24 19:38:49,721 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/babaabccac'
+2018-11-24 19:38:49,729 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:54,742 - [task_manager:client] - INFO: Received job: {'task_id': 22, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/cacbaaacbb', 'status': 'open'}
+2018-11-24 19:38:54,750 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:54,750 - [task_manager:client] - INFO: Executing task: count /tmp/cacbaaacbb
+2018-11-24 19:38:54,750 - [task_manager:executor] - INFO: Count unique words in file /tmp/cacbaaacbb
+2018-11-24 19:38:54,750 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/cacbaaacbb'
+2018-11-24 19:38:54,757 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:59,772 - [task_manager:client] - INFO: Received job: {'task_id': 23, 'client_host': '192.168.56.104', 'job_type': 'count', 'argument': '/tmp/ccaaabbbcc', 'status': 'open'}
+2018-11-24 19:38:59,780 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:38:59,781 - [task_manager:client] - INFO: Executing task: count /tmp/ccaaabbbcc
+2018-11-24 19:38:59,781 - [task_manager:executor] - INFO: Count unique words in file /tmp/ccaaabbbcc
+2018-11-24 19:38:59,781 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: '/tmp/ccaaabbbcc'
+2018-11-24 19:38:59,789 - [task_manager:client] - INFO: Task updated
+2018-11-24 19:46:09,136 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-24 19:46:09,148 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:14,157 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:19,168 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:27,311 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-24 19:46:27,324 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:32,333 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:37,342 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:42,354 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:47,367 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:52,379 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:46:57,387 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:47:02,400 - [task_manager:client] - INFO: Received job: None
+2018-11-24 19:47:07,411 - [task_manager:client] - INFO: Received job: None

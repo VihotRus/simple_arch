@@ -99,4 +99,5 @@ class MySqlClient:
         new_task = {}
         if result:
             new_task = dict(zip(required_columns, result[0]))
+        logger.debug(new_task)
         return new_task

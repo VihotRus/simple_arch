@@ -134,7 +134,7 @@ class TaskManager:
                 try:
                     job = json.loads(data_received)
                 except Exception as error:
-                    logger.info(f'Error in job receiving: {error}')
+                    logger.warning(f'Error in job receiving: {error}')
                     job = None
                 logger.info(f'Received job: {job}')
                 if job:
@@ -157,7 +157,7 @@ class TaskManager:
                         conn.request('PUT', 'update', body=json.dumps(job))
                         self.validate_response(conn)
 
-                time.sleep(TIMEOUT)
+                time.sleep(WAIT)
 
         except KeyboardInterrupt:
             print('\nStop checking jobs')
