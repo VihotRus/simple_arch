@@ -7,6 +7,7 @@ import time
 
 from argparse import ArgumentParser, RawTextHelpFormatter
 from constants import *
+from datetime import datetime
 from executor import Executor, ExecutionError
 from http import client
 from tools.config_init import logger
@@ -119,7 +120,6 @@ class TaskManager:
         data = json.dumps(data)
         # Request command to server
         conn.request('POST', cmd, body=data)
-        logger.debug(f'POST: {data}')
         self.validate_response(conn, 201)
 
     @with_connection
@@ -150,7 +150,8 @@ class TaskManager:
                         logger.warning(f'Error in job execution: {error}')
                         result = 'Errored'
                     finally:
-                        job['finished'] = int(time.time())
+                        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        job['finished'] = now
                         job['status'] = 'finished'
                         job['result'] = result
                         conn.request('PUT', 'update', body=json.dumps(job))
