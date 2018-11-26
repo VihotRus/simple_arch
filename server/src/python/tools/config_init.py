@@ -6,7 +6,7 @@ import logging.config
 import os
 
 #Variables from enviroment
-ENV_DIR = '/home/ruslan/git/simple_arch/server'
+ENV_DIR = '/home/ruslan/git/task_manager/server'
 CONF_ROOT = f'{ENV_DIR}/etc'
 
 #Logging initialization

@@ -31,19 +31,17 @@ class Executor:
     @staticmethod
     def create_file(file_path):
         logger.info(f'Creating file {file_path}')
-        # if os.path.exists(file_path):
-        #     logger.info('File already exists')
-        #     result = 'File already exists'
-        # else:
-        try:
-            result = os.open(file_path, os.O_CREAT)
-            print(result)
-            print(type(result))
-        except Exception as error:
-            logger.warning(f'Error when creating file {file_path}')
-            raise ExecutionError(error)
-        logger.info(f'Created file {file_path}')
-        result = 'File created'
+        if os.path.exists(file_path):
+            logger.warning(f'File {file_path} already exists')
+            raise ExecutionError(f'File {file_path} already exists')
+        else:
+            try:
+                os.open(file_path, os.O_WRONLY)
+            except Exception as error:
+                logger.warning(f'Error {error} when creating file {file_path}')
+                raise ExecutionError(error)
+            logger.info(f'Created file {file_path}')
+            result = 'File created'
         return result
 
     @staticmethod
@@ -51,7 +49,7 @@ class Executor:
         try:
             os.remove(file_path)
         except Exception as error:
-            logger.warning(f"Error when deleting file: {file_path}")
+            logger.warning(f"Error {error} when deleting file: {file_path}")
             raise ExecutionError(error)
         logger.info(f'File {file_path} deleted')
         result = 'File deleted'
@@ -80,4 +78,13 @@ class Executor:
                      'create': self.create_file,
                      'delete': self.delete_file,
                      'execute': self.execute_command}
-        return execution.get(task_type)(*args, **kwargs)
+        try:
+            result = execution.get(task_type)(*args, **kwargs)
+        except TypeError as error:
+            logger.error(f'Incorect task type: {task_type}i\n'
+                         f'must be in {execution.keys()}')
+            raise
+        except Exception as error:
+            logger.warning(f'Error {error} in job execution: ({task_type}, {args})')
+            raise ExecutionError(error)
+        return result

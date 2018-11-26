@@ -64,6 +64,7 @@ class Connection:
             self.conn = client.HTTPConnection(self.__tcp)
         except Exception as error:
             logger.error(f"Cannot connect to the server: {error}")
+            raise
         return self.conn
 
     def __exit__(self, exc_type, exc_val, exc_tb):
@@ -138,29 +139,30 @@ class TaskManager:
                     job = None
                 logger.info(f'Received job: {job}')
                 if job:
-                    job['status'] = 'in_progress'
-                    conn.request('PUT', 'update', body=json.dumps(job))
-                    self.validate_response(conn)
-                    try:
-                        job_type = job.get('job_type')
-                        argument = job.get('argument')
-                        logger.info(f'Executing task: {job_type} {argument}')
-                        result = self._executor.execute(job_type, argument)
-                    except ExecutionError as error:
-                        logger.warning(f'Error in job execution: {error}')
-                        result = 'Errored'
-                    finally:
-                        job['finished'] = int(time.time())
-                        job['status'] = 'finished'
-                        job['result'] = result
-                        conn.request('PUT', 'update', body=json.dumps(job))
-                        self.validate_response(conn)
+                    self.execute_job(conn, job)
 
-                time.sleep(WAIT)
+                time.sleep(FREQUENCY)
 
         except KeyboardInterrupt:
             print('\nStop checking jobs')
 
+    def execute_job(self, conn, job_info):
+        job_type = job_info.get('job_type')
+        argument = job_info.get('argument')
+        logger.info(f'Executing task: {job_type} {argument}')
+        try:
+            result = self._executor.execute(job_type, argument)
+            status = 'finished'
+        except ExecutionError as error:
+            logger.warning(f'Error in job execution: {error}')
+            status = 'errored'
+            result = str(error)
+        finally:
+            job_info['finished'] = int(time.time())
+            job_info['status'] = 'finished'
+            job_info['result'] = result
+            conn.request('PUT', 'update', body=json.dumps(job_info))
+            self.validate_response(conn)
 
 if __name__ == "__main__":
     args = args_parser()

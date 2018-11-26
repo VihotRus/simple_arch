@@ -2002,3 +2002,95 @@
 2018-11-25 02:00:33,194 - [task_manager:executor] - INFO: Created file /home/ruslan/privet
 2018-11-25 02:00:33,201 - [task_manager:client] - INFO: Task updated
 2018-11-25 02:00:38,210 - [task_manager:client] - INFO: Received job: None
+2018-11-26 04:20:19,560 - [task_manager:executor] - ERROR: Error 'NoneType' object is not callable in job execution: (balala, ())
+2018-11-26 04:20:39,320 - [task_manager:executor] - ERROR: Error 'NoneType' object is not callable in job execution: (balala, ())
+2018-11-26 04:21:18,119 - [task_manager:executor] - ERROR: Error 'NoneType' object is not callable in job execution: (balala, ())
+2018-11-26 04:21:38,422 - [task_manager:executor] - ERROR: Error 'NoneType' object is not callable in job execution: (balala, ())
+2018-11-26 04:21:48,843 - [task_manager:executor] - ERROR: Error 'NoneType' object is not callable in job execution: (balala, ())
+2018-11-26 04:22:08,574 - [task_manager:executor] - ERROR: Error 'NoneType' object is not callable in job execution: (balala, ())
+2018-11-26 04:23:36,675 - [task_manager:executor] - ERROR: balala must be in dict_keys(['count', 'create', 'delete', 'execute'])
+2018-11-26 04:23:44,675 - [task_manager:executor] - ERROR: balala must be in dict_keys(['count', 'create', 'delete', 'execute'])
+2018-11-26 04:25:10,337 - [task_manager:executor] - ERROR: Incorect task type: balalai
+must be in dict_keys(['count', 'create', 'delete', 'execute'])
+2018-11-26 04:41:16,727 - [task_manager:executor] - ERROR: Incorect task type: balalai
+must be in dict_keys(['count', 'create', 'delete', 'execute'])
+2018-11-26 04:42:37,687 - [task_manager:executor] - ERROR: Incorect task type: balalai
+must be in dict_keys(['count', 'create', 'delete', 'execute'])
+2018-11-26 04:48:19,221 - [task_manager:client] - INFO: Creating new task
+2018-11-26 04:48:19,228 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "la /home/ruslan/git/server"}
+2018-11-26 04:48:19,237 - [task_manager:client] - INFO: POST task
+2018-11-26 04:48:25,566 - [task_manager:client] - INFO: Creating new task
+2018-11-26 04:48:25,571 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "la /home/ruslan/git/server"}
+2018-11-26 04:48:25,578 - [task_manager:client] - INFO: POST task
+2018-11-26 04:48:26,393 - [task_manager:client] - INFO: Creating new task
+2018-11-26 04:48:26,398 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "la /home/ruslan/git/server"}
+2018-11-26 04:48:26,404 - [task_manager:client] - INFO: POST task
+2018-11-26 04:48:27,013 - [task_manager:client] - INFO: Creating new task
+2018-11-26 04:48:27,019 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "la /home/ruslan/git/server"}
+2018-11-26 04:48:27,025 - [task_manager:client] - INFO: POST task
+2018-11-26 04:48:56,600 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 04:48:56,617 - [task_manager:client] - INFO: Received job: {'task_id': 45, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:49:45,468 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 04:49:45,487 - [task_manager:client] - INFO: Received job: {'task_id': 46, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:50:59,369 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 04:50:59,388 - [task_manager:client] - INFO: Received job: {'task_id': 47, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:50:59,388 - [task_manager:client] - INFO: Executing task: execute la /home/ruslan/git/server
+2018-11-26 04:50:59,393 - [task_manager:executor] - WARNING: Error <[Errno 2] No such file or directory: 'la': 'la'> when executing command: la /home/ruslan/git/server
+2018-11-26 04:50:59,393 - [task_manager:executor] - WARNING: Error [Errno 2] No such file or directory: 'la': 'la' in job execution: (execute, ('la /home/ruslan/git/server',))
+2018-11-26 04:50:59,394 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'la': 'la'
+2018-11-26 04:51:01,202 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 04:51:01,221 - [task_manager:client] - INFO: Received job: {'task_id': 48, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:51:01,221 - [task_manager:client] - INFO: Executing task: execute la /home/ruslan/git/server
+2018-11-26 04:51:01,225 - [task_manager:executor] - WARNING: Error <[Errno 2] No such file or directory: 'la': 'la'> when executing command: la /home/ruslan/git/server
+2018-11-26 04:51:01,225 - [task_manager:executor] - WARNING: Error [Errno 2] No such file or directory: 'la': 'la' in job execution: (execute, ('la /home/ruslan/git/server',))
+2018-11-26 04:51:01,225 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'la': 'la'
+2018-11-26 04:53:26,240 - [task_manager:client] - INFO: Creating new task
+2018-11-26 04:53:26,246 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "la /home/ruslan/git/task_manager/server"}
+2018-11-26 04:53:26,253 - [task_manager:client] - INFO: POST task
+2018-11-26 04:53:28,468 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 04:53:28,485 - [task_manager:client] - INFO: Received job: {'task_id': 49, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 04:53:28,485 - [task_manager:client] - INFO: Executing task: execute la /home/ruslan/git/task_manager/server
+2018-11-26 04:53:28,489 - [task_manager:executor] - WARNING: Error <[Errno 2] No such file or directory: 'la': 'la'> when executing command: la /home/ruslan/git/task_manager/server
+2018-11-26 04:53:28,489 - [task_manager:executor] - WARNING: Error [Errno 2] No such file or directory: 'la': 'la' in job execution: (execute, ('la /home/ruslan/git/task_manager/server',))
+2018-11-26 04:53:28,489 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'la': 'la'
+2018-11-26 05:01:21,367 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 05:01:21,379 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:01:26,388 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:01:31,397 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:01:37,378 - [task_manager:client] - INFO: Creating new task
+2018-11-26 05:01:37,384 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "la /home/ruslan/git/task_manager/server"}
+2018-11-26 05:01:37,392 - [task_manager:client] - INFO: POST task
+2018-11-26 05:01:38,819 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 05:01:38,837 - [task_manager:client] - INFO: Received job: {'task_id': 50, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 05:01:38,837 - [task_manager:client] - INFO: Executing task: execute la /home/ruslan/git/task_manager/server
+2018-11-26 05:01:38,843 - [task_manager:executor] - WARNING: Error <[Errno 2] No such file or directory: 'la': 'la'> when executing command: la /home/ruslan/git/task_manager/server
+2018-11-26 05:01:38,844 - [task_manager:executor] - WARNING: Error [Errno 2] No such file or directory: 'la': 'la' in job execution: (execute, ('la /home/ruslan/git/task_manager/server',))
+2018-11-26 05:01:38,844 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'la': 'la'
+2018-11-26 05:01:38,853 - [task_manager:client] - ERROR: Failed to update task
+2018-11-26 05:01:43,865 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:01:48,874 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:01:53,884 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:01:58,897 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:02:03,908 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:02:08,918 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:02:13,931 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:02:18,939 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:02:27,166 - [task_manager:client] - INFO: Creating new task
+2018-11-26 05:02:27,171 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "ls -la /home/ruslan/git/task_manager/server"}
+2018-11-26 05:02:27,178 - [task_manager:client] - INFO: POST task
+2018-11-26 05:02:29,204 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 05:02:29,219 - [task_manager:client] - INFO: Received job: {'task_id': 51, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'ls -la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 05:02:29,219 - [task_manager:client] - INFO: Executing task: execute ls -la /home/ruslan/git/task_manager/server
+2018-11-26 05:02:29,228 - [task_manager:executor] - INFO: ls -la /home/ruslan/git/task_manager/server result saved to /tmp/command_result
+2018-11-26 05:02:29,236 - [task_manager:client] - INFO: Task updated
+2018-11-26 05:02:34,248 - [task_manager:client] - INFO: Received job: None
+2018-11-26 05:07:16,637 - [task_manager:client] - INFO: Creating new task
+2018-11-26 05:07:16,642 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "argument": "la /home/ruslan/git/task_manager/server"}
+2018-11-26 05:07:16,649 - [task_manager:client] - INFO: POST task
+2018-11-26 05:07:17,955 - [task_manager:client] - INFO: Starting checking jobs for execution
+2018-11-26 05:07:17,972 - [task_manager:client] - INFO: Received job: {'task_id': 52, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 05:07:17,973 - [task_manager:client] - INFO: Executing task: execute la /home/ruslan/git/task_manager/server
+2018-11-26 05:07:17,976 - [task_manager:executor] - WARNING: Error <[Errno 2] No such file or directory: 'la': 'la'> when executing command: la /home/ruslan/git/task_manager/server
+2018-11-26 05:07:17,976 - [task_manager:executor] - WARNING: Error [Errno 2] No such file or directory: 'la': 'la' in job execution: (execute, ('la /home/ruslan/git/task_manager/server',))
+2018-11-26 05:07:17,976 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'la': 'la'
+2018-11-26 05:07:17,984 - [task_manager:client] - ERROR: Failed to update task

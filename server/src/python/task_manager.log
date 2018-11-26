@@ -11209,3 +11209,275 @@
 2018-11-25 02:00:38,208 - [task_manager:mysql_client] - INFO: Get new task: {}
 2018-11-25 02:00:38,208 - [task_manager:mysql_client] - INFO: Commiting changes
 2018-11-25 02:00:38,209 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7fa9548ed7b8>
+2018-11-26 02:23:06,515 - [task_manager:server] - INFO: Started server
+2018-11-26 04:48:19,229 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:48:19,233 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:48:19,234 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47828>
+2018-11-26 04:48:19,234 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 04:48:19,235 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:48:19,236 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47828>
+2018-11-26 04:48:25,572 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:48:25,574 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:48:25,574 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47b38>
+2018-11-26 04:48:25,574 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 04:48:25,575 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:48:25,577 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47b38>
+2018-11-26 04:48:26,398 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:48:26,401 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:48:26,401 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b479b0>
+2018-11-26 04:48:26,401 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 04:48:26,402 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:48:26,403 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b479b0>
+2018-11-26 04:48:27,020 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:48:27,022 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:48:27,022 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47c50>
+2018-11-26 04:48:27,022 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 04:48:27,023 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:48:27,025 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47c50>
+2018-11-26 04:48:56,607 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:48:56,609 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:48:56,609 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47b38>
+2018-11-26 04:48:56,609 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 04:48:56,611 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 45, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'new'}
+2018-11-26 04:48:56,611 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:48:56,611 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47b38>
+2018-11-26 04:48:56,611 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:48:56,613 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:48:56,613 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47ac8>
+2018-11-26 04:48:56,613 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 04:48:56,613 - [task_manager:mysql_client] - INFO: Update task:45 status to {'task_id': 45, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:48:56,614 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:48:56,616 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47ac8>
+2018-11-26 04:49:45,475 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:49:45,477 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:49:45,478 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47a90>
+2018-11-26 04:49:45,478 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 04:49:45,479 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 46, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'new'}
+2018-11-26 04:49:45,480 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:49:45,480 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47a90>
+2018-11-26 04:49:45,481 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:49:45,483 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:49:45,483 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47d30>
+2018-11-26 04:49:45,483 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 04:49:45,483 - [task_manager:mysql_client] - INFO: Update task:46 status to {'task_id': 46, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:49:45,484 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:49:45,485 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47d30>
+2018-11-26 04:50:59,375 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:50:59,377 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:50:59,377 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47dd8>
+2018-11-26 04:50:59,377 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 04:50:59,379 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 47, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'new'}
+2018-11-26 04:50:59,379 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:50:59,379 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47dd8>
+2018-11-26 04:50:59,380 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:50:59,382 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:50:59,382 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47fd0>
+2018-11-26 04:50:59,383 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 04:50:59,383 - [task_manager:mysql_client] - INFO: Update task:47 status to {'task_id': 47, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:50:59,383 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:50:59,386 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47fd0>
+2018-11-26 04:51:01,208 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:51:01,212 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:51:01,212 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47eb8>
+2018-11-26 04:51:01,212 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 04:51:01,213 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 48, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'new'}
+2018-11-26 04:51:01,213 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:51:01,214 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47eb8>
+2018-11-26 04:51:01,214 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:51:01,217 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:51:01,217 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 04:51:01,217 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 04:51:01,217 - [task_manager:mysql_client] - INFO: Update task:48 status to {'task_id': 48, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/server', 'status': 'open'}
+2018-11-26 04:51:01,218 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:51:01,220 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 04:53:26,247 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:53:26,250 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:53:26,250 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47da0>
+2018-11-26 04:53:26,250 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 04:53:26,251 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:53:26,252 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47da0>
+2018-11-26 04:53:28,474 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:53:28,475 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:53:28,476 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47f28>
+2018-11-26 04:53:28,476 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 04:53:28,477 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 49, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'new'}
+2018-11-26 04:53:28,477 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:53:28,478 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47f28>
+2018-11-26 04:53:28,478 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 04:53:28,480 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 04:53:28,480 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47c50>
+2018-11-26 04:53:28,481 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 04:53:28,481 - [task_manager:mysql_client] - INFO: Update task:49 status to {'task_id': 49, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 04:53:28,481 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 04:53:28,483 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47c50>
+2018-11-26 05:01:21,373 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:21,375 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:21,375 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b479e8>
+2018-11-26 05:01:21,376 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:21,377 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:01:21,377 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:21,378 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b479e8>
+2018-11-26 05:01:26,382 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:26,384 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:26,384 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47fd0>
+2018-11-26 05:01:26,385 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:26,386 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:01:26,386 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:26,387 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47fd0>
+2018-11-26 05:01:31,391 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:31,393 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:31,393 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 05:01:31,393 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:31,395 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:01:31,395 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:31,395 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 05:01:37,384 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:37,386 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:37,387 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47828>
+2018-11-26 05:01:37,387 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 05:01:37,388 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:37,391 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47828>
+2018-11-26 05:01:38,825 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:38,828 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:38,828 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47f28>
+2018-11-26 05:01:38,828 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:38,830 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 50, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'new'}
+2018-11-26 05:01:38,830 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:38,830 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47f28>
+2018-11-26 05:01:38,831 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:38,833 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:38,833 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47ef0>
+2018-11-26 05:01:38,833 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 05:01:38,833 - [task_manager:mysql_client] - INFO: Update task:50 status to {'task_id': 50, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 05:01:38,834 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:38,836 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47ef0>
+2018-11-26 05:01:38,846 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:38,848 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:38,848 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 05:01:38,848 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 05:01:38,848 - [task_manager:mysql_client] - INFO: Update task:50 status to {'task_id': 50, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'finished', 'finished': 1543201298, 'result': "[Errno 2] No such file or directory: 'la': 'la'"}
+2018-11-26 05:01:38,849 - [task_manager:mysql_client] - INFO: Error occured: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'la': 'la'' WHERE task_id = '50'' at line 1")
+2018-11-26 05:01:38,850 - [task_manager:mysql_client] - INFO: Rollbacking changes
+2018-11-26 05:01:38,850 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 05:01:38,851 - [task_manager:mysql_client] - INFO: Error occured when connecting to database:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'la': 'la'' WHERE task_id = '50'' at line 1")
+2018-11-26 05:01:38,851 - [task_manager:server] - ERROR: MySqlError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'la': 'la'' WHERE task_id = '50'' at line 1")
+2018-11-26 05:01:43,860 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:43,861 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:43,862 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47a20>
+2018-11-26 05:01:43,862 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:43,863 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:01:43,863 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:43,864 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47a20>
+2018-11-26 05:01:48,868 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:48,870 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:48,870 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47cc0>
+2018-11-26 05:01:48,870 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:48,872 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:01:48,872 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:48,873 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47cc0>
+2018-11-26 05:01:53,879 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:53,881 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:53,881 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47f60>
+2018-11-26 05:01:53,881 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:53,883 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:01:53,883 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:53,883 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47f60>
+2018-11-26 05:01:58,891 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:01:58,894 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:01:58,894 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47da0>
+2018-11-26 05:01:58,894 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:01:58,896 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:01:58,896 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:01:58,896 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47da0>
+2018-11-26 05:02:03,903 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:03,905 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:03,905 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47fd0>
+2018-11-26 05:02:03,905 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:02:03,906 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:02:03,907 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:03,907 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47fd0>
+2018-11-26 05:02:08,913 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:08,915 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:08,915 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47828>
+2018-11-26 05:02:08,915 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:02:08,917 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:02:08,917 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:08,917 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47828>
+2018-11-26 05:02:13,924 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:13,926 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:13,927 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47b38>
+2018-11-26 05:02:13,927 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:02:13,929 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:02:13,929 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:13,929 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47b38>
+2018-11-26 05:02:18,933 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:18,935 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:18,936 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47eb8>
+2018-11-26 05:02:18,936 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:02:18,937 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:02:18,937 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:18,938 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47eb8>
+2018-11-26 05:02:27,172 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:27,174 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:27,174 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47c50>
+2018-11-26 05:02:27,174 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 05:02:27,175 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:27,177 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47c50>
+2018-11-26 05:02:29,209 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:29,211 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:29,211 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47f98>
+2018-11-26 05:02:29,211 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:02:29,213 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 51, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'ls -la /home/ruslan/git/task_manager/server', 'status': 'new'}
+2018-11-26 05:02:29,213 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:29,213 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47f98>
+2018-11-26 05:02:29,214 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:29,215 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:29,215 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47a20>
+2018-11-26 05:02:29,215 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 05:02:29,216 - [task_manager:mysql_client] - INFO: Update task:51 status to {'task_id': 51, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'ls -la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 05:02:29,216 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:29,218 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47a20>
+2018-11-26 05:02:29,230 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:29,232 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:29,232 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b479e8>
+2018-11-26 05:02:29,232 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 05:02:29,232 - [task_manager:mysql_client] - INFO: Update task:51 status to {'task_id': 51, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'ls -la /home/ruslan/git/task_manager/server', 'status': 'finished', 'finished': 1543201349, 'result': 'Cmd result saved to /tmp/command_result'}
+2018-11-26 05:02:29,233 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:29,234 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b479e8>
+2018-11-26 05:02:34,242 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:02:34,244 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:02:34,245 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 05:02:34,245 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:02:34,246 - [task_manager:mysql_client] - INFO: Get new task: {}
+2018-11-26 05:02:34,247 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:02:34,247 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47c88>
+2018-11-26 05:07:16,643 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:07:16,645 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:07:16,645 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47e10>
+2018-11-26 05:07:16,645 - [task_manager:mysql_client] - DEBUG: Calling func insert_task 
+2018-11-26 05:07:16,646 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:07:16,648 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47e10>
+2018-11-26 05:07:17,961 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:07:17,963 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:07:17,963 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47da0>
+2018-11-26 05:07:17,964 - [task_manager:mysql_client] - DEBUG: Calling func get_job 
+2018-11-26 05:07:17,965 - [task_manager:mysql_client] - INFO: Get new task: {'task_id': 52, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'new'}
+2018-11-26 05:07:17,966 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:07:17,966 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47da0>
+2018-11-26 05:07:17,966 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:07:17,968 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:07:17,968 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b47ef0>
+2018-11-26 05:07:17,969 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 05:07:17,969 - [task_manager:mysql_client] - INFO: Update task:52 status to {'task_id': 52, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'open'}
+2018-11-26 05:07:17,969 - [task_manager:mysql_client] - INFO: Commiting changes
+2018-11-26 05:07:17,971 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b47ef0>
+2018-11-26 05:07:17,978 - [task_manager:mysql_client] - INFO: Connecting to database
+2018-11-26 05:07:17,980 - [task_manager:mysql_client] - INFO: Connected
+2018-11-26 05:07:17,981 - [task_manager:mysql_client] - DEBUG: connection object = <pymysql.connections.Connection object at 0x7f48d7b479b0>
+2018-11-26 05:07:17,981 - [task_manager:mysql_client] - DEBUG: Calling func update_task 
+2018-11-26 05:07:17,981 - [task_manager:mysql_client] - INFO: Update task:52 status to {'task_id': 52, 'client_host': '192.168.56.104', 'job_type': 'execute', 'argument': 'la /home/ruslan/git/task_manager/server', 'status': 'finished', 'finished': 1543201637, 'result': "[Errno 2] No such file or directory: 'la': 'la'"}
+2018-11-26 05:07:17,982 - [task_manager:mysql_client] - INFO: Error occured: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'la': 'la'' WHERE task_id = '52'' at line 1")
+2018-11-26 05:07:17,982 - [task_manager:mysql_client] - INFO: Rollbacking changes
+2018-11-26 05:07:17,983 - [task_manager:mysql_client] - DEBUG: Closing connection <pymysql.connections.Connection object at 0x7f48d7b479b0>
+2018-11-26 05:07:17,983 - [task_manager:mysql_client] - INFO: Error occured when connecting to database:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'la': 'la'' WHERE task_id = '52'' at line 1")
+2018-11-26 05:07:17,983 - [task_manager:server] - ERROR: MySqlError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'la': 'la'' WHERE task_id = '52'' at line 1")
