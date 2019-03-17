@@ -96,6 +96,8 @@ class TaskManager:
         cmd = 'task'
 
         data = json.dumps(self.args)
+        test_dataset = {'task_name' : 'create', 'task_parameter' : '/tmp'}
+        data = json.dumps(test_dataset)
 
         #request command to server
         conn.request('POST', cmd, body=data)
@@ -115,38 +117,38 @@ class TaskManager:
         try:
             while(True):
 
-                conn.request('GET', 'check_job')
+                conn.request('GET', 'get_job')
                 rsp = conn.getresponse()
 
                 print(rsp.status, rsp.reason)
                 data_received = rsp.read()
 
-                job_list = json.loads(data_received)
-                print(job_list)
-                if job_list:
-                    for job in job_list:
-                        if job.get('status') == 'open':
-                            task_id = job.get('task_id')
-                            status = 'in_progress'
-                            update_task = {'task_id' : task_id, 'status' : status}
-                            conn.request('PUT', 'update', body = json.dumps(update_task))
-                            rsp = conn.getresponse()
-                            print(rsp.status, rsp.reason)
-                            try:
-                                print('Doing job')
-                                print('1.')
-                                print('2..')
-                                print('3...')
-                                result = 'passed'
-                            except:
-                                result = 'errored'
-                            finally:
-                                status = 'finished'
-                                update_task = {'task_id' : task_id, 'status' : status}
-                                conn.request('PUT', 'update', body = json.dumps(update_task))
-                                rsp = conn.getresponse()
-                                print(rsp.status, rsp.reason)
-                                time.sleep(30)
+                job = json.loads(data_received)
+                logger.info(f'Received job: {job}')
+                if job:
+                    task_id = job.get('task_id')
+                    status = 'in_progress'
+                    update_task = {'task_id' : task_id, 'job_status' : status}
+                    conn.request('PUT', 'update', body = json.dumps(update_task))
+                    rsp = conn.getresponse()
+                    assert rsp.status == 200, 'Error occured'
+                    print(rsp.status, rsp.reason)
+                    try:
+                        print('Doing job')
+                        print('1.')
+                        print('2..')
+                        print('3...')
+                        time.sleep(20)
+                        result = 'passed'
+                    except:
+                        result = 'errored'
+                    finally:
+                        status = 'finished'
+                        update_task = {'task_id' : task_id, 'job_status' : status, 'job_result' : result}
+                        conn.request('PUT', 'update', body = json.dumps(update_task))
+                        rsp = conn.getresponse()
+                        print(rsp.status, rsp.reason)
+                        time.sleep(30)
 
                 time.sleep(30)
 
@@ -155,13 +157,15 @@ class TaskManager:
 
 
 if __name__ == "__main__":
-    args = args_parser()
-    print(args)
+    #args = args_parser()
+    #print(args)
     # logger.info('Make a request to server')
     # logger.debug(f"Make a request to server with data:{args}")
-    # task = TaskManager(args=args)
+    args = {}
+    task = TaskManager(args=args)
     # # if args.get('run') == 'start':
     # #     task.check_job()
     # # else:
     # #     task.send_task()
-    # task.check_job()
+    task.check_job()
+    #task.send_task()

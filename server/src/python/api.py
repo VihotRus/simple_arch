@@ -1,8 +1,6 @@
 #!/usr/bin/env python3.7
 
 import json
-import os
-import socketserver
 
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
@@ -32,17 +30,13 @@ class TaskHandle(BaseHTTPRequestHandler):
     #handle GET command
     def do_GET(self):
         try:
-            if self.path == 'check_job':
+            if self.path == 'get_job':
 
                 self.send_response(200)
 
-                #send header first
-                # self.send_header('Content-type','text-html')
-                # self.end_headers()
-
-                host = self.client_address[0]
-                job_list = self.mysql_client.job_list(host)
-                response = job_list
+                open_job = self.mysql_client.get_job()
+                print(open_job)
+                response = open_job
 
                 response = json.dumps(response).encode()
                 self.wfile.write(response)
@@ -50,7 +44,8 @@ class TaskHandle(BaseHTTPRequestHandler):
             else:
                 raise
 
-        except:
+        except Exception as e:
+            print(e)
             self.send_error(404, 'file not found')
 
 
@@ -62,15 +57,10 @@ class TaskHandle(BaseHTTPRequestHandler):
 
             content_len = int(self.headers.get('Content-Length'))
             post_body = self.rfile.read(content_len)
-            loaded_task = json.loads(post_body)
-
+            payload = json.loads(post_body)
             host = self.client_address[0]
-            task_type = loaded_task.get('task_type')
-            self.mysql_client.insert_task(task_type, host)
 
-            #send header first
-            # self.send_header('Content-type','text-html')
-            # self.end_headers()
+            self.mysql_client.insert_task(payload, host)
 
             #send file content to client
             self.wfile.write(post_body)
@@ -82,27 +72,16 @@ class TaskHandle(BaseHTTPRequestHandler):
 
             self.send_response(200, 'Update task')
 
-            #send header first
-            # self.send_header('Content-type','text-html')
-            # self.end_headers()
-
             content_len = int(self.headers.get('Content-Length'))
             post_body = self.rfile.read(content_len)
-            loaded_task = json.loads(post_body)
-            task_id = loaded_task.get('task_id')
-            status = loaded_task.get('status')
+            payload = json.loads(post_body)
 
-            result = self.mysql_client.update_task(task_id, status)
+            result = self.mysql_client.update_task(payload)
             if result:
                 self.send_response(200, 'Task updated')
-                #send header first
-                self.send_header('Content-type','text-html')
-                self.end_headers()
             else:
                 self.send_response(404, 'Error occured')
-                #send header first
-                self.send_header('Content-type','text-html')
-                self.end_headers()
+
 
 def run():
     with HTTPServer((HOST, PORT), TaskHandle) as httpd:

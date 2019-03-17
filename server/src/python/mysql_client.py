@@ -56,11 +56,12 @@ class MySqlClient:
         return wrapper
 
     @connection
-    def insert_task(self, cursor, task_type, host):
+    def insert_task(self, cursor, payload, host):
         result = False
-        status = 'open'
-        sql_query = (f"INSERT INTO job (task_name, client_host, status) " \
-                     f"VALUES('{task_type}', '{host}', '{status}')")
+        task_name = payload.get('task_name')
+        task_parameter = payload.get('task_parameter')
+        sql_query = (f"INSERT INTO task (client_host, task_name, task_parameter) "
+                     f"VALUES('{host}', '{task_name}', '{task_parameter}')")
         insert_result = cursor.execute(sql_query)
         if insert_result:
             result = True
@@ -68,31 +69,35 @@ class MySqlClient:
 
 
     @connection
-    def job_list(self, cursor, hostname):
-        """Get job list for client host"""
-        sql_query = (f"SELECT * FROM job WHERE client_host='{hostname}' "
-                     f"AND status != 'finished'")
-        logger.info(f'Selecting jobs for client {hostname}')
-        cursor.execute(sql_query)
-        result = cursor.fetchall()
-        job_list = []
-        for job in result:
-            task_id, name, host, status = job
-            job = {'task_id' : task_id,
-                   'name' : name,
-                   'host' : host,
-                   'status' : status}
-            job_list.append(job)
-        return job_list
-
-
-    @connection
-    def update_task(self, cursor, task_id, status):
+    def update_task(self, cursor, payload):
         """Update task status and result"""
         result = False
-        sql_query = (f"UPDATE job SET status = '{status}' WHERE job_id = {task_id}")
-        logger.info(f'Update task:{task_id} status to {status}')
+        task_id = payload.get('task_id')
+        job_status = payload.get('job_status')
+        job_result = payload.get('job_result')
+        sql_query = (f"UPDATE task SET job_status = '{job_status}', job_result = '{job_result}' "
+                     f"WHERE task_id = '{task_id}'")
+        logger.info(f'Update task:{task_id} status to {job_status}')
         update_result = cursor.execute(sql_query)
         if update_result:
             result = True
         return result
+
+    @connection
+    def get_job(self, cursor):
+        """Get new job to process it"""
+        status = 'new'
+        sql_query = (f"SELECT task_id, client_host, task_name, task_parameter, job_status "
+                     f"FROM task WHERE job_status = '{status}' LIMIT 1")
+        logger.info('Get new task')
+        cursor.execute(sql_query)
+        result = cursor.fetchall()[0]
+        new_task = {}
+        if result:
+            task_id, client_host, task_name, task_parameter, job_status = result
+            new_task = {'task_id' : task_id,
+                        'client_host' : client_host,
+                        'task_name' : task_name,
+                        'task_parameter' : task_parameter,
+                        'job_status' : job_status}
+        return new_task
