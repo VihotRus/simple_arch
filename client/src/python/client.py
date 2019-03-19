@@ -100,7 +100,7 @@ class TaskManager:
             logger.error(rsp.reason)
 
     def generate_random(self, task_amount):
-        print('Generate random task')
+        print('Generate random tasks')
         job_set = ('count', 'create', 'delete')
         randomizer = 'abc'
         for index in range(task_amount):

@@ -92,7 +92,7 @@ class MySqlClient:
                             'argument', 'status')
         select_expression = ','.join(required_columns)
         sql_query = (f"SELECT {select_expression} FROM task "
-                     f"WHERE job_status = '{status}' LIMIT 1")
+                     f"WHERE status = '{status}' LIMIT 1")
         logger.info('Get new task')
         cursor.execute(sql_query)
         result = cursor.fetchall()
