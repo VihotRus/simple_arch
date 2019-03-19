@@ -1,57 +1,56 @@
 #!/usr/bin/env python3.7
 
 import json
-import http.client
+import os
+import random
 import time
 
 from argparse import ArgumentParser, RawTextHelpFormatter
-from tools.config_init import logger, config
+from constants import *
+from datetime import datetime
+from executor import Executor, ExecutionError
+from http import client
+from tools.config_init import logger
 
-#get http server ip
-HOST = config.get('server', 'host')
-PORT = config.get('server', 'port')
-
-# def args_parser():
-#     # Parsing command line arguments to run API
-#     parser = ArgumentParser(description='client settings',
-#                             formatter_class=RawTextHelpFormatter)
-#     parser.add_argument('-t', '--task_type',
-#                         choices = ['count', 'create', 'delete', 'execute', 'random'],
-#                         metavar = 'task type',
-#                         default='random',
-#                         # required=True,
-#                         help='Determine task to do'
-#                              'by default random task')
-#     parser.add_argument('-a', '--argument',
-#                         metavar = 'argument',
-#                         default='nothing',
-#                         # required=True,
-#                         help='file_path / shell_command')
-#     parser.add_argument('-r', '--run',
-#                         choices = ['start', 'stop'],
-#                         metavar = 'run',
-#                         help = 'run/stop job checker')
-#     return parser.parse_args().__dict__
 
 def args_parser():
-    # Parsing command line arguments to run API
+    # Parsing command line arguments to run API.
     parser = ArgumentParser(description='client options',
                             formatter_class=RawTextHelpFormatter)
-    # parser.add_argument(dest='purpose',
-    #                     choices=['start', 'create_task'],
-    #                     metavar='start/create_task',
-    #                     action='store',
-    #                     help='client purpose')
     subparsers = parser.add_subparsers(help='Client has two purposes:')
-    start_parser = subparsers.add_parser('start', help='Start checking jobs')
-    start_parser.add_argument(dest='start',
+    start_parser = subparsers.add_parser('start', help='Start jobs execution')
+    start_parser.add_argument(dest='job_executor',
+                              choices=['job_executor'],
                               action='store',
-                              help='Use client.py start to begin checking jobs')
-    # start_parser.add_argument(dest='purpose', action='store_const', const='start', help='start checking jobs')
-    task_parser = subparsers.add_parser('create_task', help='Create a new task')
-
-
+                              help='Use `client.py job_executor` to start executing jobs')
+    create_task = subparsers.add_parser('create', help='Create new task')
+    subsubparsers = create_task.add_subparsers(help='Create random tasks or set type and task argument')
+    task = subsubparsers.add_parser('task', help='Create task')
+    task.add_argument('-j', '--job_type',
+                      choices=['count', 'create', 'delete', 'execute'],
+                      required=True,
+                      action='store',
+                      help="Job type. Select from "
+                           "('count', 'create', 'delete', 'execute')\n"
+                           "count - count unique words in file\n"
+                           "create - create file\n"
+                           "delete - delete file\n"
+                           "execute - execute shell command")
+    task.add_argument('-a', '--argument',
+                      required=True,
+                      metavar='task parameter',
+                      action='store',
+                      help='Task paramater:\n'
+                           'For (`count`, `create`, `delete`) '
+                           'task types - file path\n'
+                           'For `execute` task_type - command')
+    random_task = subsubparsers.add_parser('random', help='Create random tasks')
+    random_task.add_argument(dest='task_amount',
+                             type=int,
+                             action='store',
+                             help='Amount of random tasks that will be generated')
     return parser.parse_args().__dict__
+
 
 class Connection:
 
@@ -62,13 +61,14 @@ class Connection:
 
     def __enter__(self):
         """Open connection"""
-
-        self.conn = http.client.HTTPConnection(self.__tcp)
+        try:
+            self.conn = client.HTTPConnection(self.__tcp)
+        except Exception as error:
+            logger.error(f"Cannot connect to the server: {error}")
         return self.conn
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Close connection"""
-
         self.conn.close()
         if exc_val:
             raise
@@ -78,94 +78,102 @@ class TaskManager:
 
     def __init__(self, args):
         self.args = args
+        self._executor = Executor()
 
 
     def with_connection(func):
         """Connection decorator"""
 
-        def execute_func(self, *args):
+        def execute_func(self, *args, **kwargs):
             with Connection(HOST, PORT) as conn:
-                func(self, conn, *args)
+                func(self, conn, *args, **kwargs)
 
         return execute_func
 
+    @staticmethod
+    def validate_response(connection, expected_status=200):
+        rsp = connection.getresponse()
+        print(rsp.status, rsp.reason)
+        if rsp.status == expected_status:
+            logger.info(rsp.reason)
+        else:
+            logger.error(rsp.reason)
+
+    def generate_random(self, task_amount):
+        print('Generate random task')
+        job_set = ('count', 'create', 'delete')
+        randomizer = 'abc'
+        for index in range(task_amount):
+            job = random.choice(job_set)
+            file_name = ''.join(random.choice(randomizer.lower())
+                                for index in range(RAND_LEN))
+            file_path = os.path.join(DUMP_DIR, file_name)
+            self.send_task(job, file_path)
+        result = f'Created {task_amount} tasks'
+        return result
 
     @with_connection
-    def send_task(self, conn):
-        #create a connection
+    def send_task(self, conn, job_type, argument):
+        # Create a connection
         cmd = 'task'
-
-        data = json.dumps(self.args)
-        test_dataset = {'task_name' : 'create', 'task_parameter' : '/tmp'}
-        data = json.dumps(test_dataset)
-
-        #request command to server
+        data = {'job_type' : job_type, 'argument' : argument}
+        data = json.dumps(data)
+        # Request command to server
         conn.request('POST', cmd, body=data)
-
-        #get response from server
-        rsp = conn.getresponse()
-
-        #print server response and data
-        print(rsp.status, rsp.reason)
-        data_received = rsp.read()
-        print(data_received)
-
+        self.validate_response(conn)
 
     @with_connection
     def check_job(self, conn):
         """Check if there are any jobs for client"""
         try:
-            while(True):
-
+            while True:
                 conn.request('GET', 'get_job')
                 rsp = conn.getresponse()
-
                 print(rsp.status, rsp.reason)
                 data_received = rsp.read()
-
-                job = json.loads(data_received)
+                try:
+                    job = json.loads(data_received)
+                except Exception as error:
+                    logger.info(f'Error in job receiving: {error}')
+                    job = None
                 logger.info(f'Received job: {job}')
                 if job:
-                    task_id = job.get('task_id')
-                    status = 'in_progress'
-                    update_task = {'task_id' : task_id, 'job_status' : status}
-                    conn.request('PUT', 'update', body = json.dumps(update_task))
-                    rsp = conn.getresponse()
-                    assert rsp.status == 200, 'Error occured'
-                    print(rsp.status, rsp.reason)
+                    job['status'] = 'in_progress'
+                    conn.request('PUT', 'update', body=json.dumps(job))
+                    self.validate_response(conn)
                     try:
-                        print('Doing job')
-                        print('1.')
-                        print('2..')
-                        print('3...')
-                        time.sleep(20)
-                        result = 'passed'
-                    except:
-                        result = 'errored'
+                        job_type = job.get('job_type')
+                        argument = job.get('argument')
+                        print('Executing task')
+                        result = self._executor.execute(job_type, argument)
+                    except ExecutionError as error:
+                        logger.warning(f'Error in job execution: {error}')
+                        result = 'Errored'
                     finally:
-                        status = 'finished'
-                        update_task = {'task_id' : task_id, 'job_status' : status, 'job_result' : result}
-                        conn.request('PUT', 'update', body = json.dumps(update_task))
-                        rsp = conn.getresponse()
-                        print(rsp.status, rsp.reason)
-                        time.sleep(30)
+                        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        job['finished'] = now
+                        job['status'] = 'finished'
+                        job['result'] = result
+                        conn.request('PUT', 'update', body=json.dumps(job))
+                        self.validate_response(conn)
 
-                time.sleep(30)
+                time.sleep(TIMEOUT)
 
         except KeyboardInterrupt:
             print('\nStop checking jobs')
 
 
 if __name__ == "__main__":
-    #args = args_parser()
-    #print(args)
-    # logger.info('Make a request to server')
-    # logger.debug(f"Make a request to server with data:{args}")
-    args = {}
-    task = TaskManager(args=args)
-    # # if args.get('run') == 'start':
-    # #     task.check_job()
-    # # else:
-    # #     task.send_task()
-    task.check_job()
-    #task.send_task()
+    args = args_parser()
+    task_manager = TaskManager(args)
+    if args.get('job_executor'):
+        logger.info('Starting checking jobs for execution')
+        task_manager.check_job()
+    elif args.get('task_amount'):
+        logger.info('Start generate random tasks')
+        task_manager.generate_random(args.get('task_amount'))
+    else:
+        logger.info('Creating new task')
+        job_type = args.get('job_type')
+        argument = args.get('argument')
+        task_manager.send_task(job_type, argument)
