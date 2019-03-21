@@ -4,7 +4,6 @@ import os
 import subprocess
 
 from constants import DUMP_DIR
-from tools.config_init import logger
 
 
 class ExecutionError(Exception):
@@ -14,9 +13,11 @@ class ExecutionError(Exception):
 class Executor:
     """Task executor"""
 
-    @staticmethod
-    def unique_words(file_path):
-        logger.info(f'Count unique words in file {file_path}')
+    def __init__(self, logger):
+        self.logger = logger
+
+    def __unique_words(self, file_path):
+        self.logger.info(f'Count unique words in file {file_path}')
         unique_words = set()
         try:
             with open(file_path, 'r') as f:
@@ -25,66 +26,56 @@ class Executor:
                     unique_words.update(line_words)
         except Exception as error:
             raise ExecutionError(error)
-        result = f'Unique words: {uniq_words}'
+        result = f'Unique words: {len(unique_words)}'
         return result
 
-    @staticmethod
-    def create_file(file_path):
-        logger.info(f'Creating file {file_path}')
-        if os.path.exists(file_path):
-            logger.warning(f'File {file_path} already exists')
-            raise ExecutionError(f'File {file_path} already exists')
-        else:
-            try:
-                os.open(file_path, os.O_WRONLY)
-            except Exception as error:
-                logger.warning(f'Error {error} when creating file {file_path}')
-                raise ExecutionError(error)
-            logger.info(f'Created file {file_path}')
+    def __create_file(self, file_path):
+        self.logger.info(f'Creating file {file_path}')
+        try:
+            os.open(file_path, os.O_CREAT|os.O_EXCL)
             result = 'File created'
+        except FileExistsError as error:
+            self.logger.warning(f'File {file_path} already exists')
+            result = f'File {file_path} already exists'
+        except Exception as error:
+            self.logger.warning(f'Error {error} when creating file {file_path}')
+            self.logger.warning(error)
+            self.logger.warning(Exception)
+            raise ExecutionError(error)
+        self.logger.info(f'Created file {file_path}')
         return result
 
-    @staticmethod
-    def delete_file(file_path):
+    def __delete_file(self, file_path):
         try:
             os.remove(file_path)
         except Exception as error:
-            logger.warning(f"Error {error} when deleting file: {file_path}")
+            self.logger.warning(f"Error {error} when deleting file: {file_path}")
             raise ExecutionError(error)
-        logger.info(f'File {file_path} deleted')
+        self.logger.info(f'File {file_path} deleted')
         result = 'File deleted'
         return result
 
-    @staticmethod
-    def execute_command(cmd):
+    def __execute_command(self, cmd):
         try:
             cmd_result = subprocess.run(cmd.split(), encoding='utf-8',
                                         stdout=subprocess.PIPE)
-            dump_file = os.path.join(DUMP_DIR, 'command_result')
             assert cmd_result.returncode == 0, \
                 f'{cmd_result.stderr}'
+            dump_file = os.path.join(DUMP_DIR, 'command_result')
             with open(dump_file, 'w') as f:
                 output = '\n'.join((cmd, str(cmd_result.stdout)))
                 f.write(output)
         except Exception as error:
-            logger.warning(f'Error <{error}> when executing command: {cmd}')
+            self.logger.warning(f'Error <{error}> when executing command: {cmd}')
             raise ExecutionError(error)
-        logger.info(f'{cmd} result saved to {dump_file}')
+        self.logger.info(f'{cmd} result saved to {dump_file}')
         result = f'Cmd result saved to {dump_file}'
         return result
 
-    def execute(self, task_type, *args, **kwargs):
-        execution = {'count': self.unique_words,
-                     'create': self.create_file,
-                     'delete': self.delete_file,
-                     'execute': self.execute_command}
-        try:
-            result = execution.get(task_type)(*args, **kwargs)
-        except TypeError as error:
-            logger.error(f'Incorect task type: {task_type}i\n'
-                         f'must be in {execution.keys()}')
-            raise
-        except Exception as error:
-            logger.warning(f'Error {error} in job execution: ({task_type}, {args})')
-            raise ExecutionError(error)
-        return result
+    def execute(self, job_type, *args, **kwargs):
+        """Executor interface"""
+        jobs  = {'count': self.__unique_words,
+                 'create': self.__create_file,
+                 'delete': self.__delete_file,
+                 'execute': self.__execute_command}
+        return jobs[job_type](*args, **kwargs)

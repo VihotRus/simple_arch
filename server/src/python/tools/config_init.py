@@ -10,8 +10,8 @@ ENV_DIR = '/home/ruslan/git/task_manager/server'
 CONF_ROOT = f'{ENV_DIR}/etc'
 
 #Logging initialization
-logger_file = os.path.join(CONF_ROOT, "logger.conf")
-logging.config.fileConfig(logger_file)
+logger_conf = os.path.join(CONF_ROOT, "logger.conf")
+logging.config.fileConfig(logger_conf)
 logger = logging.getLogger('task_manager')
 
 #Config initialization

@@ -2094,3 +2094,21 @@ must be in dict_keys(['count', 'create', 'delete', 'execute'])
 2018-11-26 05:07:17,976 - [task_manager:executor] - WARNING: Error [Errno 2] No such file or directory: 'la': 'la' in job execution: (execute, ('la /home/ruslan/git/task_manager/server',))
 2018-11-26 05:07:17,976 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'la': 'la'
 2018-11-26 05:07:17,984 - [task_manager:client] - ERROR: Failed to update task
+2019-03-21 09:45:39,048 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-21 09:45:39,060 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:45:44,078 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:46:00,952 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-21 09:46:00,961 - [task_manager:client] - WARNING: Error in job receiving: Expecting value: line 1 column 1 (char 0)
+2019-03-21 09:46:00,961 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:46:05,987 - [task_manager:client] - WARNING: Error in job receiving: Expecting value: line 1 column 1 (char 0)
+2019-03-21 09:46:05,987 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:46:11,013 - [task_manager:client] - WARNING: Error in job receiving: Expecting value: line 1 column 1 (char 0)
+2019-03-21 09:46:11,013 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:46:33,808 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-21 09:46:33,817 - [task_manager:client] - WARNING: Error in job receiving: Expecting value: line 1 column 1 (char 0)
+2019-03-21 09:46:33,817 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:46:38,840 - [task_manager:client] - WARNING: Error in job receiving: Expecting value: line 1 column 1 (char 0)
+2019-03-21 09:46:38,841 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:48:27,414 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-21 09:48:27,423 - [task_manager:client] - INFO: Received job: None
+2019-03-21 09:48:32,441 - [task_manager:client] - INFO: Received job: None

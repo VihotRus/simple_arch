@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.7
+# -*- coding: utf-8 -*-
 
 import json
 import os
@@ -9,7 +10,7 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from constants import *
 from executor import Executor, ExecutionError
 from http import client
-from tools.config_init import logger
+from tools.config_init import logger, config
 
 
 def args_parser():
@@ -35,7 +36,7 @@ def args_parser():
                            "create - create file\n"
                            "delete - delete file\n"
                            "execute - execute shell command")
-    task.add_argument('-a', '--argument',
+    task.add_argument('-a', '--job_arg',
                       required=True,
                       metavar='task parameter',
                       action='store',
@@ -78,7 +79,7 @@ class TaskManager:
 
     def __init__(self, args):
         self.args = args
-        self._executor = Executor()
+        self._executor = Executor(logger)
 
 
     def with_connection(func):
@@ -113,56 +114,58 @@ class TaskManager:
         return result
 
     @with_connection
-    def send_task(self, conn, job_type, argument):
+    def send_task(self, conn, job_type, job_arg):
         # Create a connection
         cmd = 'task'
-        data = {'job_type' : job_type, 'argument' : argument}
+        data = {'job_type' : job_type, 'job_arg' : job_arg}
         data = json.dumps(data)
         # Request command to server
         conn.request('POST', cmd, body=data)
         logger.debug(f'POST: {data}')
         self.validate_response(conn, 201)
 
+    def get_job(self, conn):
+        conn.request('GET', 'get_job')
+        rsp = conn.getresponse()
+        print(rsp.status, rsp.reason)
+        data_received = rsp.read()
+        try:
+            job_info = json.loads(data_received)
+        except json.decoder.JSONDecodeError:
+            logger.warning('cant get job')
+            job_info = None
+        return job_info
+
     @with_connection
     def check_job(self, conn):
         """Check if there are any jobs for client"""
         try:
             while True:
-                conn.request('GET', 'get_job')
-                rsp = conn.getresponse()
-                print(rsp.status, rsp.reason)
-                data_received = rsp.read()
-                try:
-                    job = json.loads(data_received)
-                except Exception as error:
-                    logger.warning(f'Error in job receiving: {error}')
-                    job = None
-                logger.info(f'Received job: {job}')
-                if job:
-                    self.execute_job(conn, job)
-
-                time.sleep(FREQUENCY)
+                job_info = self.get_job(conn)
+                if not job_info:
+                    logger.info('No avalaible job')
+                    time.sleep(TIMEOUT)
+                    continue
+                logger.info(f'Received job: {job_info}')
+                result = self.execute_job(conn, job_info)
+                job_info['result'] = result
+                conn.request('PUT', 'job_result', body=json.dumps(job_info))
+                self.validate_response(conn)
 
         except KeyboardInterrupt:
             print('\nStop checking jobs')
 
     def execute_job(self, conn, job_info):
         job_type = job_info.get('job_type')
-        argument = job_info.get('argument')
-        logger.info(f'Executing task: {job_type} {argument}')
+        job_arg = job_info.get('job_arg')
+        logger.info(f'Executing task: {job_type} {job_arg}')
         try:
-            result = self._executor.execute(job_type, argument)
-            status = 'finished'
+            result = self._executor.execute(job_type, job_arg)
         except ExecutionError as error:
             logger.warning(f'Error in job execution: {error}')
-            status = 'errored'
             result = str(error)
-        finally:
-            job_info['finished'] = int(time.time())
-            job_info['status'] = 'finished'
-            job_info['result'] = result
-            conn.request('PUT', 'update', body=json.dumps(job_info))
-            self.validate_response(conn)
+        return result
+
 
 if __name__ == "__main__":
     args = args_parser()
@@ -176,5 +179,5 @@ if __name__ == "__main__":
     else:
         logger.info('Creating new task')
         job_type = args.get('job_type')
-        argument = args.get('argument')
-        task_manager.send_task(job_type, argument)
+        job_arg = args.get('job_arg')
+        task_manager.send_task(job_type, job_arg)
