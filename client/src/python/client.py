@@ -92,8 +92,8 @@ class TaskManager:
         return execute_func
 
     @staticmethod
-    def validate_response(connection, expected_status=200):
-        rsp = connection.getresponse()
+    def get_response(conn, expected_status=200):
+        rsp = conn.getresponse()
         print(rsp.status, rsp.reason)
         if rsp.status == expected_status:
             logger.info(rsp.reason)
@@ -101,17 +101,23 @@ class TaskManager:
             logger.error(rsp.reason)
 
     def generate_random(self, task_amount):
-        print('Generate random tasks')
-        job_set = ('count', 'create', 'delete')
-        randomizer = 'abc'
-        for index in range(task_amount):
+        job_set = ('count', 'create', 'delete', 'execute')
+        execute_args = ('ps -aux',
+                        'ls -la /home/ruslan',
+                        'df -ah',
+                        'sudo -l')
+        name_letters = 'abc'
+        for _ in range(task_amount):
             job = random.choice(job_set)
-            file_name = ''.join(random.choice(randomizer.lower())
-                                for index in range(RAND_LEN))
-            file_path = os.path.join(DUMP_DIR, file_name)
-            self.send_task(job, file_path)
-        result = f'Created {task_amount} tasks'
-        return result
+            if job == 'execute':
+                exec_arg = random.choice(execute_args)
+                self.send_task(job, exec_arg)
+            else:
+                file_name = ''.join(random.choice(name_letters)
+                                    for _ in range(RAND_LEN))
+                file_path = os.path.join(DUMP_DIR, file_name)
+                self.send_task(job, file_path)
+        logger.info(f'Created {task_amount} tasks')
 
     @with_connection
     def send_task(self, conn, job_type, job_arg):
@@ -122,7 +128,7 @@ class TaskManager:
         # Request command to server
         conn.request('POST', cmd, body=data)
         logger.debug(f'POST: {data}')
-        self.validate_response(conn, 201)
+        self.get_response(conn, 201)
 
     def get_job(self, conn):
         conn.request('GET', 'get_job')
@@ -132,9 +138,14 @@ class TaskManager:
         try:
             job_info = json.loads(data_received)
         except json.decoder.JSONDecodeError:
-            logger.warning('cant get job')
+            logger.error("Error: Can't receive a job")
             job_info = None
         return job_info
+
+    def update_job(self, conn, job_info, result):
+        job_info['result'] = result
+        conn.request('PUT', 'job_result', body=json.dumps(job_info))
+        self.get_response(conn)
 
     @with_connection
     def check_job(self, conn):
@@ -148,9 +159,7 @@ class TaskManager:
                     continue
                 logger.info(f'Received job: {job_info}')
                 result = self.execute_job(conn, job_info)
-                job_info['result'] = result
-                conn.request('PUT', 'job_result', body=json.dumps(job_info))
-                self.validate_response(conn)
+                self.update_job(conn, job_info, result)
 
         except KeyboardInterrupt:
             print('\nStop checking jobs')

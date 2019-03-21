@@ -36,7 +36,8 @@ class TaskHandler(BaseHTTPRequestHandler):
                 self.wfile.write(json.dumps(new_job).encode())
             except MySqlException as error:
                 logger.error(f'MySqlError: {error}')
-                self.send_error(404, 'Cannot get job')
+                self.send_error(404, "MySqlError: can't get job")
+                self.wfile.write(json.dumps({}).encode())
         else:
             self.send_error(404, 'Not found')
 
