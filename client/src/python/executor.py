@@ -3,20 +3,37 @@
 import os
 import subprocess
 
-from constants import DUMP_DIR
-from tools.config_init import logger
-
 
 class ExecutionError(Exception):
+    """Base Executor Exception Error class."""
     pass
 
 
 class Executor:
-    """Task executor"""
 
-    @staticmethod
-    def unique_words(file_path):
-        logger.info(f'Count unique words in file {file_path}')
+    """Jobs execution class."""
+
+    def __init__(self, logger):
+        """Initialize logger.
+
+        :Parameters:
+            - `logger`: logging.logger instance.
+        """
+        self.logger = logger
+
+    def __unique_words(self, file_path):
+        """Count unique words in file.
+
+        :Parameters:
+            - `file_path`: a string with path to file.
+
+        :Exceptions:
+            - `ExecutionError`: is raised if error occurred.
+
+        :Return:
+            Int amount of unique words in file.
+        """
+        self.logger.info(f'Count unique words in file {file_path}')
         unique_words = set()
         try:
             with open(file_path, 'r') as f:
@@ -24,60 +41,143 @@ class Executor:
                     line_words = set(line.split())
                     unique_words.update(line_words)
         except Exception as error:
+            self.logger.warning(f'Error occurred {error} when '
+                                f'counting unique words in {file_path}')
             raise ExecutionError(error)
-        result = f'Unique words: {uniq_words}'
+        result = f'Unique words: {len(unique_words)}'
+        self.logger.info(result)
         return result
 
-    @staticmethod
-    def create_file(file_path):
-        logger.info(f'Creating file {file_path}')
-        # if os.path.exists(file_path):
-        #     logger.info('File already exists')
-        #     result = 'File already exists'
-        # else:
+    def __create_file(self, file_path):
+        """Create file if it not exist.
+
+        :Parameters:
+            - `file_path`: a string with path to file.
+
+        :Exceptions:
+            - `ExecutionError`: is raised if error occurred.
+
+        :Returns:
+            1) a string f'File {file_path} created' if no errors occurred.
+            2) a string with error.
+        """
+        self.logger.info(f'Creating file {file_path}')
         try:
-            result = os.open(file_path, os.O_CREAT)
-            print(result)
-            print(type(result))
+            fd = os.open(file_path, os.O_CREAT|os.O_EXCL)
+            os.close(fd)
+        except FileExistsError:
+            self.logger.warning(f'File {file_path} already exists')
+            raise ExecutionError(f'File {file_path} already exists')
         except Exception as error:
-            logger.warning(f'Error when creating file {file_path}')
+            self.logger.warning(f'Error {error} when creating file {file_path}')
             raise ExecutionError(error)
-        logger.info(f'Created file {file_path}')
-        result = 'File created'
+        result = f'File {file_path} created'
+        self.logger.info(result)
         return result
 
-    @staticmethod
-    def delete_file(file_path):
+    def __create_dir(self, dir_path):
+        """Create directory if it not exist.
+
+        :Parameters:
+            - `dir_path`: a string with path to directory.
+
+        :Exceptions:
+            - `ExecutionError`: is raised if error occurred.
+
+        :Returns:
+            1) a string f'Directory {dir_path} created' if no errors occurred.
+            2) a string with error.
+        """
+        self.logger.info(f'Creating dir {dir_path}')
+        try:
+            os.mkdir(dir_path)
+        except Exception as error:
+            self.logger.warning(f'Error {error} when creating file {dir_path}')
+            raise ExecutionError(error)
+        result = f'File {dir_path} created'
+        self.logger.info(result)
+        return result
+
+    def __delete_file(self, file_path):
+        """Delete file.
+
+        :Parameters:
+            - `file_path`: a string with path to file.
+
+        :Exceptions:
+            - `ExecutionError`: is raised if error occurred.
+
+        :Returns:
+            1) a string f'File {file_path} deleted' if no errors occurred.
+            2) a string with error.
+        """
         try:
             os.remove(file_path)
         except Exception as error:
-            logger.warning(f"Error when deleting file: {file_path}")
+            self.logger.warning(f"Error {error} when deleting file: {file_path}")
             raise ExecutionError(error)
-        logger.info(f'File {file_path} deleted')
-        result = 'File deleted'
+        result = f'File {file_path} deleted'
+        self.logger.info(result)
         return result
 
-    @staticmethod
-    def execute_command(cmd):
+    def __delete_dir(self, dir_path):
+        """Delete directory.
+
+        :Parameters:
+            - `dir_path`: a string with path to directory.
+
+        :Exceptions:
+            - `ExecutionError`: is raised if error occurred.
+
+        :Returns:
+            1) a string f'Directory {file_path} deleted' if no errors occurred.
+            2) a string with error.
+        """
+        try:
+            os.rmdir(dir_path)
+        except Exception as error:
+            self.logger.warning(f"Error {error} when deleting dir: {dir_path}")
+            raise ExecutionError(error)
+        result = f'Directory {dir_path} deleted'
+        self.logger.info(result)
+        return result
+
+    def __execute_command(self, cmd, dump_dir, job_id):
+        """Execute shell command.
+
+        :Parameters:
+            - `cmd`: a string with command.
+            - `dump_dir`: a string with dump directory path.
+            - `job_id`: id of current job.
+
+        :Exceptions:
+            - `ExecutionError`: is raised if error occurred.
+
+        :Returns:
+            1) a string f'Cmd result saved to {dump_file}' if no errors occurred.
+            2) a string with error.
+        """
         try:
             cmd_result = subprocess.run(cmd.split(), encoding='utf-8',
                                         stdout=subprocess.PIPE)
-            dump_file = os.path.join(DUMP_DIR, 'command_result')
-            assert cmd_result.returncode == 0, \
-                f'{cmd_result.stderr}'
+            assert cmd_result.returncode == 0, f'{cmd_result.stderr}'
+            dump_file = os.path.join(dump_dir, 'command_result_', job_id)
             with open(dump_file, 'w') as f:
                 output = '\n'.join((cmd, str(cmd_result.stdout)))
                 f.write(output)
         except Exception as error:
-            logger.warning(f'Error <{error}> when executing command: {cmd}')
+            self.logger.warning(f'Error <{error}> when executing command: {cmd}')
             raise ExecutionError(error)
-        logger.info(f'{cmd} result saved to {dump_file}')
+        self.logger.info(f'{cmd} result saved to {dump_file}')
         result = f'Cmd result saved to {dump_file}'
         return result
 
-    def execute(self, task_type, *args, **kwargs):
-        execution = {'count': self.unique_words,
-                     'create': self.create_file,
-                     'delete': self.delete_file,
-                     'execute': self.execute_command}
-        return execution.get(task_type)(*args, **kwargs)
+    def execute(self, job_type, *args, **kwargs):
+        """Executor interface"""
+        jobs = {'count': self.__unique_words,
+                'create_f': self.__create_file,
+                'create_d': self.__create_dir,
+                'delete_f': self.__delete_file,
+                'delete_d': self.__delete_dir,
+                'execute': self.__execute_command}
+        return jobs[job_type](*args, **kwargs)
