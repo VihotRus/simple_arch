@@ -7,7 +7,6 @@ import configparser
 import json
 import logging.config
 import os
-import random
 import time
 
 from argparse import ArgumentParser, RawTextHelpFormatter
@@ -34,7 +33,7 @@ def args_parser():
     task = subsubparsers.add_parser('task', help='Create task')
     task.add_argument('-j', '--job_type',
                       choices=['count', 'create_f', 'create_d',
-                               'delete_f', 'delete_d', 'execute'],
+                               'delete_f', 'delete_d', 'execute', 'random'],
                       required=True,
                       action='store',
                       help="Job type.\nSelect from "
@@ -44,7 +43,8 @@ def args_parser():
                            "create_d - create directory;\n"
                            "delete_f - delete file;\n"
                            "delete_d - delete directory;\n"
-                           "execute - execute shell command.")
+                           "execute - execute shell command;\n"
+                           "random - generate random jobs.")
     task.add_argument('-a', '--job_arg',
                       required=True,
                       metavar='task parameter',
@@ -53,11 +53,11 @@ def args_parser():
                            'For (`count`, `create`, `delete`) '
                            'task types - file path\n'
                            'For `execute` task_type - command')
-    random_task = subsubparsers.add_parser('random', help='Create random tasks')
-    random_task.add_argument(dest='task_amount',
-                             type=int,
-                             action='store',
-                             help='Amount of random tasks that will be generated')
+    # random_task = subsubparsers.add_parser('random', help='Create random tasks')
+    # random_task.add_argument(dest='task_amount',
+    #                          type=int,
+    #                          action='store',
+    #                          help='Amount of random tasks that will be generated')
     return parser.parse_args().__dict__
 
 
@@ -111,12 +111,12 @@ class TaskManager:
         self._executor = Executor(self.logger)
         self.__host = self.config.get('server', 'host')
         self.__port = self.config.get('server', 'port')
-        # Directory to save shell commands output.
-        self.dump_dir = self.config.get('shared_dir', 'dump_dir')
-        # Length of generated random file names.
-        self.rand_len = eval(self.config.get('shared_dir', 'random_file_length'))
         # Wait time for checking jobs
         self.timeout = eval(self.config.get('job_executor', 'timeout'))
+        # Length of generated random file names.
+        self.rand_len = eval(self.config.get('shared_dir', 'random_file_length'))
+        # Directory to save shell commands output.
+        self.dump_dir = self.config.get('shared_dir', 'dump_dir')
 
     def with_connection(func):
         """Connection decorator."""
@@ -124,30 +124,6 @@ class TaskManager:
             with Connection(self.__host, self.__port) as conn:
                 func(self, conn, *args, **kwargs)
         return execute_func
-
-    def generate_random(self, task_amount):
-        """Generate random jobs.
-
-        :Parameters:
-            - `task_amount`: and int with amount of jobs to generate.
-        """
-        job_set = ('count', 'create_f', 'delete_f', 'execute')
-        execute_args = ('ps -aux',
-                        'ls -la /home/ruslan',
-                        'df -ah',
-                        'sudo -l')
-        name_letters = 'abc'
-        for _ in range(task_amount):
-            job = random.choice(job_set)
-            if job == 'execute':
-                exec_arg = random.choice(execute_args)
-                self.send_task(job, exec_arg)
-            else:
-                file_name = ''.join(random.choice(name_letters)
-                                    for _ in range(self.rand_len))
-                file_path = os.path.join(self.dump_dir, file_name)
-                self.send_task(job, file_path)
-        self.logger.info(f'Created {task_amount} tasks')
 
     def get_response(self, conn, expected_status=200):
         """Get response.
@@ -269,6 +245,12 @@ class TaskManager:
                                                      job_arg,
                                                      self.dump_dir,
                                                      job_info['id'])
+            elif job_type == 'random':
+                jobs = self._executor.execute(job_type, job_arg,
+                                              self.rand_len, self.dump_dir)
+                for j_type, j_arg in jobs:
+                    self.send_task(j_type, j_arg)
+                result_info = f'Generated {job_arg} jobs.'
             else:
                 result_info = self._executor.execute(job_type, job_arg)
             result = 'PASS'
@@ -284,9 +266,9 @@ if __name__ == "__main__":
     if args.get('job_executor'):
         task_manager.logger.info('Starting checking jobs for execution')
         task_manager.check_job()
-    elif args.get('task_amount'):
-        task_manager.logger.info('Start generate random tasks')
-        task_manager.generate_random(args.get('task_amount'))
+    # elif args.get('task_amount'):
+    #     task_manager.logger.info('Start generate random tasks')
+    #     task_manager.generate_random(args.get('task_amount'))
     else:
         task_manager.logger.info('Creating new task')
         job_type = args.get('job_type')

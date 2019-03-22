@@ -5,6 +5,8 @@
 import pymysql
 import time
 
+from constants import RETRY, DELAY
+
 
 class MySqlException(Exception):
     """Base MySqlClient Exception Error class."""
@@ -29,9 +31,9 @@ class MySqlClient:
         self.__user = self.config.get('db', 'user')
         self.__passwd = self.config.get('db', 'passwd')
         # Retries connect to db.
-        self.__retries = 5
-        # Delay connect after retry
-        self.__delay = 3
+        self.__retries = RETRY
+        # Delay connect after retry.
+        self.__delay = DELAY
 
     def with_connection(func):
         """Database connection decorator."""
@@ -39,7 +41,7 @@ class MySqlClient:
             self.logger.info('Connecting to database')
             retries = self.__retries
             result = 'no connection to db'
-            while retries >1:
+            while retries >=1:
                 try:
                     cnx = pymysql.connect(host=self.__host,
                                         db=self.__name,
@@ -126,7 +128,8 @@ class MySqlClient:
         data_set = [f'{column} = "{value}"' for column, value in job_info.items()
                     if column not in not_update]
         set_expression = ','.join(data_set)
-        sql_query = (f"UPDATE job_queue SET {set_expression} WHERE id = '{job_id}'")
+        sql_query = (f"UPDATE job_queue SET {set_expression} "
+                     f"WHERE id = '{job_id}'")
         self.logger.info(f'Update job with id {job_id} status to {job_info}')
         cursor.execute(sql_query)
         if result_info:
