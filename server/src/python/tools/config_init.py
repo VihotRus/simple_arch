@@ -6,8 +6,8 @@ import logging.config
 import os
 
 # Variables from enviroment.
-ENV_DIR = 'C:\\Users\\Ruslan\\PycharmProjects\\task_manager\\server'
-CONF_ROOT = f'{ENV_DIR}\\etc'
+ENV_DIR = '/home/ruslan/git/task_manager/server'
+CONF_ROOT = f'{ENV_DIR}/etc'
 
 # Logging initialization.
 logger_conf = os.path.join(CONF_ROOT, "logger.conf")

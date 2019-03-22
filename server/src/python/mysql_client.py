@@ -28,39 +28,50 @@ class MySqlClient:
         self.__name = self.config.get('db', 'name')
         self.__user = self.config.get('db', 'user')
         self.__passwd = self.config.get('db', 'passwd')
-
-    @staticmethod
-    def retry():
-        pass
+        # Retries connect to db.
+        self.__retries = 5
+        # Delay connect after retry
+        self.__delay = 3
 
     def with_connection(func):
         """Database connection decorator."""
         def wrapper(self, *args, **kwargs):
             self.logger.info('Connecting to database')
-            try:
-                cnx = pymysql.connect(host=self.__host,
-                                      db=self.__name,
-                                      user=self.__user,
-                                      passwd=self.__passwd)
-                self.logger.info('Connected')
-                self.logger.debug("Calling func %s " % (func.__name__, ))
+            retries = self.__retries
+            result = 'no connection to db'
+            while retries >1:
                 try:
-                    cursor = cnx.cursor()
-                    result = func(self, cursor, *args, **kwargs)
-                    self.logger.info("Commiting changes")
-                    cnx.commit()
-                except Exception as error:
-                    self.logger.error(error)
-                    self.logger.info("Rollbacking changes")
-                    cnx.rollback()
-                    raise MySqlException(error)
-                finally:
-                    self.logger.debug("Closing connection %s" % (cnx, ))
-                    cnx.close()
+                    cnx = pymysql.connect(host=self.__host,
+                                        db=self.__name,
+                                        user=self.__user,
+                                        passwd=self.__passwd)
+                    self.logger.info('Connected')
+                    self.logger.debug("Calling func %s " % (func.__name__, ))
+                    try:
+                        cursor = cnx.cursor()
+                        result = func(self, cursor, *args, **kwargs)
+                        self.logger.info("Commiting changes")
+                        cnx.commit()
+                    except Exception as error:
+                        self.logger.error(error)
+                        self.logger.info("Rollbacking changes")
+                        cnx.rollback()
+                        raise MySqlException(error)
+                    finally:
+                        self.logger.debug("Closing connection %s" % (cnx, ))
+                        cnx.close()
+                        break
 
-            except Exception as error:
-                self.logger.error(f'Error occured when connecting to database:{error}')
-                raise MySqlException(error)
+                except Exception as error:
+                    self.logger.error(f'Error occured when connecting '
+                                      f'to database:{error}')
+                    time.sleep(self.__delay)
+                    retries -= 1
+            if result == 'no connection to db':
+                msg = f'Connection to database failed after ' \
+                      f'{self.__retries} retries'
+                self.logger.error(msg)
+                raise MySqlException(msg)
             return result
         return wrapper
 

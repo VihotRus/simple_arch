@@ -161,7 +161,8 @@ class Executor:
             cmd_result = subprocess.run(cmd.split(), encoding='utf-8',
                                         stdout=subprocess.PIPE)
             assert cmd_result.returncode == 0, f'{cmd_result.stderr}'
-            dump_file = os.path.join(dump_dir, 'command_result_', job_id)
+            file_name = 'command_result_' + str(job_id)
+            dump_file = os.path.join(dump_dir, file_name)
             with open(dump_file, 'w') as f:
                 output = '\n'.join((cmd, str(cmd_result.stdout)))
                 f.write(output)

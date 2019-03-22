@@ -14,8 +14,8 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from executor import Executor, ExecutionError
 from http import client
 
-ENV_DIR = 'C:\\Users\\Ruslan\\PycharmProjects\\task_manager\\client'
-CONF_ROOT = f'{ENV_DIR}\\etc'
+ENV_DIR = '/home/ruslan/git/task_manager/client'
+CONF_ROOT = f'{ENV_DIR}/etc'
 
 def args_parser():
     # Parsing command line arguments to run API.
@@ -26,23 +26,25 @@ def args_parser():
     start_parser.add_argument(dest='job_executor',
                               choices=['job_executor'],
                               action='store',
-                              help='Use `client.py job_executor` to start executing jobs')
+                              help='Use `client.py job_executor` to '
+                                   'start executing jobs')
     create_task = subparsers.add_parser('create', help='Create new task')
-    subsubparsers = create_task.add_subparsers(help='Create random tasks or set type and task argument')
+    subsubparsers = create_task.add_subparsers(help='Create random tasks or set'
+                                                    ' type and task argument')
     task = subsubparsers.add_parser('task', help='Create task')
     task.add_argument('-j', '--job_type',
                       choices=['count', 'create_f', 'create_d',
                                'delete_f', 'delete_d', 'execute'],
                       required=True,
                       action='store',
-                      help="Job type. Select from "
+                      help="Job type.\nSelect from "
                            "('count', 'create', 'delete', 'execute')\n"
-                           "count - count unique words in file\n"
-                           "create_f - create file\n"
-                           "create_d - create directory\n"
-                           "delete_f - delete file\n"
-                           "delete_d - delete directory\n"
-                           "execute - execute shell command")
+                           "count - count unique words in file;\n"
+                           "create_f - create file;\n"
+                           "create_d - create directory;\n"
+                           "delete_f - delete file;\n"
+                           "delete_d - delete directory;\n"
+                           "execute - execute shell command.")
     task.add_argument('-a', '--job_arg',
                       required=True,
                       metavar='task parameter',
@@ -263,8 +265,10 @@ class TaskManager:
         self.logger.info(f'Executing task: {job_type} {job_arg}')
         try:
             if job_type == 'execute':
-                result_info = self._executor(job_type, job_arg,
-                                             self.dump_dirm, job_info['id'])
+                result_info = self._executor.execute(job_type,
+                                                     job_arg,
+                                                     self.dump_dir,
+                                                     job_info['id'])
             else:
                 result_info = self._executor.execute(job_type, job_arg)
             result = 'PASS'
