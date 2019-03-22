@@ -2112,3 +2112,403 @@ must be in dict_keys(['count', 'create', 'delete', 'execute'])
 2019-03-21 09:48:27,414 - [task_manager:client] - INFO: Starting checking jobs for execution
 2019-03-21 09:48:27,423 - [task_manager:client] - INFO: Received job: None
 2019-03-21 09:48:32,441 - [task_manager:client] - INFO: Received job: None
+2019-03-22 03:25:15,929 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:25:16,962 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:25:17,062 - [task_manager:client] - INFO: POST task
+2019-03-22 03:27:51,164 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 03:27:52,290 - [task_manager:client] - INFO: Received job: {'id': 1, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218072, 'mtime': 1553218072}
+2019-03-22 03:27:52,290 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:27:52,355 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:28:39,290 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 03:28:40,323 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 03:29:50,110 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:29:51,123 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:29:51,183 - [task_manager:client] - INFO: POST task
+2019-03-22 03:29:52,299 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:29:53,313 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:29:53,376 - [task_manager:client] - INFO: POST task
+2019-03-22 03:29:54,314 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:29:55,328 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:29:55,417 - [task_manager:client] - INFO: POST task
+2019-03-22 03:29:56,278 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:29:57,293 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:29:57,359 - [task_manager:client] - INFO: POST task
+2019-03-22 03:30:14,925 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 03:30:16,018 - [task_manager:client] - INFO: Received job: {'id': 2, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218215, 'mtime': 1553218215}
+2019-03-22 03:30:16,018 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:30:16,078 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:31:37,202 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 03:31:38,315 - [task_manager:client] - INFO: Received job: {'id': 3, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218298, 'mtime': 1553218298}
+2019-03-22 03:31:38,315 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:31:38,394 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:31:39,454 - [task_manager:client] - ERROR: Failed to update task
+2019-03-22 03:31:40,539 - [task_manager:client] - INFO: Received job: {'id': 4, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218300, 'mtime': 1553218300}
+2019-03-22 03:31:40,539 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:31:40,616 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:31:41,680 - [task_manager:client] - ERROR: Failed to update task
+2019-03-22 03:31:42,831 - [task_manager:client] - INFO: Received job: {'id': 5, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218302, 'mtime': 1553218302}
+2019-03-22 03:31:42,832 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:31:42,963 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:35:33,000 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:35:34,013 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:35:34,054 - [task_manager:client] - INFO: POST task
+2019-03-22 03:35:35,336 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:35:36,350 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:35:36,512 - [task_manager:client] - INFO: POST task
+2019-03-22 03:35:37,216 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:35:38,232 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:35:38,288 - [task_manager:client] - INFO: POST task
+2019-03-22 03:35:47,760 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 03:35:48,847 - [task_manager:client] - INFO: Received job: {'id': 6, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218548, 'mtime': 1553218548}
+2019-03-22 03:35:48,848 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:35:48,931 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:35:50,007 - [task_manager:client] - ERROR: Failed to update task
+2019-03-22 03:35:51,221 - [task_manager:client] - INFO: Received job: {'id': 7, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218551, 'mtime': 1553218551}
+2019-03-22 03:35:51,222 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:35:51,295 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:37:48,259 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 03:37:49,400 - [task_manager:client] - INFO: Received job: {'id': 8, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553218669, 'mtime': 1553218669}
+2019-03-22 03:37:49,401 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:37:49,495 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:37:50,591 - [task_manager:client] - ERROR: Failed to update task
+2019-03-22 03:37:51,612 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 03:42:51,846 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:42:52,860 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:42:52,920 - [task_manager:client] - INFO: POST task
+2019-03-22 03:42:54,448 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:42:55,461 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:42:55,504 - [task_manager:client] - INFO: POST task
+2019-03-22 03:42:56,511 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:42:57,528 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:42:57,611 - [task_manager:client] - INFO: POST task
+2019-03-22 03:42:58,476 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:42:59,490 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:42:59,545 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:00,482 - [task_manager:client] - INFO: Creating new task
+2019-03-22 03:43:01,498 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "python -V"}
+2019-03-22 03:43:01,545 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:14,571 - [task_manager:client] - INFO: Start generate random tasks
+2019-03-22 03:43:15,585 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "ps -aux"}
+2019-03-22 03:43:15,694 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:16,698 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\cbb"}
+2019-03-22 03:43:16,760 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:17,765 - [task_manager:client] - DEBUG: POST: {"job_type": "count", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\bcc"}
+2019-03-22 03:43:17,819 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:18,823 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\aca"}
+2019-03-22 03:43:18,878 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:19,881 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\ccb"}
+2019-03-22 03:43:19,944 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:20,948 - [task_manager:client] - DEBUG: POST: {"job_type": "count", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\abc"}
+2019-03-22 03:43:21,044 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:22,049 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\aca"}
+2019-03-22 03:43:22,111 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:23,115 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "df -ah"}
+2019-03-22 03:43:23,152 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:24,157 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "df -ah"}
+2019-03-22 03:43:24,219 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:25,224 - [task_manager:client] - DEBUG: POST: {"job_type": "count", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\acc"}
+2019-03-22 03:43:25,319 - [task_manager:client] - INFO: POST task
+2019-03-22 03:43:25,320 - [task_manager:client] - INFO: Created 10 tasks
+2019-03-22 03:44:38,741 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 03:44:39,834 - [task_manager:client] - INFO: Received job: {'id': 9, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553219079, 'mtime': 1553219079}
+2019-03-22 03:44:39,834 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:44:39,930 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:44:41,024 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:42,242 - [task_manager:client] - INFO: Received job: {'id': 10, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553219082, 'mtime': 1553219082}
+2019-03-22 03:44:42,242 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:44:42,329 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:44:43,500 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:44,582 - [task_manager:client] - INFO: Received job: {'id': 11, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553219084, 'mtime': 1553219084}
+2019-03-22 03:44:44,582 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:44:44,643 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:44:45,741 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:46,868 - [task_manager:client] - INFO: Received job: {'id': 12, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553219086, 'mtime': 1553219086}
+2019-03-22 03:44:46,869 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:44:47,012 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:44:48,143 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:49,225 - [task_manager:client] - INFO: Received job: {'id': 13, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'python -V', 'status': 'in_progress', 'stime': 1553219089, 'mtime': 1553219089}
+2019-03-22 03:44:49,225 - [task_manager:client] - INFO: Executing task: execute python -V
+2019-03-22 03:44:49,326 - [task_manager:executor] - INFO: python -V result saved to C:\Users\Ruslan\Pictures\test\command_result
+2019-03-22 03:44:50,557 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:51,658 - [task_manager:client] - INFO: Received job: {'id': 14, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'ps -aux', 'status': 'in_progress', 'stime': 1553219091, 'mtime': 1553219091}
+2019-03-22 03:44:51,659 - [task_manager:client] - INFO: Executing task: execute ps -aux
+2019-03-22 03:44:51,666 - [task_manager:executor] - WARNING: Error <[WinError 2] The system cannot find the file specified> when executing command: ps -aux
+2019-03-22 03:44:51,666 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified
+2019-03-22 03:44:52,812 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:53,992 - [task_manager:client] - INFO: Received job: {'id': 15, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:UsersRuslanPictures\testcbb', 'status': 'in_progress', 'stime': 1553219093, 'mtime': 1553219093}
+2019-03-22 03:44:53,992 - [task_manager:client] - INFO: Executing task: delete C:UsersRuslanPictures	estcbb
+2019-03-22 03:44:53,992 - [task_manager:executor] - WARNING: Error [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:UsersRuslanPictures\testcbb' when deleting file: C:UsersRuslanPictures	estcbb
+2019-03-22 03:44:53,992 - [task_manager:client] - WARNING: Error in job execution: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:UsersRuslanPictures\testcbb'
+2019-03-22 03:44:55,149 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:56,250 - [task_manager:client] - INFO: Received job: {'id': 16, 'client_host': '127.0.0.1', 'job_type': 'count', 'job_arg': 'C:UsersRuslanPictures\test\x08cc', 'status': 'in_progress', 'stime': 1553219096, 'mtime': 1553219096}
+2019-03-22 03:44:56,250 - [task_manager:client] - INFO: Executing task: count C:UsersRuslanPictures	estcc
+2019-03-22 03:44:56,250 - [task_manager:executor] - INFO: Count unique words in file C:UsersRuslanPictures	estcc
+2019-03-22 03:44:56,250 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\test\x08cc'
+2019-03-22 03:44:57,590 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:44:58,666 - [task_manager:client] - INFO: Received job: {'id': 17, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:UsersRuslanPictures\testaca', 'status': 'in_progress', 'stime': 1553219098, 'mtime': 1553219098}
+2019-03-22 03:44:58,666 - [task_manager:client] - INFO: Executing task: delete C:UsersRuslanPictures	estaca
+2019-03-22 03:44:58,666 - [task_manager:executor] - WARNING: Error [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:UsersRuslanPictures\testaca' when deleting file: C:UsersRuslanPictures	estaca
+2019-03-22 03:44:58,666 - [task_manager:client] - WARNING: Error in job execution: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:UsersRuslanPictures\testaca'
+2019-03-22 03:44:59,773 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:45:00,883 - [task_manager:client] - INFO: Received job: {'id': 18, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:UsersRuslanPictures\testccb', 'status': 'in_progress', 'stime': 1553219100, 'mtime': 1553219100}
+2019-03-22 03:45:00,883 - [task_manager:client] - INFO: Executing task: delete C:UsersRuslanPictures	estccb
+2019-03-22 03:45:00,883 - [task_manager:executor] - WARNING: Error [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:UsersRuslanPictures\testccb' when deleting file: C:UsersRuslanPictures	estccb
+2019-03-22 03:45:00,884 - [task_manager:client] - WARNING: Error in job execution: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:UsersRuslanPictures\testccb'
+2019-03-22 03:45:02,052 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:45:03,178 - [task_manager:client] - INFO: Received job: {'id': 19, 'client_host': '127.0.0.1', 'job_type': 'count', 'job_arg': 'C:UsersRuslanPictures\testabc', 'status': 'in_progress', 'stime': 1553219103, 'mtime': 1553219103}
+2019-03-22 03:45:03,178 - [task_manager:client] - INFO: Executing task: count C:UsersRuslanPictures	estabc
+2019-03-22 03:45:03,178 - [task_manager:executor] - INFO: Count unique words in file C:UsersRuslanPictures	estabc
+2019-03-22 03:45:03,179 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\testabc'
+2019-03-22 03:45:04,249 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:45:05,549 - [task_manager:client] - INFO: Received job: {'id': 20, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:UsersRuslanPictures\testaca', 'status': 'in_progress', 'stime': 1553219105, 'mtime': 1553219105}
+2019-03-22 03:45:05,549 - [task_manager:client] - INFO: Executing task: create C:UsersRuslanPictures	estaca
+2019-03-22 03:45:05,550 - [task_manager:executor] - INFO: Creating file C:UsersRuslanPictures	estaca
+2019-03-22 03:45:05,550 - [task_manager:executor] - WARNING: Error [Errno 22] Invalid argument: 'C:UsersRuslanPictures\testaca' when creating file C:UsersRuslanPictures	estaca
+2019-03-22 03:45:05,550 - [task_manager:executor] - WARNING: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\testaca'
+2019-03-22 03:45:05,550 - [task_manager:executor] - WARNING: <class 'Exception'>
+2019-03-22 03:45:05,551 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\testaca'
+2019-03-22 03:45:06,607 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:45:07,691 - [task_manager:client] - INFO: Received job: {'id': 21, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'df -ah', 'status': 'in_progress', 'stime': 1553219107, 'mtime': 1553219107}
+2019-03-22 03:45:07,691 - [task_manager:client] - INFO: Executing task: execute df -ah
+2019-03-22 03:45:07,699 - [task_manager:executor] - WARNING: Error <[WinError 2] The system cannot find the file specified> when executing command: df -ah
+2019-03-22 03:45:07,699 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified
+2019-03-22 03:45:08,765 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:45:09,850 - [task_manager:client] - INFO: Received job: {'id': 22, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'df -ah', 'status': 'in_progress', 'stime': 1553219109, 'mtime': 1553219109}
+2019-03-22 03:45:09,851 - [task_manager:client] - INFO: Executing task: execute df -ah
+2019-03-22 03:45:09,858 - [task_manager:executor] - WARNING: Error <[WinError 2] The system cannot find the file specified> when executing command: df -ah
+2019-03-22 03:45:09,858 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified
+2019-03-22 03:45:10,932 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:45:11,982 - [task_manager:client] - INFO: Received job: {'id': 23, 'client_host': '127.0.0.1', 'job_type': 'count', 'job_arg': 'C:UsersRuslanPictures\testacc', 'status': 'in_progress', 'stime': 1553219111, 'mtime': 1553219111}
+2019-03-22 03:45:11,982 - [task_manager:client] - INFO: Executing task: count C:UsersRuslanPictures	estacc
+2019-03-22 03:45:11,982 - [task_manager:executor] - INFO: Count unique words in file C:UsersRuslanPictures	estacc
+2019-03-22 03:45:11,982 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\testacc'
+2019-03-22 03:45:13,057 - [task_manager:client] - INFO: Task updated
+2019-03-22 03:45:14,075 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:00:53,092 - [task_manager:client] - INFO: Start generate random tasks
+2019-03-22 04:00:54,105 - [task_manager:client] - DEBUG: POST: {"job_type": "count", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\aba"}
+2019-03-22 04:00:54,195 - [task_manager:client] - INFO: POST task
+2019-03-22 04:00:55,199 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\bcb"}
+2019-03-22 04:00:55,262 - [task_manager:client] - INFO: POST task
+2019-03-22 04:00:56,265 - [task_manager:client] - DEBUG: POST: {"job_type": "count", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\aaa"}
+2019-03-22 04:00:56,369 - [task_manager:client] - INFO: POST task
+2019-03-22 04:00:57,375 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\cba"}
+2019-03-22 04:00:57,533 - [task_manager:client] - INFO: POST task
+2019-03-22 04:00:58,535 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\aac"}
+2019-03-22 04:00:58,594 - [task_manager:client] - INFO: POST task
+2019-03-22 04:00:59,597 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\aca"}
+2019-03-22 04:00:59,661 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:00,663 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\ccb"}
+2019-03-22 04:01:00,803 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:01,807 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\ccb"}
+2019-03-22 04:01:01,944 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:02,948 - [task_manager:client] - DEBUG: POST: {"job_type": "count", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\bcc"}
+2019-03-22 04:01:03,019 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:04,024 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\caa"}
+2019-03-22 04:01:04,086 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:05,090 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\bab"}
+2019-03-22 04:01:05,127 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:06,130 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\cca"}
+2019-03-22 04:01:06,244 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:07,249 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\aba"}
+2019-03-22 04:01:07,311 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:08,314 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\bca"}
+2019-03-22 04:01:08,368 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:09,371 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "ps -aux"}
+2019-03-22 04:01:09,444 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:10,446 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\cac"}
+2019-03-22 04:01:10,494 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:11,497 - [task_manager:client] - DEBUG: POST: {"job_type": "execute", "job_arg": "ps -aux"}
+2019-03-22 04:01:11,561 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:12,565 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\ccc"}
+2019-03-22 04:01:12,636 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:13,641 - [task_manager:client] - DEBUG: POST: {"job_type": "delete", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\acc"}
+2019-03-22 04:01:13,751 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:14,753 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\cab"}
+2019-03-22 04:01:14,793 - [task_manager:client] - INFO: POST task
+2019-03-22 04:01:14,794 - [task_manager:client] - INFO: Created 20 tasks
+2019-03-22 04:02:09,324 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 04:02:10,427 - [task_manager:client] - INFO: Received job: {'id': 24, 'client_host': '127.0.0.1', 'job_type': 'count', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testaba', 'status': 'in_progress', 'stime': 1553220130, 'mtime': 1553220130}
+2019-03-22 04:02:10,427 - [task_manager:client] - INFO: Executing task: count C:\Users\Ruslan\Pictures\testaba
+2019-03-22 04:02:10,427 - [task_manager:executor] - INFO: Count unique words in file C:\Users\Ruslan\Pictures\testaba
+2019-03-22 04:02:10,428 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'C:\\Users\\Ruslan\\Pictures\\testaba'
+2019-03-22 04:02:43,186 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 04:02:44,283 - [task_manager:client] - INFO: Received job: {'id': 25, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\x08cb', 'status': 'in_progress', 'stime': 1553220164, 'mtime': 1553220164}
+2019-03-22 04:02:44,284 - [task_manager:client] - INFO: Executing task: delete C:\Users\Ruslan\Pictures\testcb
+2019-03-22 04:02:44,284 - [task_manager:executor] - WARNING: Error [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:\\Users\\Ruslan\\Pictures\\test\x08cb' when deleting file: C:\Users\Ruslan\Pictures\testcb
+2019-03-22 04:02:44,284 - [task_manager:client] - WARNING: Error in job execution: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:\\Users\\Ruslan\\Pictures\\test\x08cb'
+2019-03-22 04:02:45,390 - [task_manager:client] - ERROR: Failed to update task
+2019-03-22 04:02:46,484 - [task_manager:client] - INFO: Received job: {'id': 26, 'client_host': '127.0.0.1', 'job_type': 'count', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testaaa', 'status': 'in_progress', 'stime': 1553220166, 'mtime': 1553220166}
+2019-03-22 04:02:46,484 - [task_manager:client] - INFO: Executing task: count C:\Users\Ruslan\Pictures\testaaa
+2019-03-22 04:02:46,484 - [task_manager:executor] - INFO: Count unique words in file C:\Users\Ruslan\Pictures\testaaa
+2019-03-22 04:02:46,485 - [task_manager:client] - WARNING: Error in job execution: [Errno 2] No such file or directory: 'C:\\Users\\Ruslan\\Pictures\\testaaa'
+2019-03-22 04:02:47,561 - [task_manager:client] - ERROR: Failed to update task
+2019-03-22 04:11:25,955 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 04:11:27,046 - [task_manager:client] - INFO: Received job: {'id': 27, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testcba', 'status': 'in_progress', 'stime': 1553220686, 'mtime': 1553220686}
+2019-03-22 04:11:27,047 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testcba
+2019-03-22 04:11:27,047 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testcba
+2019-03-22 04:11:27,048 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\testcba
+2019-03-22 04:11:28,112 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:29,170 - [task_manager:client] - INFO: Received job: {'id': 28, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testaac', 'status': 'in_progress', 'stime': 1553220689, 'mtime': 1553220689}
+2019-03-22 04:11:29,171 - [task_manager:client] - INFO: Executing task: delete C:\Users\Ruslan\Pictures\testaac
+2019-03-22 04:11:29,171 - [task_manager:executor] - WARNING: Error [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testaac' when deleting file: C:\Users\Ruslan\Pictures\testaac
+2019-03-22 04:11:29,171 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testaac'
+2019-03-22 04:11:30,236 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:31,304 - [task_manager:client] - INFO: Received job: {'id': 29, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testaca', 'status': 'in_progress', 'stime': 1553220691, 'mtime': 1553220691}
+2019-03-22 04:11:31,304 - [task_manager:client] - INFO: Executing task: delete C:\Users\Ruslan\Pictures\testaca
+2019-03-22 04:11:31,305 - [task_manager:executor] - WARNING: Error [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testaca' when deleting file: C:\Users\Ruslan\Pictures\testaca
+2019-03-22 04:11:31,305 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testaca'
+2019-03-22 04:11:32,387 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:33,463 - [task_manager:client] - INFO: Received job: {'id': 30, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testccb', 'status': 'in_progress', 'stime': 1553220693, 'mtime': 1553220693}
+2019-03-22 04:11:33,463 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testccb
+2019-03-22 04:11:33,463 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testccb
+2019-03-22 04:11:33,464 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\testccb
+2019-03-22 04:11:34,545 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:35,621 - [task_manager:client] - INFO: Received job: {'id': 31, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testccb', 'status': 'in_progress', 'stime': 1553220695, 'mtime': 1553220695}
+2019-03-22 04:11:35,621 - [task_manager:client] - INFO: Executing task: delete C:\Users\Ruslan\Pictures\testccb
+2019-03-22 04:11:35,622 - [task_manager:executor] - WARNING: Error [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Ruslan\\Pictures\\testccb' when deleting file: C:\Users\Ruslan\Pictures\testccb
+2019-03-22 04:11:35,622 - [task_manager:client] - WARNING: Error in job execution: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Ruslan\\Pictures\\testccb'
+2019-03-22 04:11:36,694 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:37,780 - [task_manager:client] - INFO: Received job: {'id': 32, 'client_host': '127.0.0.1', 'job_type': 'count', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\x08cc', 'status': 'in_progress', 'stime': 1553220697, 'mtime': 1553220697}
+2019-03-22 04:11:37,780 - [task_manager:client] - INFO: Executing task: count C:\Users\Ruslan\Pictures\testcc
+2019-03-22 04:11:37,780 - [task_manager:executor] - INFO: Count unique words in file C:\Users\Ruslan\Pictures\testcc
+2019-03-22 04:11:37,781 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:\\Users\\Ruslan\\Pictures\\test\x08cc'
+2019-03-22 04:11:38,861 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:40,187 - [task_manager:client] - INFO: Received job: {'id': 33, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testcaa', 'status': 'in_progress', 'stime': 1553220699, 'mtime': 1553220699}
+2019-03-22 04:11:40,187 - [task_manager:client] - INFO: Executing task: delete C:\Users\Ruslan\Pictures\testcaa
+2019-03-22 04:11:40,188 - [task_manager:executor] - WARNING: Error [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testcaa' when deleting file: C:\Users\Ruslan\Pictures\testcaa
+2019-03-22 04:11:40,188 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testcaa'
+2019-03-22 04:11:41,269 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:42,388 - [task_manager:client] - INFO: Received job: {'id': 34, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\x08ab', 'status': 'in_progress', 'stime': 1553220702, 'mtime': 1553220702}
+2019-03-22 04:11:42,388 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testab
+2019-03-22 04:11:42,388 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testab
+2019-03-22 04:11:42,389 - [task_manager:executor] - WARNING: Error [Errno 22] Invalid argument: 'C:\\Users\\Ruslan\\Pictures\\test\x08ab' when creating file C:\Users\Ruslan\Pictures\testab
+2019-03-22 04:11:42,389 - [task_manager:executor] - WARNING: [Errno 22] Invalid argument: 'C:\\Users\\Ruslan\\Pictures\\test\x08ab'
+2019-03-22 04:11:42,390 - [task_manager:executor] - WARNING: <class 'Exception'>
+2019-03-22 04:11:42,390 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:\\Users\\Ruslan\\Pictures\\test\x08ab'
+2019-03-22 04:11:43,452 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:44,528 - [task_manager:client] - INFO: Received job: {'id': 35, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testcca', 'status': 'in_progress', 'stime': 1553220704, 'mtime': 1553220704}
+2019-03-22 04:11:44,529 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testcca
+2019-03-22 04:11:44,529 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testcca
+2019-03-22 04:11:44,530 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\testcca
+2019-03-22 04:11:45,594 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:46,670 - [task_manager:client] - INFO: Received job: {'id': 36, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testaba', 'status': 'in_progress', 'stime': 1553220706, 'mtime': 1553220706}
+2019-03-22 04:11:46,671 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testaba
+2019-03-22 04:11:46,671 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testaba
+2019-03-22 04:11:46,672 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\testaba
+2019-03-22 04:11:47,752 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:48,846 - [task_manager:client] - INFO: Received job: {'id': 37, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\x08ca', 'status': 'in_progress', 'stime': 1553220708, 'mtime': 1553220708}
+2019-03-22 04:11:48,847 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testca
+2019-03-22 04:11:48,847 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testca
+2019-03-22 04:11:48,848 - [task_manager:executor] - WARNING: Error [Errno 22] Invalid argument: 'C:\\Users\\Ruslan\\Pictures\\test\x08ca' when creating file C:\Users\Ruslan\Pictures\testca
+2019-03-22 04:11:48,848 - [task_manager:executor] - WARNING: [Errno 22] Invalid argument: 'C:\\Users\\Ruslan\\Pictures\\test\x08ca'
+2019-03-22 04:11:48,848 - [task_manager:executor] - WARNING: <class 'Exception'>
+2019-03-22 04:11:48,848 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:\\Users\\Ruslan\\Pictures\\test\x08ca'
+2019-03-22 04:11:49,910 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:51,078 - [task_manager:client] - INFO: Received job: {'id': 38, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'ps -aux', 'status': 'in_progress', 'stime': 1553220710, 'mtime': 1553220710}
+2019-03-22 04:11:51,109 - [task_manager:client] - INFO: Executing task: execute ps -aux
+2019-03-22 04:11:51,117 - [task_manager:executor] - WARNING: Error <[WinError 2] The system cannot find the file specified> when executing command: ps -aux
+2019-03-22 04:11:51,117 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified
+2019-03-22 04:11:52,202 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:53,295 - [task_manager:client] - INFO: Received job: {'id': 39, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testcac', 'status': 'in_progress', 'stime': 1553220713, 'mtime': 1553220713}
+2019-03-22 04:11:53,295 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testcac
+2019-03-22 04:11:53,295 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testcac
+2019-03-22 04:11:53,297 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\testcac
+2019-03-22 04:11:54,353 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:55,429 - [task_manager:client] - INFO: Received job: {'id': 40, 'client_host': '127.0.0.1', 'job_type': 'execute', 'job_arg': 'ps -aux', 'status': 'in_progress', 'stime': 1553220715, 'mtime': 1553220715}
+2019-03-22 04:11:55,429 - [task_manager:client] - INFO: Executing task: execute ps -aux
+2019-03-22 04:11:55,437 - [task_manager:executor] - WARNING: Error <[WinError 2] The system cannot find the file specified> when executing command: ps -aux
+2019-03-22 04:11:55,437 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified
+2019-03-22 04:11:56,560 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:57,678 - [task_manager:client] - INFO: Received job: {'id': 41, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testccc', 'status': 'in_progress', 'stime': 1553220717, 'mtime': 1553220717}
+2019-03-22 04:11:57,678 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testccc
+2019-03-22 04:11:57,678 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testccc
+2019-03-22 04:11:57,680 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\testccc
+2019-03-22 04:11:58,761 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:11:59,837 - [task_manager:client] - INFO: Received job: {'id': 42, 'client_host': '127.0.0.1', 'job_type': 'delete', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testacc', 'status': 'in_progress', 'stime': 1553220719, 'mtime': 1553220719}
+2019-03-22 04:11:59,837 - [task_manager:client] - INFO: Executing task: delete C:\Users\Ruslan\Pictures\testacc
+2019-03-22 04:11:59,838 - [task_manager:executor] - WARNING: Error [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testacc' when deleting file: C:\Users\Ruslan\Pictures\testacc
+2019-03-22 04:11:59,838 - [task_manager:client] - WARNING: Error in job execution: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Ruslan\\Pictures\\testacc'
+2019-03-22 04:12:00,910 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:12:02,137 - [task_manager:client] - INFO: Received job: {'id': 43, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\testcab', 'status': 'in_progress', 'stime': 1553220721, 'mtime': 1553220721}
+2019-03-22 04:12:02,138 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\testcab
+2019-03-22 04:12:02,138 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\testcab
+2019-03-22 04:12:02,139 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\testcab
+2019-03-22 04:12:03,210 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:12:04,232 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:12:25,250 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:12:46,274 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:13:07,294 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:13:28,314 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:13:49,335 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:14:10,353 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:14:31,391 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:16:44,736 - [task_manager:client] - INFO: Creating new task
+2019-03-22 04:16:45,749 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\test.txt"}
+2019-03-22 04:16:45,824 - [task_manager:client] - INFO: POST task
+2019-03-22 04:16:46,838 - [task_manager:client] - INFO: Creating new task
+2019-03-22 04:16:47,852 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\test.txt"}
+2019-03-22 04:16:47,907 - [task_manager:client] - INFO: POST task
+2019-03-22 04:16:48,931 - [task_manager:client] - INFO: Creating new task
+2019-03-22 04:16:49,946 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\Users\\Ruslan\\Pictures\\test\\test.txt"}
+2019-03-22 04:16:50,015 - [task_manager:client] - INFO: POST task
+2019-03-22 04:16:59,547 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 04:17:00,666 - [task_manager:client] - INFO: Received job: {'id': 44, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:UsersRuslanPictures\test\test.txt', 'status': 'in_progress', 'stime': 1553221020, 'mtime': 1553221020}
+2019-03-22 04:17:00,667 - [task_manager:client] - INFO: Executing task: create C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:00,667 - [task_manager:executor] - INFO: Creating file C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:00,668 - [task_manager:executor] - WARNING: Error [Errno 22] Invalid argument: 'C:UsersRuslanPictures\test\test.txt' when creating file C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:00,668 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\test\test.txt'
+2019-03-22 04:17:01,740 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:17:02,815 - [task_manager:client] - INFO: Received job: {'id': 45, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:UsersRuslanPictures\test\test.txt', 'status': 'in_progress', 'stime': 1553221022, 'mtime': 1553221022}
+2019-03-22 04:17:02,816 - [task_manager:client] - INFO: Executing task: create C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:02,816 - [task_manager:executor] - INFO: Creating file C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:02,816 - [task_manager:executor] - WARNING: Error [Errno 22] Invalid argument: 'C:UsersRuslanPictures\test\test.txt' when creating file C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:02,816 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\test\test.txt'
+2019-03-22 04:17:03,948 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:17:05,025 - [task_manager:client] - INFO: Received job: {'id': 46, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:UsersRuslanPictures\test\test.txt', 'status': 'in_progress', 'stime': 1553221024, 'mtime': 1553221024}
+2019-03-22 04:17:05,025 - [task_manager:client] - INFO: Executing task: create C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:05,026 - [task_manager:executor] - INFO: Creating file C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:05,027 - [task_manager:executor] - WARNING: Error [Errno 22] Invalid argument: 'C:UsersRuslanPictures\test\test.txt' when creating file C:UsersRuslanPictures	est	est.txt
+2019-03-22 04:17:05,027 - [task_manager:client] - WARNING: Error in job execution: [Errno 22] Invalid argument: 'C:UsersRuslanPictures\test\test.txt'
+2019-03-22 04:17:06,373 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:17:07,382 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 04:17:52,838 - [task_manager:client] - INFO: Creating new task
+2019-03-22 04:17:53,852 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\\\test.txt"}
+2019-03-22 04:17:53,947 - [task_manager:client] - INFO: POST task
+2019-03-22 04:17:55,104 - [task_manager:client] - INFO: Creating new task
+2019-03-22 04:17:56,119 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\\\test.txt"}
+2019-03-22 04:17:56,180 - [task_manager:client] - INFO: POST task
+2019-03-22 04:17:57,224 - [task_manager:client] - INFO: Creating new task
+2019-03-22 04:17:58,237 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\\\test.txt"}
+2019-03-22 04:17:58,297 - [task_manager:client] - INFO: POST task
+2019-03-22 04:17:59,355 - [task_manager:client] - INFO: Creating new task
+2019-03-22 04:18:00,369 - [task_manager:client] - DEBUG: POST: {"job_type": "create", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\\\test.txt"}
+2019-03-22 04:18:00,445 - [task_manager:client] - INFO: POST task
+2019-03-22 04:18:10,664 - [task_manager:client] - INFO: Starting checking jobs for execution
+2019-03-22 04:18:11,798 - [task_manager:client] - INFO: Received job: {'id': 47, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\\test.txt', 'status': 'in_progress', 'stime': 1553221091, 'mtime': 1553221091}
+2019-03-22 04:18:11,798 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:11,798 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:11,800 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:12,931 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:18:14,022 - [task_manager:client] - INFO: Received job: {'id': 48, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\\test.txt', 'status': 'in_progress', 'stime': 1553221093, 'mtime': 1553221093}
+2019-03-22 04:18:14,023 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:14,023 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:14,024 - [task_manager:executor] - WARNING: File C:\Users\Ruslan\Pictures\test\test.txt already exists
+2019-03-22 04:18:14,024 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:15,137 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:18:16,215 - [task_manager:client] - INFO: Received job: {'id': 49, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\\test.txt', 'status': 'in_progress', 'stime': 1553221096, 'mtime': 1553221096}
+2019-03-22 04:18:16,215 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:16,215 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:16,216 - [task_manager:executor] - WARNING: File C:\Users\Ruslan\Pictures\test\test.txt already exists
+2019-03-22 04:18:16,216 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:17,312 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:18:18,389 - [task_manager:client] - INFO: Received job: {'id': 50, 'client_host': '127.0.0.1', 'job_type': 'create', 'job_arg': 'C:\\Users\\Ruslan\\Pictures\\test\\test.txt', 'status': 'in_progress', 'stime': 1553221098, 'mtime': 1553221098}
+2019-03-22 04:18:18,389 - [task_manager:client] - INFO: Executing task: create C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:18,389 - [task_manager:executor] - INFO: Creating file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:18,390 - [task_manager:executor] - WARNING: File C:\Users\Ruslan\Pictures\test\test.txt already exists
+2019-03-22 04:18:18,390 - [task_manager:executor] - INFO: Created file C:\Users\Ruslan\Pictures\test\test.txt
+2019-03-22 04:18:19,456 - [task_manager:client] - INFO: Task updated
+2019-03-22 04:18:20,463 - [task_manager:client] - INFO: No avalaible job
+2019-03-22 05:49:46,649 - [task_manager:client] - INFO: Start generate random tasks
+2019-03-22 05:49:47,664 - [task_manager:client] - DEBUG: POST: {"job_type": "count", "job_arg": "C:\\\\Users\\\\Ruslan\\\\Pictures\\\\test\\\\baa"}
+2019-03-22 05:49:47,675 - [task_manager:client] - ERROR: Failed to POST job
+2019-03-22 05:49:47,675 - [task_manager:client] - INFO: Created 1 tasks

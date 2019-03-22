@@ -1,46 +1,47 @@
 #!/usr/bin/env python3.7
 
-"""This module works with database"""
+"""This module works with database."""
 
 import pymysql
 import time
 
-from constants import DB_SECTION
 
 class MySqlException(Exception):
-    """Base MySql Exception Error class"""
+    """Base MySqlClient Exception Error class."""
     pass
 
 
 class MySqlClient:
 
-    """Client that works with MySql database"""
+    """Class that works with MySql database."""
 
     def __init__(self, config, logger):
-        """Intiialize db params"""
+        """Initialize db params, config and logger.
+
+        :Parameters:
+            - `config`: configparser instance.
+            - `logger': logging.logger instance.
+        """
         self.config = config
         self.logger = logger
-        self.__host = self.config.get(DB_SECTION, 'host')
-        self.__name = self.config.get(DB_SECTION, 'name')
-        self.__user = self.config.get(DB_SECTION, 'user')
-        self.__passwd = self.config.get(DB_SECTION, 'passwd')
-        self.__charset = self.config.get(DB_SECTION, 'charset')
+        self.__host = self.config.get('db', 'host')
+        self.__name = self.config.get('db', 'name')
+        self.__user = self.config.get('db', 'user')
+        self.__passwd = self.config.get('db', 'passwd')
 
     @staticmethod
     def retry():
         pass
 
     def with_connection(func):
-        """Database connection decorator"""
+        """Database connection decorator."""
         def wrapper(self, *args, **kwargs):
             self.logger.info('Connecting to database')
-            result = False
             try:
                 cnx = pymysql.connect(host=self.__host,
                                       db=self.__name,
                                       user=self.__user,
-                                      passwd=self.__passwd,
-                                      charset=self.__charset)
+                                      passwd=self.__passwd)
                 self.logger.info('Connected')
                 self.logger.debug("Calling func %s " % (func.__name__, ))
                 try:
@@ -63,42 +64,79 @@ class MySqlClient:
             return result
         return wrapper
 
+    def insert_dict(self, cursor, table, data):
+        """Insert items from dictionary.
+
+        :Parameters:
+            - `cursor`: connection cursor object.
+            - `table`: a string with mysql table name.
+            - `data`: dictionary with data to insert.
+        """
+        data_set = [(column, f'"{value}"') for column, value in data.items()]
+        columns, values = list(zip(*data_set))
+        columns_expression = ','.join(columns)
+        values_expression = ','.join(values)
+        sql_query = (f"INSERT INTO {table} ({columns_expression}) "
+                     f"VALUES({values_expression})")
+        self.logger.debug(f'Executing query: {sql_query}')
+        cursor.execute(sql_query)
+
     @with_connection
-    def insert_task(self, cursor, job_info):
-        """Create new task
-        :Args:
-            `cursor`: blabla
-            `job_info`: job_info dict
+    def create_job(self, cursor, job_info):
+        """Create new job.
+
+        :Parameters:
+            - `cursor`: connection cursor object. It comes from decorator.
+            - `job_info`: dictionary with job type and job argument. for e.g.:
+                           {'job_type': 'create', 'job_arg': '/tmp/text.txt'}
         """
         now = int(time.time())
         job_info['ctime'] = now
         job_info['mtime'] = now
-        data_set = [(column, f'"{value}"') for column, value in job_info.items()]
-        columns, values = list(zip(*data_set))
-        columns_expression = ','.join(columns)
-        values_expression = ','.join(values)
-        sql_query = (f"INSERT INTO job_queue ({columns_expression}) "
-                     f"VALUES({values_expression})")
-        result = cursor.execute(sql_query)
-        return result
+        self.insert_dict(cursor, 'job_queue', job_info)
 
     @with_connection
-    def update_job(self, cursor, job_info):
-        """Update task"""
+    def update_job(self, cursor, job_info, result_info=None):
+        """Update job.
+
+        :Parameters:
+            - `cursor`: connection cursor object. It comes from decorator.
+            - `job_info: dictionary with job_info to update. for e.g.:
+                         {'id': 1, 'status': 'finished'}
+            - `result_info`: dictionary with job result info.
+                            by default None. for e.g.:
+                            {'job_id': 1, 'result': 'PASS',
+                             'result_info: 'File test.txt created',
+                             'run_time': 1}
+        """
         not_update = ('id',)
-        job_id = job_info.get('id')
+        job_id = job_info['id']
         job_info['mtime'] = int(time.time())
         data_set = [f'{column} = "{value}"' for column, value in job_info.items()
                     if column not in not_update]
         set_expression = ','.join(data_set)
         sql_query = (f"UPDATE job_queue SET {set_expression} WHERE id = '{job_id}'")
         self.logger.info(f'Update job with id {job_id} status to {job_info}')
-        result = cursor.execute(sql_query)
-        return result
+        cursor.execute(sql_query)
+        if result_info:
+            result_info['job_id'] = job_info['id']
+            result_info['run_time'] = int(time.time()) - job_info['stime']
+            self.insert_dict(cursor, 'job_result', result_info)
 
     @with_connection
     def get_job(self, cursor):
-        """Get new job to process it"""
+        """Get new job to process it.
+
+        :Parameters:
+            - `cursor`: connection cursor object. It comes from decorator.
+
+        :Returns:
+            1) Empty dict if no jobs in queue with status 'new'.
+            2) Dictionary with job information that contains all values
+               from `required_columns` variable. for e.g.:
+               {'id': 1, 'client_host: 'localhost',
+                'job_type': 'create', 'job_arg': 'test.txt'}
+        """
         status = 'new'
         required_columns = ('id', 'client_host', 'job_type', 'job_arg')
         select_expression = ','.join(required_columns)
